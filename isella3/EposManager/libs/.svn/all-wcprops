@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/63/trunk/EposManager/libs
+END
+libftd2xx.so.0.4.16
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/63/trunk/EposManager/libs/libftd2xx.so.0.4.16
+END
+libEPOS.so
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/63/trunk/EposManager/libs/libEPOS.so
+END
+99-ftdi.rules
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/56/trunk/EposManager/libs/99-ftdi.rules
+END

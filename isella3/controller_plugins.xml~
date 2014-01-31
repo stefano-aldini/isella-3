@@ -1,0 +1,6 @@
+<library path="lib/libmy_controller_lib">
+  <class name="isella3/MyControllerPlugin" 
+         type="my_controller_ns::Isella3Controller"/>
+  <class name="MyCartControllerPlugin" 
+         type="my_controller_ns::MyCartControllerClass"/>
+</library>

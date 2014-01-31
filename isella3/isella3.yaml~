@@ -1,0 +1,7 @@
+my_controller_exe:    
+    type: isella3/MyControllerPlugin
+    
+    desired_position1: 135.0
+    desired_position2: 180.0
+    desired_position3: 135.0
+    desired_position4: 180.0

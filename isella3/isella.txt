@@ -1,0 +1,315 @@
+[0m[ INFO] [1387201770.834888001]: Node initialized[0m
+[0m[ INFO] [1387201770.841814841]: Current Time = 8[0m
+[0m[ INFO] [1387201770.841902761]: Final Time = 20000008[0m
+[0m[ INFO] [1387201770.841951121]: update ---> d_last_time = 8, time_fin = 20000008[0m
+Device opened
+SetProtocolStackSettings ok!
+NodeId setted for ArmModule 0 and MotorController 0
+Entering InitializeSettings...
+KeyHandle 0x40001 ErrorCode 0
+Disabled
+Motor Parameters setted
+Max Profile Velocity setted
+Settings initialized for ArmModule 0 and MotorController 0
+NodeId setted for ArmModule 0 and MotorController 1
+Entering InitializeSettings...
+KeyHandle 0x40001 ErrorCode 0
+Disabled
+Motor Parameters setted
+Max Profile Velocity setted
+Settings initialized for ArmModule 0 and MotorController 1
+NodeId setted for ArmModule 1 and MotorController 0
+Entering InitializeSettings...
+KeyHandle 0x40001 ErrorCode 0
+Disabled
+Motor Parameters setted
+Max Profile Velocity setted
+Settings initialized for ArmModule 1 and MotorController 0
+NodeId setted for ArmModule 1 and MotorController 1
+Entering InitializeSettings...
+KeyHandle 0x40001 ErrorCode 0
+ModuleState = CONNECTED
+Disabled
+Motor Parameters setted
+Max Profile Velocity setted
+Settings initialized for ArmModule 1 and MotorController 1
+[0m[ INFO] [1387201773.321036920]: Trajectory ---> desired_pos = 135, AngleAxisIs = 194, time_in = 8, time_fin = 20000008[0m
+Matrix A:
+          1           8          64         512        4096       32768
+          0           1          16         192        2048       20480
+          0           0           2          48         768       10240
+          1       2e+07       4e+14 8.00001e+21     1.6e+29 3.20001e+36
+          0           1       4e+07     1.2e+15     3.2e+22 8.00001e+29
+          0           0           2     1.2e+08     4.8e+15     1.6e+23
+Vector b:
+194.13
+0
+0
+135
+0
+0
+Vector x:
+194.13
+-1.41883e-17
+1.7739e-18
+-7.39127e-20
+5.54344e-27
+-1.10869e-34
+Vector b = A*x:
+194.13
+2.87374e-21
+1.32204e-28
+135
+-1.65304e-20
+-1.03499e-27
+[0m[ INFO] [1387201773.334739280]: Trajectory ---> desired_pos = 180, AngleAxisIs = 138, time_in = 8, time_fin = 20000008[0m
+Matrix A:
+          1           8          64         512        4096       32768
+          0           1          16         192        2048       20480
+          0           0           2          48         768       10240
+          1       2e+07       4e+14 8.00001e+21     1.6e+29 3.20001e+36
+          0           1       4e+07     1.2e+15     3.2e+22 8.00001e+29
+          0           0           2     1.2e+08     4.8e+15     1.6e+23
+Vector b:
+138.24
+0
+0
+180
+0
+0
+Vector x:
+138.24
+1.00204e-17
+-1.2528e-18
+5.22001e-20
+-3.915e-27
+7.83e-35
+Vector b = A*x:
+138.24
+-2.02955e-21
+-9.33676e-29
+180
+3.33122e-20
+3.75734e-27
+[0m[ INFO] [1387201773.348508480]: Trajectory ---> desired_pos = 135, AngleAxisIs = 168, time_in = 8, time_fin = 20000008[0m
+Matrix A:
+          1           8          64         512        4096       32768
+          0           1          16         192        2048       20480
+          0           0           2          48         768       10240
+          1       2e+07       4e+14 8.00001e+21     1.6e+29 3.20001e+36
+          0           1       4e+07     1.2e+15     3.2e+22 8.00001e+29
+          0           0           2     1.2e+08     4.8e+15     1.6e+23
+Vector b:
+168.3
+0
+0
+135
+0
+0
+Vector x:
+168.3
+-7.99039e-18
+9.99001e-19
+-4.16251e-20
+3.12188e-27
+-6.24375e-35
+Vector b = A*x:
+168.3
+1.61839e-21
+7.44525e-29
+135
+-1.75594e-20
+-1.63058e-27
+[0m[ INFO] [1387201773.362366000]: Trajectory ---> desired_pos = 180, AngleAxisIs = 185, time_in = 8, time_fin = 20000008[0m
+Matrix A:
+          1           8          64         512        4096       32768
+          0           1          16         192        2048       20480
+          0           0           2          48         768       10240
+          1       2e+07       4e+14 8.00001e+21     1.6e+29 3.20001e+36
+          0           1       4e+07     1.2e+15     3.2e+22 8.00001e+29
+          0           0           2     1.2e+08     4.8e+15     1.6e+23
+Vector b:
+186.12
+0
+0
+180
+0
+0
+Vector x:
+186.12
+-1.4685e-18
+1.836e-19
+-7.65001e-21
+5.7375e-28
+-1.1475e-35
+Vector b = A*x:
+186.12
+2.97434e-22
+1.36831e-29
+180
+-2.85377e-21
+-2.08654e-28
+[0m[ INFO] [1387201773.362994520]: Controller started[0m
+[0m[ INFO] [1387201773.363175800]: 
+Desired position 1: 194 
+Desired position 2: 138 
+Desired position 3: 168 
+Desired position 4: 186 
+[0m
+[0m[ INFO] [1387201773.389335480]: 
+Actual position 1: 194 
+Actual position 2: 138 
+Actual position 3: 168 
+Actual position 4: 186 
+[0m
+sCurrentMust = 42
+sCurrentMust = 42
+Moving...
+Moving...
+sCurrentMust = 111
+sCurrentMust = -68
+Moving...
+Moving...
+[0m[ INFO] [1387201773.574419520]: Still going to the desired position[0m
+[0m[ INFO] [1387201773.574506880]: time ---------------------> 2732738[0m
+[0m[ INFO] [1387201773.574607560]: 
+Desired position 1: 192 
+Desired position 2: 139 
+Desired position 3: 167 
+Desired position 4: 185 
+[0m
+[0m[ INFO] [1387201773.601216360]: 
+Actual position 1: 194 
+Actual position 2: 137 
+Actual position 3: 167 
+Actual position 4: 185 
+[0m
+sCurrentMust = 923
+sCurrentMust = -2774
+Moving...
+Moving...
+sCurrentMust = 573
+sCurrentMust = -470
+Moving...
+Moving...
+[0m[ INFO] [1387201773.705625640]: Still going to the desired position[0m
+[0m[ INFO] [1387201773.705690680]: time ---------------------> 2863926[0m
+[0m[ INFO] [1387201773.705753480]: 
+Desired position 1: 192 
+Desired position 2: 139 
+Desired position 3: 167 
+Desired position 4: 185 
+[0m
+[0m[ INFO] [1387201773.732100160]: 
+Actual position 1: 199 
+Actual position 2: 136 
+Actual position 3: 166 
+Actual position 4: 184 
+[0m
+sCurrentMust = -957
+sCurrentMust = -3890
+Moving...
+Moving...
+sCurrentMust = 817
+sCurrentMust = -29
+Moving...
+Moving...
+[0m[ INFO] [1387201773.836833840]: Still going to the desired position[0m
+[0m[ INFO] [1387201773.836898160]: time ---------------------> 2995133[0m
+[0m[ INFO] [1387201773.836959960]: 
+Desired position 1: 192 
+Desired position 2: 139 
+Desired position 3: 167 
+Desired position 4: 185 
+[0m
+[0m[ INFO] [1387201773.863152920]: 
+Actual position 1: 203 
+Actual position 2: 138 
+Actual position 3: 167 
+Actual position 4: 185 
+[0m
+sCurrentMust = -3857
+sCurrentMust = -3890
+Moving...
+Moving...
+sCurrentMust = -2462
+sCurrentMust = -410
+Moving...
+Moving...
+[0m[ INFO] [1387201773.969058160]: Still going to the desired position[0m
+[0m[ INFO] [1387201773.969132320]: time ---------------------> 3127367[0m
+[0m[ INFO] [1387201773.969222600]: 
+Desired position 1: 192 
+Desired position 2: 139 
+Desired position 3: 167 
+Desired position 4: 185 
+[0m
+[0m[ INFO] [1387201773.995945920]: 
+Actual position 1: 188 
+Actual position 2: 139 
+Actual position 3: 173 
+Actual position 4: 187 
+[0m
+sCurrentMust = 3889
+sCurrentMust = 3198
+Moving...
+Moving...
+sCurrentMust = -3890
+sCurrentMust = -451
+Moving...
+Moving...
+sCurrentMust = 3890
+sCurrentMust = 3890
+Moving...
+Moving...
+sCurrentMust = 1782
+sCurrentMust = -81
+Moving...
+Moving...
+ModuleState = CONNECTED
+ModuleState = CONNECTED
+ModuleState = CONNECTED
+ModuleState = CONNECTED
+... logging to /home/rsk-sa/.ros/log/e290264a-6658-11e3-bcaf-001d09093f81/roslaunch-agenor-9507.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/opt/ros/groovy/stacks/ros_pkg_tutorials/isella3/isella3.launch
+[1mstarted roslaunch server http://agenor:35215/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /desired_position1
+ * /desired_position2
+ * /desired_position3
+ * /desired_position4
+ * /pid_parameters/d
+ * /pid_parameters/i
+ * /pid_parameters/i_clamp
+ * /pid_parameters/p
+ * /root_name
+ * /rosdistro
+ * /rosversion
+ * /tip_name
+ * /type
+
+NODES
+  /
+    isella (isella3/my_controller_exe)
+
+auto-starting new master
+[1mprocess[master]: started with pid [9521][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/opt/ros/groovy/stacks/ros_pkg_tutorials/isella3/isella3.launch http://localhost:11311
+[1msetting /run_id to e290264a-6658-11e3-bcaf-001d09093f81[0m
+[1mprocess[rosout-1]: started with pid [9536][0m
+started core service [/rosout]
+[1mprocess[isella-2]: started with pid [9548][0m
+[isella-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

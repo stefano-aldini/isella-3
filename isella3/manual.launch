@@ -1,0 +1,3 @@
+<launch>
+   <node name="isella" pkg="isella3" type="manual" output="screen" args="-o /opt/ros/groovy/stacks/ros_pkg_tutorials/isella3/my.bag -a"/>
+</launch>

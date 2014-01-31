@@ -1,0 +1,17 @@
+#include "isella3_controller2.h"
+#include <sys/time.h>
+#include <time.h>
+#include <iostream>
+
+int main(int argc, char ** argv)
+{
+	ros::init(argc, argv, "isella_node");
+	ROS_INFO("Node initialized");
+	ros::NodeHandle n_;
+	theApp.OpenDevice();
+	theApp.OpenBrakes();
+	while(ros::ok());
+	theApp.CloseBrakes();
+	theApp.CloseDevice();
+	ROS_INFO("End");
+};

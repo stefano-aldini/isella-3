@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/86/trunk/EposManager
+END
+mainpage.dox
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/56/trunk/EposManager/mainpage.dox
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/56/trunk/EposManager/CMakeLists.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/56/trunk/EposManager/Makefile
+END
+manifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/56/trunk/EposManager/manifest.xml
+END
+cmake_install.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/56/trunk/EposManager/cmake_install.cmake
+END

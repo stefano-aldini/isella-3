@@ -1,0 +1,3386 @@
+[0m[ INFO] [1387275856.759809266]: Node initialized[0m
+[0m[ INFO] [1387275856.767495906]: qd1 = 0[0m
+[0m[ INFO] [1387275856.768544986]: qd2 = 0[0m
+[0m[ INFO] [1387275856.769356106]: qd3 = 0[0m
+[0m[ INFO] [1387275856.770294226]: qd4 = 0[0m
+PID --> K(0,0) =
+350
+0
+25
+PID --> K(0,1) =
+350
+0
+25
+PID --> K(1,0) =
+220
+0
+20
+PID --> K(1,1) =
+220
+0
+20
+[0m[ INFO] [1387275856.770552226]: Current Time = 194[0m
+[0m[ INFO] [1387275856.770578946]: Final Time = 20000194[0m
+[0m[ INFO] [1387275856.770609986]: update ---> d_last_time = 194, time_fin = 20000194[0m
+Device opened
+SetProtocolStackSettings ok!
+NodeId setted for ArmModule 0 and MotorController 0
+Entering InitializeSettings...
+KeyHandle 0x40001 ErrorCode 0
+Disabled
+Motor Parameters setted
+Max Profile Velocity setted
+Settings initialized for ArmModule 0 and MotorController 0
+NodeId setted for ArmModule 0 and MotorController 1
+Entering InitializeSettings...
+KeyHandle 0x40001 ErrorCode 0
+Disabled
+Motor Parameters setted
+Max Profile Velocity setted
+Settings initialized for ArmModule 0 and MotorController 1
+NodeId setted for ArmModule 1 and MotorController 0
+Entering InitializeSettings...
+KeyHandle 0x40001 ErrorCode 0
+Disabled
+Motor Parameters setted
+Max Profile Velocity setted
+Settings initialized for ArmModule 1 and MotorController 0
+NodeId setted for ArmModule 1 and MotorController 1
+Entering InitializeSettings...
+KeyHandle 0x40001 ErrorCode 0
+Disabled
+Motor Parameters setted
+Max Profile Velocity setted
+Settings initialized for ArmModule 1 and MotorController 1
+[0m[ INFO] [1387275859.370628866]: Trajectory ---> desired_pos = 200, AngleAxisIs = 139, time_in = 194, time_fin = 20000194[0m
+Matrix A:
+          1         194       37636 7.30138e+06 1.41647e+09 2.74795e+11
+          0           1         388      112908 2.92055e+07 7.08234e+09
+          0           0           2        1164      451632 1.46028e+08
+          1 2.00002e+07 4.00008e+14 8.00023e+21 1.60006e+29 3.20016e+36
+          0           1 4.00004e+07 1.20002e+15 3.20009e+22 8.00031e+29
+          0           0           2 1.20001e+08 4.80009e+15 1.60005e+23
+Vector b:
+139.32
+0
+0
+200
+0
+0
+Vector x:
+139.32
+8.56423e-15
+-4.4146e-17
+7.58544e-20
+-5.68886e-27
+1.13775e-34
+Vector b = A*x:
+139.32
+-2.32835e-21
+7.63978e-29
+200
+-1.14085e-20
+-4.22829e-28
+[0m[ INFO] [1387275859.384357666]: Trajectory ---> desired_pos = 200, AngleAxisIs = 130, time_in = 194, time_fin = 20000194[0m
+Matrix A:
+          1         194       37636 7.30138e+06 1.41647e+09 2.74795e+11
+          0           1         388      112908 2.92055e+07 7.08234e+09
+          0           0           2        1164      451632 1.46028e+08
+          1 2.00002e+07 4.00008e+14 8.00023e+21 1.60006e+29 3.20016e+36
+          0           1 4.00004e+07 1.20002e+15 3.20009e+22 8.00031e+29
+          0           0           2 1.20001e+08 4.80009e+15 1.60005e+23
+Vector b:
+130.05
+0
+0
+200
+0
+0
+Vector x:
+130.05
+9.87258e-15
+-5.08901e-17
+8.74426e-20
+-6.55794e-27
+1.31156e-34
+Vector b = A*x:
+130.05
+-2.68405e-21
+8.80572e-29
+200
+1.30231e-20
+4.05632e-27
+[0m[ INFO] [1387275859.397958266]: Trajectory ---> desired_pos = 200, AngleAxisIs = 111, time_in = 194, time_fin = 20000194[0m
+Matrix A:
+          1         194       37636 7.30138e+06 1.41647e+09 2.74795e+11
+          0           1         388      112908 2.92055e+07 7.08234e+09
+          0           0           2        1164      451632 1.46028e+08
+          1 2.00002e+07 4.00008e+14 8.00023e+21 1.60006e+29 3.20016e+36
+          0           1 4.00004e+07 1.20002e+15 3.20009e+22 8.00031e+29
+          0           0           2 1.20001e+08 4.80009e+15 1.60005e+23
+Vector b:
+111.33
+0
+0
+200
+0
+0
+Vector x:
+111.33
+1.25147e-14
+-6.45093e-17
+1.10844e-19
+-8.31297e-27
+1.66256e-34
+Vector b = A*x:
+111.33
+-3.40235e-21
+1.1164e-28
+200
+2.97388e-20
+5.59302e-27
+[0m[ INFO] [1387275859.411441426]: Trajectory ---> desired_pos = 200, AngleAxisIs = 145, time_in = 194, time_fin = 20000194[0m
+Matrix A:
+          1         194       37636 7.30138e+06 1.41647e+09 2.74795e+11
+          0           1         388      112908 2.92055e+07 7.08234e+09
+          0           0           2        1164      451632 1.46028e+08
+          1 2.00002e+07 4.00008e+14 8.00023e+21 1.60006e+29 3.20016e+36
+          0           1 4.00004e+07 1.20002e+15 3.20009e+22 8.00031e+29
+          0           0           2 1.20001e+08 4.80009e+15 1.60005e+23
+Vector b:
+145.98
+0
+0
+200
+0
+0
+Vector x:
+145.98
+7.62426e-15
+-3.93007e-17
+6.75289e-20
+-5.06447e-27
+1.01288e-34
+Vector b = A*x:
+145.98
+-2.0728e-21
+6.80136e-29
+200
+4.92338e-21
+1.81596e-27
+[0m[ INFO] [1387275859.412094786]: Controller started[0m
+[0m[ INFO] [1387275859.412185586]: 
+Desired position 1: 139 
+Desired position 2: 130 
+Desired position 3: 111 
+Desired position 4: 145 
+[0m
+[0m[ INFO] [1387275859.452947826]: 
+Actual position 1: 139 
+Actual position 2: 130 
+Actual position 3: 111 
+Actual position 4: 145 
+[0m
+Position Error = 0.0937729
+sCurrentMust = 32
+Position Error = -0.0826111
+sCurrentMust = 28
+Moving...
+Moving...
+Position Error = 0.0502167
+sCurrentMust = 11
+Position Error = -0.0428619
+sCurrentMust = 9
+Moving...
+Moving...
+[0m[ INFO] [1387275859.646995626]: Still going to the desired position[0m
+[0m[ INFO] [1387275859.647112746]: time ---------------------> 2876738[0m
+[0m[ INFO] [1387275859.647233546]: 
+Desired position 1: 140 
+Desired position 2: 131 
+Desired position 3: 113 
+Desired position 4: 147 
+[0m
+[0m[ INFO] [1387275859.675220546]: 
+Actual position 1: 140 
+Actual position 2: 129 
+Actual position 3: 110 
+Actual position 4: 145 
+[0m
+Position Error = 2.77307
+sCurrentMust = 970
+Position Error = 2.51852
+sCurrentMust = -881
+Moving...
+Moving...
+Position Error = 3.43102
+sCurrentMust = 755
+Position Error = 0.565628
+sCurrentMust = -124
+Moving...
+Moving...
+[0m[ INFO] [1387275859.786184106]: Still going to the desired position[0m
+[0m[ INFO] [1387275859.786284986]: time ---------------------> 3015915[0m
+[0m[ INFO] [1387275859.786364306]: 
+Desired position 1: 140 
+Desired position 2: 131 
+Desired position 3: 113 
+Desired position 4: 147 
+[0m
+[0m[ INFO] [1387275859.812163546]: 
+Actual position 1: 141 
+Actual position 2: 128 
+Actual position 3: 109 
+Actual position 4: 145 
+[0m
+Position Error = 2.86334
+sCurrentMust = 1002
+Position Error = 3.79251
+sCurrentMust = -1327
+Moving...
+Moving...
+Position Error = 2.96462
+sCurrentMust = 652
+Position Error = -1.12866
+sCurrentMust = 248
+Moving...
+Moving...
+[0m[ INFO] [1387275859.930679306]: Still going to the desired position[0m
+[0m[ INFO] [1387275859.931126466]: time ---------------------> 3160748[0m
+[0m[ INFO] [1387275859.931348866]: 
+Desired position 1: 141 
+Desired position 2: 132 
+Desired position 3: 114 
+Desired position 4: 147 
+[0m
+[0m[ INFO] [1387275859.961598546]: 
+Actual position 1: 142 
+Actual position 2: 128 
+Actual position 3: 113 
+Actual position 4: 147 
+[0m
+Position Error = 3.01079
+sCurrentMust = 1053
+Position Error = 3.98318
+sCurrentMust = -1394
+Moving...
+Moving...
+Position Error = -5.06794
+sCurrentMust = -1116
+Position Error = -0.616013
+sCurrentMust = 135
+Moving...
+Moving...
+[0m[ INFO] [1387275860.073892826]: Still going to the desired position[0m
+[0m[ INFO] [1387275860.074000386]: time ---------------------> 3303629[0m
+[0m[ INFO] [1387275860.074080306]: 
+Desired position 1: 141 
+Desired position 2: 132 
+Desired position 3: 114 
+Desired position 4: 147 
+[0m
+[0m[ INFO] [1387275860.100202986]: 
+Actual position 1: 142 
+Actual position 2: 128 
+Actual position 3: 123 
+Actual position 4: 151 
+[0m
+Position Error = 3.53296
+sCurrentMust = 1236
+Position Error = 4.19128
+sCurrentMust = -1466
+Moving...
+Moving...
+Position Error = -4.56776
+sCurrentMust = -1004
+Position Error = -1.05124
+sCurrentMust = 231
+Moving...
+Moving...
+[0m[ INFO] [1387275860.209940826]: Still going to the desired position[0m
+[0m[ INFO] [1387275860.210049466]: time ---------------------> 3439679[0m
+[0m[ INFO] [1387275860.210128546]: 
+Desired position 1: 141 
+Desired position 2: 132 
+Desired position 3: 114 
+Desired position 4: 148 
+[0m
+[0m[ INFO] [1387275860.240495146]: 
+Actual position 1: 142 
+Actual position 2: 128 
+Actual position 3: 113 
+Actual position 4: 149 
+[0m
+Position Error = 3.75362
+sCurrentMust = 1313
+Position Error = 4.35147
+sCurrentMust = -1523
+Moving...
+Moving...
+Position Error = 4.9481
+sCurrentMust = 1089
+Position Error = 0.126022
+sCurrentMust = -27
+Moving...
+Moving...
+[0m[ INFO] [1387275860.352403946]: Still going to the desired position[0m
+[0m[ INFO] [1387275860.352519426]: time ---------------------> 3582148[0m
+[0m[ INFO] [1387275860.352600066]: 
+Desired position 1: 141 
+Desired position 2: 133 
+Desired position 3: 115 
+Desired position 4: 148 
+[0m
+[0m[ INFO] [1387275860.379654906]: 
+Actual position 1: 142 
+Actual position 2: 128 
+Actual position 3: 109 
+Actual position 4: 144 
+[0m
+Position Error = 4.37239
+sCurrentMust = 1530
+Position Error = 4.53874
+sCurrentMust = -1588
+Moving...
+Moving...
+Position Error = 7.96066
+sCurrentMust = 1751
+Position Error = -0.422989
+sCurrentMust = 93
+Moving...
+Moving...
+[0m[ INFO] [1387275860.489793186]: Still going to the desired position[0m
+[0m[ INFO] [1387275860.489897066]: time ---------------------> 3719526[0m
+[0m[ INFO] [1387275860.489976946]: 
+Desired position 1: 142 
+Desired position 2: 133 
+Desired position 3: 115 
+Desired position 4: 148 
+[0m
+[0m[ INFO] [1387275860.516179986]: 
+Actual position 1: 142 
+Actual position 2: 128 
+Actual position 3: 110 
+Actual position 4: 145 
+[0m
+Position Error = 4.82632
+sCurrentMust = 1689
+Position Error = 4.72662
+sCurrentMust = -1654
+Moving...
+Moving...
+Position Error = -2.67776
+sCurrentMust = -590
+Position Error = -0.268906
+sCurrentMust = 59
+Moving...
+Moving...
+[0m[ INFO] [1387275860.632442466]: Still going to the desired position[0m
+[0m[ INFO] [1387275860.632552866]: time ---------------------> 3862182[0m
+[0m[ INFO] [1387275860.632633026]: 
+Desired position 1: 142 
+Desired position 2: 133 
+Desired position 3: 116 
+Desired position 4: 148 
+[0m
+[0m[ INFO] [1387275860.662284626]: 
+Actual position 1: 142 
+Actual position 2: 128 
+Actual position 3: 126 
+Actual position 4: 152 
+[0m
+Position Error = 5.37289
+sCurrentMust = 1880
+Position Error = 5.06641
+sCurrentMust = -1773
+Moving...
+Moving...
+Position Error = -8.68758
+sCurrentMust = -1912
+Position Error = 0.346283
+sCurrentMust = -76
+Moving...
+Moving...
+[0m[ INFO] [1387275860.771808306]: Still going to the desired position[0m
+[0m[ INFO] [1387275860.771919186]: time ---------------------> 4001549[0m
+[0m[ INFO] [1387275860.772000466]: 
+Desired position 1: 142 
+Desired position 2: 134 
+Desired position 3: 116 
+Desired position 4: 149 
+[0m
+[0m[ INFO] [1387275860.797986346]: 
+Actual position 1: 142 
+Actual position 2: 128 
+Actual position 3: 108 
+Actual position 4: 152 
+[0m
+Position Error = 5.70476
+sCurrentMust = 1996
+Position Error = 4.92393
+sCurrentMust = -1723
+Moving...
+Moving...
+Position Error = 2.85673
+sCurrentMust = 630
+Position Error = 0.525436
+sCurrentMust = -115
+Moving...
+Moving...
+[0m[ INFO] [1387275860.916298386]: Still going to the desired position[0m
+[0m[ INFO] [1387275860.916399706]: time ---------------------> 4146029[0m
+[0m[ INFO] [1387275860.916481586]: 
+Desired position 1: 143 
+Desired position 2: 134 
+Desired position 3: 116 
+Desired position 4: 149 
+[0m
+[0m[ INFO] [1387275860.946245466]: 
+Actual position 1: 142 
+Actual position 2: 128 
+Actual position 3: 114 
+Actual position 4: 147 
+[0m
+Position Error = 6.22587
+sCurrentMust = 2179
+Position Error = 5.20044
+sCurrentMust = -1820
+Moving...
+Moving...
+Position Error = 5.78021
+sCurrentMust = 1272
+Position Error = 0.557693
+sCurrentMust = -122
+Moving...
+Moving...
+[0m[ INFO] [1387275861.056322946]: Still going to the desired position[0m
+[0m[ INFO] [1387275861.056439586]: time ---------------------> 4286069[0m
+[0m[ INFO] [1387275861.056519186]: 
+Desired position 1: 143 
+Desired position 2: 134 
+Desired position 3: 117 
+Desired position 4: 149 
+[0m
+[0m[ INFO] [1387275861.082760146]: 
+Actual position 1: 142 
+Actual position 2: 128 
+Actual position 3: 109 
+Actual position 4: 147 
+[0m
+Position Error = 6.44892
+sCurrentMust = 2257
+Position Error = 5.43048
+sCurrentMust = -1900
+Moving...
+Moving...
+Position Error = 0.49324
+sCurrentMust = 107
+Position Error = 0.712753
+sCurrentMust = -156
+Moving...
+Moving...
+[0m[ INFO] [1387275861.194743266]: Still going to the desired position[0m
+[0m[ INFO] [1387275861.194845586]: time ---------------------> 4424475[0m
+[0m[ INFO] [1387275861.194926666]: 
+Desired position 1: 143 
+Desired position 2: 135 
+Desired position 3: 118 
+Desired position 4: 150 
+[0m
+[0m[ INFO] [1387275861.221685906]: 
+Actual position 1: 144 
+Actual position 2: 129 
+Actual position 3: 124 
+Actual position 4: 151 
+[0m
+Position Error = 5.23384
+sCurrentMust = 1831
+Position Error = 5.32828
+sCurrentMust = -1864
+Moving...
+Moving...
+Position Error = -9.53778
+sCurrentMust = -2099
+Position Error = 0.234497
+sCurrentMust = -51
+Moving...
+Moving...
+[0m[ INFO] [1387275861.335232786]: Still going to the desired position[0m
+[0m[ INFO] [1387275861.335345306]: time ---------------------> 4564973[0m
+[0m[ INFO] [1387275861.335426386]: 
+Desired position 1: 144 
+Desired position 2: 135 
+Desired position 3: 118 
+Desired position 4: 150 
+[0m
+[0m[ INFO] [1387275861.365020986]: 
+Actual position 1: 146 
+Actual position 2: 131 
+Actual position 3: 121 
+Actual position 4: 154 
+[0m
+Position Error = 3.3636
+sCurrentMust = 1176
+Position Error = 5.75339
+sCurrentMust = -2013
+Moving...
+Moving...
+Position Error = -3.51992
+sCurrentMust = -773
+Position Error = -0.0523071
+sCurrentMust = 11
+Moving...
+Moving...
+[0m[ INFO] [1387275861.475579386]: Still going to the desired position[0m
+[0m[ INFO] [1387275861.475689866]: time ---------------------> 4705320[0m
+[0m[ INFO] [1387275861.475768266]: 
+Desired position 1: 144 
+Desired position 2: 136 
+Desired position 3: 119 
+Desired position 4: 150 
+[0m
+[0m[ INFO] [1387275861.501590986]: 
+Actual position 1: 148 
+Actual position 2: 131 
+Actual position 3: 117 
+Actual position 4: 150 
+[0m
+Position Error = 3.10468
+sCurrentMust = 1086
+Position Error = 6.22571
+sCurrentMust = -2179
+Moving...
+Moving...
+Position Error = 9.70597
+sCurrentMust = 2137
+Position Error = 0.222733
+sCurrentMust = -49
+Moving...
+Moving...
+[0m[ INFO] [1387275861.611076666]: Still going to the desired position[0m
+[0m[ INFO] [1387275861.611181866]: time ---------------------> 4840811[0m
+[0m[ INFO] [1387275861.611263306]: 
+Desired position 1: 145 
+Desired position 2: 136 
+Desired position 3: 119 
+Desired position 4: 151 
+[0m
+[0m[ INFO] [1387275861.639838306]: 
+Actual position 1: 147 
+Actual position 2: 131 
+Actual position 3: 107 
+Actual position 4: 144 
+[0m
+Position Error = 3.72554
+sCurrentMust = 1304
+Position Error = 6.5435
+sCurrentMust = -2290
+Moving...
+Moving...
+Position Error = 9.22251
+sCurrentMust = 2028
+Position Error = 0.890976
+sCurrentMust = -196
+Moving...
+Moving...
+[0m[ INFO] [1387275861.752726306]: Still going to the desired position[0m
+[0m[ INFO] [1387275861.753147786]: time ---------------------> 4982771[0m
+[0m[ INFO] [1387275861.753347946]: 
+Desired position 1: 145 
+Desired position 2: 137 
+Desired position 3: 120 
+Desired position 4: 151 
+[0m
+[0m[ INFO] [1387275861.780340346]: 
+Actual position 1: 148 
+Actual position 2: 131 
+Actual position 3: 115 
+Actual position 4: 148 
+[0m
+Position Error = 4.27262
+sCurrentMust = 1495
+Position Error = 6.83879
+sCurrentMust = -2393
+Moving...
+Moving...
+Position Error = -4.06868
+sCurrentMust = -896
+Position Error = -1.40819
+sCurrentMust = 310
+Moving...
+Moving...
+[0m[ INFO] [1387275861.891859026]: Still going to the desired position[0m
+[0m[ INFO] [1387275861.891970586]: time ---------------------> 5121599[0m
+[0m[ INFO] [1387275861.892051146]: 
+Desired position 1: 145 
+Desired position 2: 137 
+Desired position 3: 121 
+Desired position 4: 151 
+[0m
+[0m[ INFO] [1387275861.918201866]: 
+Actual position 1: 148 
+Actual position 2: 131 
+Actual position 3: 132 
+Actual position 4: 155 
+[0m
+Position Error = 5.13996
+sCurrentMust = 1799
+Position Error = 7.18976
+sCurrentMust = -2516
+Moving...
+Moving...
+Position Error = -6.35255
+sCurrentMust = -1397
+Position Error = 0.237549
+sCurrentMust = -52
+Moving...
+Moving...
+[0m[ INFO] [1387275862.031185666]: Still going to the desired position[0m
+[0m[ INFO] [1387275862.031287386]: time ---------------------> 5260919[0m
+[0m[ INFO] [1387275862.031361306]: 
+Desired position 1: 146 
+Desired position 2: 138 
+Desired position 3: 121 
+Desired position 4: 152 
+[0m
+[0m[ INFO] [1387275862.059890426]: 
+Actual position 1: 148 
+Actual position 2: 131 
+Actual position 3: 121 
+Actual position 4: 153 
+[0m
+Position Error = 5.89967
+sCurrentMust = 2065
+Position Error = 7.32985
+sCurrentMust = -2565
+Moving...
+Moving...
+Position Error = 3.49683
+sCurrentMust = 770
+Position Error = 0.401932
+sCurrentMust = -88
+Moving...
+Moving...
+[0m[ INFO] [1387275862.175064706]: Still going to the desired position[0m
+[0m[ INFO] [1387275862.175173466]: time ---------------------> 5404803[0m
+[0m[ INFO] [1387275862.175254626]: 
+Desired position 1: 146 
+Desired position 2: 138 
+Desired position 3: 122 
+Desired position 4: 152 
+[0m
+[0m[ INFO] [1387275862.201424066]: 
+Actual position 1: 148 
+Actual position 2: 131 
+Actual position 3: 119 
+Actual position 4: 149 
+[0m
+Position Error = 6.41503
+sCurrentMust = 2245
+Position Error = 7.96881
+sCurrentMust = -2789
+Moving...
+Moving...
+Position Error = 6.97544
+sCurrentMust = 1535
+Position Error = 0.514938
+sCurrentMust = -113
+Moving...
+Moving...
+[0m[ INFO] [1387275862.313965386]: Still going to the desired position[0m
+[0m[ INFO] [1387275862.314070546]: time ---------------------> 5543700[0m
+[0m[ INFO] [1387275862.314149746]: 
+Desired position 1: 147 
+Desired position 2: 139 
+Desired position 3: 123 
+Desired position 4: 153 
+[0m
+[0m[ INFO] [1387275862.344228106]: 
+Actual position 1: 149 
+Actual position 2: 132 
+Actual position 3: 110 
+Actual position 4: 149 
+[0m
+Position Error = 4.74957
+sCurrentMust = 1662
+Position Error = 7.54611
+sCurrentMust = -2641
+Moving...
+Moving...
+Position Error = -0.648529
+sCurrentMust = -143
+Position Error = -0.151749
+sCurrentMust = 33
+Moving...
+Moving...
+[0m[ INFO] [1387275862.457049026]: Still going to the desired position[0m
+[0m[ INFO] [1387275862.457436866]: time ---------------------> 5687060[0m
+[0m[ INFO] [1387275862.457647866]: 
+Desired position 1: 147 
+Desired position 2: 140 
+Desired position 3: 124 
+Desired position 4: 153 
+[0m
+[0m[ INFO] [1387275862.484274146]: 
+Actual position 1: 151 
+Actual position 2: 136 
+Actual position 3: 132 
+Actual position 4: 156 
+[0m
+Position Error = 1.01194
+sCurrentMust = 353
+Position Error = 4.59023
+sCurrentMust = -1606
+Moving...
+Moving...
+Position Error = -9.40503
+sCurrentMust = -2070
+Position Error = 1.27205
+sCurrentMust = -280
+Moving...
+Moving...
+[0m[ INFO] [1387275862.597117946]: Still going to the desired position[0m
+[0m[ INFO] [1387275862.597224826]: time ---------------------> 5826854[0m
+[0m[ INFO] [1387275862.597305186]: 
+Desired position 1: 148 
+Desired position 2: 140 
+Desired position 3: 124 
+Desired position 4: 154 
+[0m
+[0m[ INFO] [1387275862.623799026]: 
+Actual position 1: 147 
+Actual position 2: 139 
+Actual position 3: 124 
+Actual position 4: 156 
+[0m
+Position Error = 1.11896
+sCurrentMust = 391
+Position Error = 0.315857
+sCurrentMust = -109
+Moving...
+Moving...
+Position Error = -2.06023
+sCurrentMust = -452
+Position Error = -1.16083
+sCurrentMust = 255
+Moving...
+Moving...
+[0m[ INFO] [1387275862.735780506]: Still going to the desired position[0m
+[0m[ INFO] [1387275862.735895066]: time ---------------------> 5965523[0m
+[0m[ INFO] [1387275862.736673266]: 
+Desired position 1: 149 
+Desired position 2: 141 
+Desired position 3: 125 
+Desired position 4: 154 
+[0m
+[0m[ INFO] [1387275862.767960026]: 
+Actual position 1: 147 
+Actual position 2: 139 
+Actual position 3: 119 
+Actual position 4: 151 
+[0m
+Position Error = 2.41545
+sCurrentMust = 845
+Position Error = 1.17703
+sCurrentMust = -412
+Moving...
+Moving...
+Position Error = 10.7328
+sCurrentMust = 2363
+Position Error = 1.23735
+sCurrentMust = -272
+Moving...
+Moving...
+[0m[ INFO] [1387275862.877078666]: Still going to the desired position[0m
+[0m[ INFO] [1387275862.877181506]: time ---------------------> 6106811[0m
+[0m[ INFO] [1387275862.877261786]: 
+Desired position 1: 149 
+Desired position 2: 141 
+Desired position 3: 126 
+Desired position 4: 155 
+[0m
+[0m[ INFO] [1387275862.904111346]: 
+Actual position 1: 148 
+Actual position 2: 138 
+Actual position 3: 111 
+Actual position 4: 148 
+[0m
+Position Error = 3.68323
+sCurrentMust = 1289
+Position Error = 2.84538
+sCurrentMust = -996
+Moving...
+Moving...
+Position Error = 6.10052
+sCurrentMust = 1341
+Position Error = -0.493805
+sCurrentMust = 108
+Moving...
+Moving...
+[0m[ INFO] [1387275863.019797466]: Still going to the desired position[0m
+[0m[ INFO] [1387275863.019906866]: time ---------------------> 6249536[0m
+[0m[ INFO] [1387275863.019985626]: 
+Desired position 1: 150 
+Desired position 2: 142 
+Desired position 3: 127 
+Desired position 4: 155 
+[0m
+[0m[ INFO] [1387275863.049853186]: 
+Actual position 1: 149 
+Actual position 2: 138 
+Actual position 3: 123 
+Actual position 4: 153 
+[0m
+Position Error = 4.25765
+sCurrentMust = 1490
+Position Error = 3.45604
+sCurrentMust = -1209
+Moving...
+Moving...
+Position Error = -3.04987
+sCurrentMust = -672
+Position Error = 0.710495
+sCurrentMust = -156
+Moving...
+Moving...
+[0m[ INFO] [1387275863.158704906]: Still going to the desired position[0m
+[0m[ INFO] [1387275863.159090106]: time ---------------------> 6388713[0m
+[0m[ INFO] [1387275863.159285786]: 
+Desired position 1: 150 
+Desired position 2: 143 
+Desired position 3: 128 
+Desired position 4: 156 
+[0m
+[0m[ INFO] [1387275863.186977826]: 
+Actual position 1: 149 
+Actual position 2: 138 
+Actual position 3: 138 
+Actual position 4: 158 
+[0m
+Position Error = 5.04234
+sCurrentMust = 1764
+Position Error = 3.67534
+sCurrentMust = -1286
+Moving...
+Moving...
+Position Error = -7.9493
+sCurrentMust = -1749
+Position Error = 1.26343
+sCurrentMust = -278
+Moving...
+Moving...
+[0m[ INFO] [1387275863.298269066]: Still going to the desired position[0m
+[0m[ INFO] [1387275863.298372266]: time ---------------------> 6528003[0m
+[0m[ INFO] [1387275863.298451186]: 
+Desired position 1: 151 
+Desired position 2: 144 
+Desired position 3: 129 
+Desired position 4: 156 
+[0m
+[0m[ INFO] [1387275863.324631586]: 
+Actual position 1: 149 
+Actual position 2: 138 
+Actual position 3: 126 
+Actual position 4: 160 
+[0m
+Position Error = 5.94448
+sCurrentMust = 2080
+Position Error = 4.17038
+sCurrentMust = -1459
+Moving...
+Moving...
+Position Error = 4.05496
+sCurrentMust = 893
+Position Error = 1.49817
+sCurrentMust = -329
+Moving...
+Moving...
+[0m[ INFO] [1387275863.435688466]: Still going to the desired position[0m
+[0m[ INFO] [1387275863.435792386]: time ---------------------> 6665421[0m
+[0m[ INFO] [1387275863.435874226]: 
+Desired position 1: 152 
+Desired position 2: 144 
+Desired position 3: 129 
+Desired position 4: 157 
+[0m
+[0m[ INFO] [1387275863.474548626]: 
+Actual position 1: 149 
+Actual position 2: 138 
+Actual position 3: 126 
+Actual position 4: 153 
+[0m
+Position Error = 7.1641
+sCurrentMust = 2507
+Position Error = 4.71988
+sCurrentMust = -1652
+Moving...
+Moving...
+Position Error = 6.66084
+sCurrentMust = 1465
+Position Error = 1.96043
+sCurrentMust = -431
+Moving...
+Moving...
+[0m[ INFO] [1387275863.585420746]: Still going to the desired position[0m
+[0m[ INFO] [1387275863.585525786]: time ---------------------> 6815154[0m
+[0m[ INFO] [1387275863.585609506]: 
+Desired position 1: 152 
+Desired position 2: 145 
+Desired position 3: 130 
+Desired position 4: 157 
+[0m
+[0m[ INFO] [1387275863.613105186]: 
+Actual position 1: 149 
+Actual position 2: 139 
+Actual position 3: 125 
+Actual position 4: 154 
+[0m
+Position Error = 7.38905
+sCurrentMust = 2586
+Position Error = 4.98293
+sCurrentMust = -1744
+Moving...
+Moving...
+Position Error = -2.70222
+sCurrentMust = -595
+Position Error = 1.1946
+sCurrentMust = -262
+Moving...
+Moving...
+[0m[ INFO] [1387275863.724976986]: Still going to the desired position[0m
+[0m[ INFO] [1387275863.725078186]: time ---------------------> 6954708[0m
+[0m[ INFO] [1387275863.725157546]: 
+Desired position 1: 153 
+Desired position 2: 146 
+Desired position 3: 131 
+Desired position 4: 158 
+[0m
+[0m[ INFO] [1387275863.759718546]: 
+Actual position 1: 153 
+Actual position 2: 140 
+Actual position 3: 143 
+Actual position 4: 160 
+[0m
+Position Error = 5.12357
+sCurrentMust = 1792
+Position Error = 4.42104
+sCurrentMust = -1547
+Moving...
+Moving...
+Position Error = -7.50537
+sCurrentMust = -1651
+Position Error = 2.11026
+sCurrentMust = -464
+Moving...
+Moving...
+[0m[ INFO] [1387275863.870503226]: Still going to the desired position[0m
+[0m[ INFO] [1387275863.870617186]: time ---------------------> 7100246[0m
+[0m[ INFO] [1387275863.870698786]: 
+Desired position 1: 154 
+Desired position 2: 147 
+Desired position 3: 132 
+Desired position 4: 159 
+[0m
+[0m[ INFO] [1387275863.897798826]: 
+Actual position 1: 155 
+Actual position 2: 143 
+Actual position 3: 131 
+Actual position 4: 160 
+[0m
+Position Error = 2.48206
+sCurrentMust = 868
+Position Error = 3.78845
+sCurrentMust = -1325
+Moving...
+Moving...
+Position Error = 2.64909
+sCurrentMust = 584
+Position Error = 0.380722
+sCurrentMust = -83
+Moving...
+Moving...
+[0m[ INFO] [1387275864.010763626]: Still going to the desired position[0m
+[0m[ INFO] [1387275864.010873706]: time ---------------------> 7240503[0m
+[0m[ INFO] [1387275864.010954186]: 
+Desired position 1: 154 
+Desired position 2: 147 
+Desired position 3: 133 
+Desired position 4: 159 
+[0m
+[0m[ INFO] [1387275864.037688706]: 
+Actual position 1: 155 
+Actual position 2: 144 
+Actual position 3: 130 
+Actual position 4: 155 
+[0m
+Position Error = 3.1801
+sCurrentMust = 1113
+Position Error = 3.92725
+sCurrentMust = -1374
+Moving...
+Moving...
+Position Error = 7.37169
+sCurrentMust = 1622
+Position Error = 2.44026
+sCurrentMust = -537
+Moving...
+Moving...
+[0m[ INFO] [1387275864.153220346]: Still going to the desired position[0m
+[0m[ INFO] [1387275864.153654346]: time ---------------------> 7383276[0m
+[0m[ INFO] [1387275864.153871986]: 
+Desired position 1: 155 
+Desired position 2: 148 
+Desired position 3: 134 
+Desired position 4: 160 
+[0m
+[0m[ INFO] [1387275864.180705066]: 
+Actual position 1: 155 
+Actual position 2: 144 
+Actual position 3: 123 
+Actual position 4: 154 
+[0m
+Position Error = 4.36292
+sCurrentMust = 1527
+Position Error = 4.35597
+sCurrentMust = -1524
+Moving...
+Moving...
+Position Error = 0.924667
+sCurrentMust = 202
+Position Error = 0.951797
+sCurrentMust = -209
+Moving...
+Moving...
+[0m[ INFO] [1387275864.297580106]: Still going to the desired position[0m
+[0m[ INFO] [1387275864.297691786]: time ---------------------> 7527320[0m
+[0m[ INFO] [1387275864.297771946]: 
+Desired position 1: 156 
+Desired position 2: 149 
+Desired position 3: 135 
+Desired position 4: 160 
+[0m
+[0m[ INFO] [1387275864.323610826]: 
+Actual position 1: 155 
+Actual position 2: 144 
+Actual position 3: 142 
+Actual position 4: 160 
+[0m
+Position Error = 5.4025
+sCurrentMust = 1891
+Position Error = 4.96869
+sCurrentMust = -1739
+Moving...
+Moving...
+Position Error = -8.86047
+sCurrentMust = -1950
+Position Error = 2.29312
+sCurrentMust = -504
+Moving...
+Moving...
+[0m[ INFO] [1387275864.434278826]: Still going to the desired position[0m
+[0m[ INFO] [1387275864.435055346]: time ---------------------> 7664673[0m
+[0m[ INFO] [1387275864.435525026]: 
+Desired position 1: 156 
+Desired position 2: 150 
+Desired position 3: 136 
+Desired position 4: 161 
+[0m
+[0m[ INFO] [1387275864.465152586]: 
+Actual position 1: 155 
+Actual position 2: 144 
+Actual position 3: 143 
+Actual position 4: 164 
+[0m
+Position Error = 6.44357
+sCurrentMust = 2255
+Position Error = 5.34691
+sCurrentMust = -1871
+Moving...
+Moving...
+Position Error = -2.44334
+sCurrentMust = -536
+Position Error = 2.15097
+sCurrentMust = -473
+Moving...
+Moving...
+[0m[ INFO] [1387275864.578462906]: Still going to the desired position[0m
+[0m[ INFO] [1387275864.578568786]: time ---------------------> 7808198[0m
+[0m[ INFO] [1387275864.578650426]: 
+Desired position 1: 157 
+Desired position 2: 151 
+Desired position 3: 138 
+Desired position 4: 162 
+[0m
+[0m[ INFO] [1387275864.604716386]: 
+Actual position 1: 155 
+Actual position 2: 144 
+Actual position 3: 134 
+Actual position 4: 159 
+[0m
+Position Error = 7.90779
+sCurrentMust = 2767
+Position Error = 5.93681
+sCurrentMust = -2077
+Moving...
+Moving...
+Position Error = 9.88254
+sCurrentMust = 2175
+Position Error = 1.75339
+sCurrentMust = -385
+Moving...
+Moving...
+[0m[ INFO] [1387275864.715009146]: Still going to the desired position[0m
+[0m[ INFO] [1387275864.715113506]: time ---------------------> 7944742[0m
+[0m[ INFO] [1387275864.715196626]: 
+Desired position 1: 158 
+Desired position 2: 151 
+Desired position 3: 139 
+Desired position 4: 162 
+[0m
+[0m[ INFO] [1387275864.741633906]: 
+Actual position 1: 156 
+Actual position 2: 144 
+Actual position 3: 126 
+Actual position 4: 155 
+[0m
+Position Error = 8.09265
+sCurrentMust = 2832
+Position Error = 6.30495
+sCurrentMust = -2206
+Moving...
+Moving...
+Position Error = 8.46158
+sCurrentMust = 1861
+Position Error = 2.09555
+sCurrentMust = -461
+Moving...
+Moving...
+[0m[ INFO] [1387275864.864632746]: Still going to the desired position[0m
+[0m[ INFO] [1387275864.865036506]: time ---------------------> 8094660[0m
+[0m[ INFO] [1387275864.865252666]: 
+Desired position 1: 159 
+Desired position 2: 152 
+Desired position 3: 140 
+Desired position 4: 163 
+[0m
+[0m[ INFO] [1387275864.891614146]: 
+Actual position 1: 159 
+Actual position 2: 147 
+Actual position 3: 138 
+Actual position 4: 160 
+[0m
+Position Error = 4.34912
+sCurrentMust = 1521
+Position Error = 4.30336
+sCurrentMust = -1505
+Moving...
+Moving...
+Position Error = -5.32788
+sCurrentMust = -1174
+Position Error = 0.36647
+sCurrentMust = -80
+Moving...
+Moving...
+[0m[ INFO] [1387275865.021123546]: Still going to the desired position[0m
+[0m[ INFO] [1387275865.021225466]: time ---------------------> 8250855[0m
+[0m[ INFO] [1387275865.021311146]: 
+Desired position 1: 159 
+Desired position 2: 153 
+Desired position 3: 141 
+Desired position 4: 164 
+[0m
+[0m[ INFO] [1387275865.047981986]: 
+Actual position 1: 157 
+Actual position 2: 153 
+Actual position 3: 155 
+Actual position 4: 167 
+[0m
+Position Error = 0.88887
+sCurrentMust = 310
+Position Error = -1.84236
+sCurrentMust = 645
+Moving...
+Moving...
+Position Error = -5.08812
+sCurrentMust = -1119
+Position Error = 1.4249
+sCurrentMust = -313
+Moving...
+Moving...
+[0m[ INFO] [1387275865.167309466]: Still going to the desired position[0m
+[0m[ INFO] [1387275865.167419266]: time ---------------------> 8397048[0m
+[0m[ INFO] [1387275865.167526266]: 
+Desired position 1: 160 
+Desired position 2: 154 
+Desired position 3: 142 
+Desired position 4: 165 
+[0m
+[0m[ INFO] [1387275865.193954226]: 
+Actual position 1: 156 
+Actual position 2: 154 
+Actual position 3: 142 
+Actual position 4: 163 
+[0m
+Position Error = 1.98973
+sCurrentMust = 696
+Position Error = -1.49231
+sCurrentMust = 522
+Moving...
+Moving...
+Position Error = 5.89891
+sCurrentMust = 1299
+Position Error = 2.45624
+sCurrentMust = -540
+Moving...
+Moving...
+[0m[ INFO] [1387275865.314854786]: Still going to the desired position[0m
+[0m[ INFO] [1387275865.314954586]: time ---------------------> 8544585[0m
+[0m[ INFO] [1387275865.315035146]: 
+Desired position 1: 161 
+Desired position 2: 155 
+Desired position 3: 143 
+Desired position 4: 165 
+[0m
+[0m[ INFO] [1387275865.341784586]: 
+Actual position 1: 161 
+Actual position 2: 152 
+Actual position 3: 138 
+Actual position 4: 159 
+[0m
+Position Error = 3.26573
+sCurrentMust = 1143
+Position Error = 3.57727
+sCurrentMust = -1252
+Moving...
+Moving...
+Position Error = 11.684
+sCurrentMust = 2571
+Position Error = 1.8766
+sCurrentMust = -412
+Moving...
+Moving...
+[0m[ INFO] [1387275865.456163826]: Still going to the desired position[0m
+[0m[ INFO] [1387275865.456273706]: time ---------------------> 8685903[0m
+[0m[ INFO] [1387275865.456352786]: 
+Desired position 1: 162 
+Desired position 2: 156 
+Desired position 3: 144 
+Desired position 4: 166 
+[0m
+[0m[ INFO] [1387275865.483155386]: 
+Actual position 1: 164 
+Actual position 2: 150 
+Actual position 3: 142 
+Actual position 4: 161 
+[0m
+Position Error = 4.58659
+sCurrentMust = 1605
+Position Error = 6.73938
+sCurrentMust = -2359
+Moving...
+Moving...
+Position Error = -0.397568
+sCurrentMust = -89
+Position Error = 2.73491
+sCurrentMust = -601
+Moving...
+Moving...
+[0m[ INFO] [1387275865.594441386]: Still going to the desired position[0m
+[0m[ INFO] [1387275865.594542306]: time ---------------------> 8824173[0m
+[0m[ INFO] [1387275865.594620986]: 
+Desired position 1: 163 
+Desired position 2: 157 
+Desired position 3: 145 
+Desired position 4: 167 
+[0m
+[0m[ INFO] [1387275865.621086266]: 
+Actual position 1: 166 
+Actual position 2: 151 
+Actual position 3: 155 
+Actual position 4: 167 
+[0m
+Position Error = 4.38255
+sCurrentMust = 1533
+Position Error = 7.44096
+sCurrentMust = -2604
+Moving...
+Moving...
+Position Error = -8.83502
+sCurrentMust = -1944
+Position Error = 4.0699
+sCurrentMust = -895
+Moving...
+Moving...
+[0m[ INFO] [1387275865.733563746]: Still going to the desired position[0m
+[0m[ INFO] [1387275865.733664826]: time ---------------------> 8963294[0m
+[0m[ INFO] [1387275865.733745746]: 
+Desired position 1: 163 
+Desired position 2: 158 
+Desired position 3: 147 
+Desired position 4: 167 
+[0m
+[0m[ INFO] [1387275865.763223186]: 
+Actual position 1: 165 
+Actual position 2: 152 
+Actual position 3: 150 
+Actual position 4: 168 
+[0m
+Position Error = 4.42467
+sCurrentMust = 1548
+Position Error = 6.65916
+sCurrentMust = -2330
+Moving...
+Moving...
+Position Error = 0.154861
+sCurrentMust = 35
+Position Error = 3.29465
+sCurrentMust = -724
+Moving...
+Moving...
+[0m[ INFO] [1387275865.872167506]: Still going to the desired position[0m
+[0m[ INFO] [1387275865.872528066]: time ---------------------> 9102153[0m
+[0m[ INFO] [1387275865.872734546]: 
+Desired position 1: 164 
+Desired position 2: 159 
+Desired position 3: 148 
+Desired position 4: 168 
+[0m
+[0m[ INFO] [1387275865.900477506]: 
+Actual position 1: 165 
+Actual position 2: 154 
+Actual position 3: 146 
+Actual position 4: 165 
+[0m
+Position Error = 4.63564
+sCurrentMust = 1622
+Position Error = 5.35527
+sCurrentMust = -1874
+Moving...
+Moving...
+Position Error = 7.78154
+sCurrentMust = 1713
+Position Error = 4.24817
+sCurrentMust = -934
+Moving...
+Moving...
+[0m[ INFO] [1387275866.017368346]: Still going to the desired position[0m
+[0m[ INFO] [1387275866.017477866]: time ---------------------> 9247107[0m
+[0m[ INFO] [1387275866.017560986]: 
+Desired position 1: 165 
+Desired position 2: 160 
+Desired position 3: 149 
+Desired position 4: 169 
+[0m
+[0m[ INFO] [1387275866.044041626]: 
+Actual position 1: 164 
+Actual position 2: 154 
+Actual position 3: 138 
+Actual position 4: 160 
+[0m
+Position Error = 5.75797
+sCurrentMust = 2015
+Position Error = 4.6682
+sCurrentMust = -1633
+Moving...
+Moving...
+Position Error = 4.71956
+sCurrentMust = 1037
+Position Error = 2.45847
+sCurrentMust = -540
+Moving...
+Moving...
+[0m[ INFO] [1387275866.157234746]: Still going to the desired position[0m
+[0m[ INFO] [1387275866.157346866]: time ---------------------> 9386976[0m
+[0m[ INFO] [1387275866.157422066]: 
+Desired position 1: 166 
+Desired position 2: 161 
+Desired position 3: 150 
+Desired position 4: 169 
+[0m
+[0m[ INFO] [1387275866.188743666]: 
+Actual position 1: 163 
+Actual position 2: 154 
+Actual position 3: 153 
+Actual position 4: 168 
+[0m
+Position Error = 7.0004
+sCurrentMust = 2450
+Position Error = 5.24324
+sCurrentMust = -1835
+Moving...
+Moving...
+Position Error = -5.23412
+sCurrentMust = -1152
+Position Error = 3.0155
+sCurrentMust = -663
+Moving...
+Moving...
+[0m[ INFO] [1387275866.298533306]: Still going to the desired position[0m
+[0m[ INFO] [1387275866.298634786]: time ---------------------> 9528264[0m
+[0m[ INFO] [1387275866.298715546]: 
+Desired position 1: 166 
+Desired position 2: 161 
+Desired position 3: 151 
+Desired position 4: 170 
+[0m
+[0m[ INFO] [1387275866.324530106]: 
+Actual position 1: 164 
+Actual position 2: 154 
+Actual position 3: 169 
+Actual position 4: 173 
+[0m
+Position Error = 8.12703
+sCurrentMust = 2844
+Position Error = 5.77844
+sCurrentMust = -2022
+Moving...
+Moving...
+Position Error = -6.55
+sCurrentMust = -1441
+Position Error = 3.59407
+sCurrentMust = -790
+Moving...
+Moving...
+[0m[ INFO] [1387275866.438787506]: Still going to the desired position[0m
+[0m[ INFO] [1387275866.438900106]: time ---------------------> 9668529[0m
+[0m[ INFO] [1387275866.438979746]: 
+Desired position 1: 167 
+Desired position 2: 162 
+Desired position 3: 152 
+Desired position 4: 171 
+[0m
+[0m[ INFO] [1387275866.469555746]: 
+Actual position 1: 165 
+Actual position 2: 155 
+Actual position 3: 156 
+Actual position 4: 169 
+[0m
+Position Error = 7.91006
+sCurrentMust = 2768
+Position Error = 5.48936
+sCurrentMust = -1921
+Moving...
+Moving...
+Position Error = 3.72881
+sCurrentMust = 821
+Position Error = 3.73123
+sCurrentMust = -820
+Moving...
+Moving...
+[0m[ INFO] [1387275866.584476866]: Still going to the desired position[0m
+[0m[ INFO] [1387275866.584592866]: time ---------------------> 9814221[0m
+[0m[ INFO] [1387275866.584679866]: 
+Desired position 1: 168 
+Desired position 2: 163 
+Desired position 3: 154 
+Desired position 4: 172 
+[0m
+[0m[ INFO] [1387275866.612422826]: 
+Actual position 1: 167 
+Actual position 2: 159 
+Actual position 3: 152 
+Actual position 4: 165 
+[0m
+Position Error = 4.56837
+sCurrentMust = 1598
+Position Error = 2.819
+sCurrentMust = -986
+Moving...
+Moving...
+Position Error = 8.22366
+sCurrentMust = 1809
+Position Error = 4.48999
+sCurrentMust = -987
+Moving...
+Moving...
+[0m[ INFO] [1387275866.722278066]: Still going to the desired position[0m
+[0m[ INFO] [1387275866.722381906]: time ---------------------> 9952011[0m
+[0m[ INFO] [1387275866.722464706]: 
+Desired position 1: 169 
+Desired position 2: 164 
+Desired position 3: 155 
+Desired position 4: 172 
+[0m
+[0m[ INFO] [1387275866.748801466]: 
+Actual position 1: 165 
+Actual position 2: 163 
+Actual position 3: 150 
+Actual position 4: 166 
+[0m
+Position Error = 2.6523
+sCurrentMust = 927
+Position Error = -1.7382
+sCurrentMust = 609
+Moving...
+Moving...
+Position Error = 0.00306702
+sCurrentMust = 0
+Position Error = 4.20599
+sCurrentMust = -925
+Moving...
+Moving...
+[0m[ INFO] [1387275866.868971226]: Still going to the desired position[0m
+[0m[ INFO] [1387275866.869078466]: time ---------------------> 10098709[0m
+[0m[ INFO] [1387275866.869414906]: 
+Desired position 1: 170 
+Desired position 2: 165 
+Desired position 3: 156 
+Desired position 4: 173 
+[0m
+[0m[ INFO] [1387275866.896939546]: 
+Actual position 1: 165 
+Actual position 2: 164 
+Actual position 3: 168 
+Actual position 4: 173 
+[0m
+Position Error = 3.75502
+sCurrentMust = 1314
+Position Error = -0.916916
+sCurrentMust = 320
+Moving...
+Moving...
+Position Error = -9.56433
+sCurrentMust = -2105
+Position Error = 4.99884
+sCurrentMust = -1099
+Moving...
+Moving...
+[0m[ INFO] [1387275867.007684386]: Still going to the desired position[0m
+[0m[ INFO] [1387275867.007791106]: time ---------------------> 10237419[0m
+[0m[ INFO] [1387275867.007874386]: 
+Desired position 1: 171 
+Desired position 2: 166 
+Desired position 3: 157 
+Desired position 4: 174 
+[0m
+[0m[ INFO] [1387275867.033637426]: 
+Actual position 1: 167 
+Actual position 2: 163 
+Actual position 3: 161 
+Actual position 4: 175 
+[0m
+Position Error = 4.94069
+sCurrentMust = 1729
+Position Error = 2.95549
+sCurrentMust = -1035
+Moving...
+Moving...
+Position Error = 2.49529
+sCurrentMust = 550
+Position Error = 4.60365
+sCurrentMust = -1012
+Moving...
+Moving...
+[0m[ INFO] [1387275867.146565346]: Still going to the desired position[0m
+[0m[ INFO] [1387275867.146666546]: time ---------------------> 10376296[0m
+[0m[ INFO] [1387275867.146750746]: 
+Desired position 1: 171 
+Desired position 2: 167 
+Desired position 3: 158 
+Desired position 4: 174 
+[0m
+[0m[ INFO] [1387275867.177852146]: 
+Actual position 1: 169 
+Actual position 2: 162 
+Actual position 3: 161 
+Actual position 4: 171 
+[0m
+Position Error = 6.37958
+sCurrentMust = 2233
+Position Error = 4.41484
+sCurrentMust = -1545
+Moving...
+Moving...
+Position Error = 5.39885
+sCurrentMust = 1188
+Position Error = 5.80403
+sCurrentMust = -1277
+Moving...
+Moving...
+[0m[ INFO] [1387275867.290167586]: Still going to the desired position[0m
+[0m[ INFO] [1387275867.290276106]: time ---------------------> 10519905[0m
+[0m[ INFO] [1387275867.290967426]: 
+Desired position 1: 172 
+Desired position 2: 168 
+Desired position 3: 159 
+Desired position 4: 175 
+[0m
+[0m[ INFO] [1387275867.317448506]: 
+Actual position 1: 169 
+Actual position 2: 162 
+Actual position 3: 157 
+Actual position 4: 169 
+[0m
+Position Error = 7.35013
+sCurrentMust = 2572
+Position Error = 4.77989
+sCurrentMust = -1673
+Moving...
+Moving...
+Position Error = 2.18504
+sCurrentMust = 480
+Position Error = 5.06641
+sCurrentMust = -1114
+Moving...
+Moving...
+[0m[ INFO] [1387275867.429376426]: Still going to the desired position[0m
+[0m[ INFO] [1387275867.429478106]: time ---------------------> 10659108[0m
+[0m[ INFO] [1387275867.429558986]: 
+Desired position 1: 173 
+Desired position 2: 169 
+Desired position 3: 161 
+Desired position 4: 176 
+[0m
+[0m[ INFO] [1387275867.456414546]: 
+Actual position 1: 170 
+Actual position 2: 162 
+Actual position 3: 168 
+Actual position 4: 174 
+[0m
+Position Error = 8.32346
+sCurrentMust = 2913
+Position Error = 5.25975
+sCurrentMust = -1840
+Moving...
+Moving...
+Position Error = -8.45549
+sCurrentMust = -1861
+Position Error = 6.48715
+sCurrentMust = -1427
+Moving...
+Moving...
+[0m[ INFO] [1387275867.568945906]: Still going to the desired position[0m
+[0m[ INFO] [1387275867.569058946]: time ---------------------> 10798688[0m
+[0m[ INFO] [1387275867.569147786]: 
+Desired position 1: 174 
+Desired position 2: 170 
+Desired position 3: 162 
+Desired position 4: 177 
+[0m
+[0m[ INFO] [1387275867.597963066]: 
+Actual position 1: 171 
+Actual position 2: 164 
+Actual position 3: 180 
+Actual position 4: 179 
+[0m
+Position Error = 6.70547
+sCurrentMust = 2346
+Position Error = 4.00903
+sCurrentMust = -1402
+Moving...
+Moving...
+Position Error = -5.94449
+sCurrentMust = -1307
+Position Error = 6.09489
+sCurrentMust = -1340
+Moving...
+Moving...
+[0m[ INFO] [1387275867.712280346]: Still going to the desired position[0m
+[0m[ INFO] [1387275867.712389786]: time ---------------------> 10942019[0m
+[0m[ INFO] [1387275867.712471306]: 
+Desired position 1: 174 
+Desired position 2: 171 
+Desired position 3: 163 
+Desired position 4: 177 
+[0m
+[0m[ INFO] [1387275867.738574666]: 
+Actual position 1: 171 
+Actual position 2: 168 
+Actual position 3: 169 
+Actual position 4: 175 
+[0m
+Position Error = 3.78879
+sCurrentMust = 1325
+Position Error = 0.496994
+sCurrentMust = -173
+Moving...
+Moving...
+Position Error = 5.65286
+sCurrentMust = 1245
+Position Error = 5.64746
+sCurrentMust = -1242
+Moving...
+Moving...
+[0m[ INFO] [1387275867.852486826]: Still going to the desired position[0m
+[0m[ INFO] [1387275867.852588946]: time ---------------------> 11082220[0m
+[0m[ INFO] [1387275867.852670466]: 
+Desired position 1: 175 
+Desired position 2: 172 
+Desired position 3: 164 
+Desired position 4: 178 
+[0m
+[0m[ INFO] [1387275867.884628146]: 
+Actual position 1: 169 
+Actual position 2: 171 
+Actual position 3: 163 
+Actual position 4: 171 
+[0m
+Position Error = 4.12305
+sCurrentMust = 1443
+Position Error = -1.63568
+sCurrentMust = 572
+Moving...
+Moving...
+Position Error = 10.8282
+sCurrentMust = 2382
+Position Error = 4.74318
+sCurrentMust = -1043
+Moving...
+Moving...
+[0m[ INFO] [1387275867.996644426]: Still going to the desired position[0m
+[0m[ INFO] [1387275867.996761266]: time ---------------------> 11226388[0m
+[0m[ INFO] [1387275867.996840746]: 
+Desired position 1: 176 
+Desired position 2: 172 
+Desired position 3: 165 
+Desired position 4: 179 
+[0m
+[0m[ INFO] [1387275868.022934946]: 
+Actual position 1: 170 
+Actual position 2: 170 
+Actual position 3: 163 
+Actual position 4: 172 
+[0m
+Position Error = 5.26866
+sCurrentMust = 1844
+Position Error = -0.22084
+sCurrentMust = 77
+Moving...
+Moving...
+Position Error = 0.675644
+sCurrentMust = 147
+Position Error = 5.51715
+sCurrentMust = -1213
+Moving...
+Moving...
+[0m[ INFO] [1387275868.134208706]: Still going to the desired position[0m
+[0m[ INFO] [1387275868.134317906]: time ---------------------> 11363947[0m
+[0m[ INFO] [1387275868.134399266]: 
+Desired position 1: 177 
+Desired position 2: 173 
+Desired position 3: 166 
+Desired position 4: 179 
+[0m
+[0m[ INFO] [1387275868.160335066]: 
+Actual position 1: 172 
+Actual position 2: 169 
+Actual position 3: 181 
+Actual position 4: 179 
+[0m
+Position Error = 6.46419
+sCurrentMust = 2262
+Position Error = 2.48795
+sCurrentMust = -871
+Moving...
+Moving...
+Position Error = -11.9053
+sCurrentMust = -2620
+Position Error = 6.84529
+sCurrentMust = -1506
+Moving...
+Moving...
+[0m[ INFO] [1387275868.277081666]: Still going to the desired position[0m
+[0m[ INFO] [1387275868.277196586]: time ---------------------> 11506824[0m
+[0m[ INFO] [1387275868.277278106]: 
+Desired position 1: 178 
+Desired position 2: 174 
+Desired position 3: 168 
+Desired position 4: 180 
+[0m
+[0m[ INFO] [1387275868.304270146]: 
+Actual position 1: 173 
+Actual position 2: 169 
+Actual position 3: 164 
+Actual position 4: 182 
+[0m
+Position Error = 7.70047
+sCurrentMust = 2695
+Position Error = 3.40916
+sCurrentMust = -1193
+Moving...
+Moving...
+Position Error = -1.91353
+sCurrentMust = -419
+Position Error = 7.06146
+sCurrentMust = -1553
+Moving...
+Moving...
+[0m[ INFO] [1387275868.417693586]: Still going to the desired position[0m
+[0m[ INFO] [1387275868.417802866]: time ---------------------> 11647431[0m
+[0m[ INFO] [1387275868.417885546]: 
+Desired position 1: 178 
+Desired position 2: 175 
+Desired position 3: 169 
+Desired position 4: 181 
+[0m
+[0m[ INFO] [1387275868.446355506]: 
+Actual position 1: 173 
+Actual position 2: 169 
+Actual position 3: 171 
+Actual position 4: 177 
+[0m
+Position Error = 8.54167
+sCurrentMust = 2989
+Position Error = 3.78152
+sCurrentMust = -1323
+Moving...
+Moving...
+Position Error = 9.94139
+sCurrentMust = 2188
+Position Error = 7.3609
+sCurrentMust = -1619
+Moving...
+Moving...
+[0m[ INFO] [1387275868.554938746]: Still going to the desired position[0m
+[0m[ INFO] [1387275868.555048706]: time ---------------------> 11784676[0m
+[0m[ INFO] [1387275868.555129466]: 
+Desired position 1: 179 
+Desired position 2: 176 
+Desired position 3: 170 
+Desired position 4: 181 
+[0m
+[0m[ INFO] [1387275868.587888506]: 
+Actual position 1: 174 
+Actual position 2: 170 
+Actual position 3: 160 
+Actual position 4: 171 
+[0m
+Position Error = 8.71992
+sCurrentMust = 3052
+Position Error = 3.85896
+sCurrentMust = -1350
+Moving...
+Moving...
+Position Error = 7.55751
+sCurrentMust = 1662
+Position Error = 6.01422
+sCurrentMust = -1322
+Moving...
+Moving...
+[0m[ INFO] [1387275868.701491666]: Still going to the desired position[0m
+[0m[ INFO] [1387275868.701601866]: time ---------------------> 11931231[0m
+[0m[ INFO] [1387275868.701691066]: 
+Desired position 1: 180 
+Desired position 2: 177 
+Desired position 3: 171 
+Desired position 4: 182 
+[0m
+[0m[ INFO] [1387275868.727417906]: 
+Actual position 1: 175 
+Actual position 2: 172 
+Actual position 3: 177 
+Actual position 4: 177 
+[0m
+Position Error = 6.70792
+sCurrentMust = 2347
+Position Error = 1.36241
+sCurrentMust = -476
+Moving...
+Moving...
+Position Error = -5.24104
+sCurrentMust = -1154
+Position Error = 7.95633
+sCurrentMust = -1750
+Moving...
+Moving...
+[0m[ INFO] [1387275868.839795106]: Still going to the desired position[0m
+[0m[ INFO] [1387275868.839905866]: time ---------------------> 12069535[0m
+[0m[ INFO] [1387275868.839987626]: 
+Desired position 1: 181 
+Desired position 2: 178 
+Desired position 3: 172 
+Desired position 4: 183 
+[0m
+[0m[ INFO] [1387275868.866540666]: 
+Actual position 1: 174 
+Actual position 2: 176 
+Actual position 3: 192 
+Actual position 4: 184 
+[0m
+Position Error = 4.5524
+sCurrentMust = 1592
+Position Error = -1.83014
+sCurrentMust = 641
+Moving...
+Moving...
+Position Error = -6.19333
+sCurrentMust = -1362
+Position Error = 8.39967
+sCurrentMust = -1847
+Moving...
+Moving...
+[0m[ INFO] [1387275868.980712026]: Still going to the desired position[0m
+[0m[ INFO] [1387275868.981102826]: time ---------------------> 12210726[0m
+[0m[ INFO] [1387275868.981304226]: 
+Desired position 1: 181 
+Desired position 2: 179 
+Desired position 3: 173 
+Desired position 4: 183 
+[0m
+[0m[ INFO] [1387275869.008922106]: 
+Actual position 1: 175 
+Actual position 2: 177 
+Actual position 3: 179 
+Actual position 4: 180 
+[0m
+Position Error = 4.65379
+sCurrentMust = 1628
+Position Error = -0.965515
+sCurrentMust = 337
+Moving...
+Moving...
+Position Error = 7.18703
+sCurrentMust = 1583
+Position Error = 8.20139
+sCurrentMust = -1804
+Moving...
+Moving...
+[0m[ INFO] [1387275869.122297706]: Still going to the desired position[0m
+[0m[ INFO] [1387275869.122405426]: time ---------------------> 12352036[0m
+[0m[ INFO] [1387275869.122488226]: 
+Desired position 1: 182 
+Desired position 2: 179 
+Desired position 3: 174 
+Desired position 4: 184 
+[0m
+[0m[ INFO] [1387275869.148577106]: 
+Actual position 1: 177 
+Actual position 2: 176 
+Actual position 3: 174 
+Actual position 4: 177 
+[0m
+Position Error = 6.04759
+sCurrentMust = 2116
+Position Error = 1.28616
+sCurrentMust = -450
+Moving...
+Moving...
+Position Error = 5.86166
+sCurrentMust = 1289
+Position Error = 5.95311
+sCurrentMust = -1309
+Moving...
+Moving...
+[0m[ INFO] [1387275869.261192426]: Still going to the desired position[0m
+[0m[ INFO] [1387275869.261335386]: time ---------------------> 12490962[0m
+[0m[ INFO] [1387275869.261417426]: 
+Desired position 1: 183 
+Desired position 2: 180 
+Desired position 3: 175 
+Desired position 4: 185 
+[0m
+[0m[ INFO] [1387275869.291369986]: 
+Actual position 1: 178 
+Actual position 2: 175 
+Actual position 3: 181 
+Actual position 4: 179 
+[0m
+Position Error = 7.08064
+sCurrentMust = 2478
+Position Error = 2.76796
+sCurrentMust = -969
+Moving...
+Moving...
+Position Error = -5.50266
+sCurrentMust = -1212
+Position Error = 6.68431
+sCurrentMust = -1470
+Moving...
+Moving...
+[0m[ INFO] [1387275869.406128626]: Still going to the desired position[0m
+[0m[ INFO] [1387275869.406234746]: time ---------------------> 12635864[0m
+[0m[ INFO] [1387275869.406322386]: 
+Desired position 1: 183 
+Desired position 2: 181 
+Desired position 3: 176 
+Desired position 4: 185 
+[0m
+[0m[ INFO] [1387275869.433930586]: 
+Actual position 1: 178 
+Actual position 2: 175 
+Actual position 3: 196 
+Actual position 4: 186 
+[0m
+Position Error = 8.46886
+sCurrentMust = 2964
+Position Error = 3.03854
+sCurrentMust = -1063
+Moving...
+Moving...
+Position Error = -4.4926
+sCurrentMust = -988
+Position Error = 6.77547
+sCurrentMust = -1490
+Moving...
+Moving...
+[0m[ INFO] [1387275869.547486506]: Still going to the desired position[0m
+[0m[ INFO] [1387275869.547616666]: time ---------------------> 12777246[0m
+[0m[ INFO] [1387275869.547696186]: 
+Desired position 1: 184 
+Desired position 2: 182 
+Desired position 3: 177 
+Desired position 4: 186 
+[0m
+[0m[ INFO] [1387275869.575571786]: 
+Actual position 1: 178 
+Actual position 2: 175 
+Actual position 3: 182 
+Actual position 4: 183 
+[0m
+Position Error = 9.46631
+sCurrentMust = 3313
+Position Error = 3.63383
+sCurrentMust = -1271
+Moving...
+Moving...
+Position Error = 7.96724
+sCurrentMust = 1754
+Position Error = 7.6055
+sCurrentMust = -1673
+Moving...
+Moving...
+[0m[ INFO] [1387275869.692857226]: Still going to the desired position[0m
+[0m[ INFO] [1387275869.693278426]: time ---------------------> 12922901[0m
+[0m[ INFO] [1387275869.693478866]: 
+Desired position 1: 185 
+Desired position 2: 183 
+Desired position 3: 178 
+Desired position 4: 186 
+[0m
+[0m[ INFO] [1387275869.720918386]: 
+Actual position 1: 179 
+Actual position 2: 176 
+Actual position 3: 176 
+Actual position 4: 178 
+[0m
+Position Error = 9.71083
+sCurrentMust = 3398
+Position Error = 3.38188
+sCurrentMust = -1183
+Moving...
+Moving...
+Position Error = 6.28604
+sCurrentMust = 1382
+Position Error = 8.73201
+sCurrentMust = -1921
+Moving...
+Moving...
+[0m[ INFO] [1387275869.838080546]: Still going to the desired position[0m
+[0m[ INFO] [1387275869.838229466]: time ---------------------> 13067856[0m
+[0m[ INFO] [1387275869.838311586]: 
+Desired position 1: 186 
+Desired position 2: 183 
+Desired position 3: 179 
+Desired position 4: 187 
+[0m
+[0m[ INFO] [1387275869.865249346]: 
+Actual position 1: 179 
+Actual position 2: 179 
+Actual position 3: 186 
+Actual position 4: 181 
+[0m
+Position Error = 6.26295
+sCurrentMust = 2191
+Position Error = 0.485168
+sCurrentMust = -169
+Moving...
+Moving...
+Position Error = -4.86703
+sCurrentMust = -1072
+Position Error = 8.32187
+sCurrentMust = -1830
+Moving...
+Moving...
+[0m[ INFO] [1387275869.981320346]: Still going to the desired position[0m
+[0m[ INFO] [1387275869.981728546]: time ---------------------> 13211352[0m
+[0m[ INFO] [1387275869.981960266]: 
+Desired position 1: 186 
+Desired position 2: 184 
+Desired position 3: 180 
+Desired position 4: 188 
+[0m
+[0m[ INFO] [1387275870.009288106]: 
+Actual position 1: 181 
+Actual position 2: 184 
+Actual position 3: 202 
+Actual position 4: 189 
+[0m
+Position Error = 2.02353
+sCurrentMust = 707
+Position Error = -2.92604
+sCurrentMust = 1024
+Moving...
+Moving...
+Position Error = -6.54366
+sCurrentMust = -1439
+Position Error = 8.29938
+sCurrentMust = -1825
+Moving...
+Moving...
+[0m[ INFO] [1387275870.121494786]: Still going to the desired position[0m
+[0m[ INFO] [1387275870.121603906]: time ---------------------> 13351233[0m
+[0m[ INFO] [1387275870.121682786]: 
+Desired position 1: 187 
+Desired position 2: 185 
+Desired position 3: 181 
+Desired position 4: 188 
+[0m
+[0m[ INFO] [1387275870.147878626]: 
+Actual position 1: 185 
+Actual position 2: 185 
+Actual position 3: 190 
+Actual position 4: 183 
+[0m
+Position Error = 1.44249
+sCurrentMust = 504
+Position Error = 0.0158539
+sCurrentMust = -6
+Moving...
+Moving...
+Position Error = 5.97372
+sCurrentMust = 1315
+Position Error = 7.89034
+sCurrentMust = -1735
+Moving...
+Moving...
+[0m[ INFO] [1387275870.259806706]: Still going to the desired position[0m
+[0m[ INFO] [1387275870.259909746]: time ---------------------> 13489539[0m
+[0m[ INFO] [1387275870.259993106]: 
+Desired position 1: 187 
+Desired position 2: 186 
+Desired position 3: 182 
+Desired position 4: 189 
+[0m
+[0m[ INFO] [1387275870.291130586]: 
+Actual position 1: 187 
+Actual position 2: 183 
+Actual position 3: 185 
+Actual position 4: 181 
+[0m
+Position Error = 2.83885
+sCurrentMust = 993
+Position Error = 2.37407
+sCurrentMust = -831
+Moving...
+Moving...
+Position Error = 9.43539
+sCurrentMust = 2076
+Position Error = 7.14095
+sCurrentMust = -1570
+Moving...
+Moving...
+[0m[ INFO] [1387275870.405668066]: Still going to the desired position[0m
+[0m[ INFO] [1387275870.406061386]: time ---------------------> 13635684[0m
+[0m[ INFO] [1387275870.406260146]: 
+Desired position 1: 188 
+Desired position 2: 186 
+Desired position 3: 183 
+Desired position 4: 189 
+[0m
+[0m[ INFO] [1387275870.436775866]: 
+Actual position 1: 188 
+Actual position 2: 183 
+Actual position 3: 189 
+Actual position 4: 184 
+[0m
+Position Error = 3.78619
+sCurrentMust = 1325
+Position Error = 2.88779
+sCurrentMust = -1010
+Moving...
+Moving...
+Position Error = -4.40469
+sCurrentMust = -970
+Position Error = 8.06955
+sCurrentMust = -1775
+Moving...
+Moving...
+[0m[ INFO] [1387275870.549200266]: Still going to the desired position[0m
+[0m[ INFO] [1387275870.549309906]: time ---------------------> 13778939[0m
+[0m[ INFO] [1387275870.549389626]: 
+Desired position 1: 189 
+Desired position 2: 187 
+Desired position 3: 184 
+Desired position 4: 190 
+[0m
+[0m[ INFO] [1387275870.576928066]: 
+Actual position 1: 187 
+Actual position 2: 183 
+Actual position 3: 206 
+Actual position 4: 190 
+[0m
+Position Error = 4.77887
+sCurrentMust = 1672
+Position Error = 3.47314
+sCurrentMust = -1215
+Moving...
+Moving...
+Position Error = -7.48569
+sCurrentMust = -1647
+Position Error = 8.2702
+sCurrentMust = -1819
+Moving...
+Moving...
+[0m[ INFO] [1387275870.712105466]: Still going to the desired position[0m
+[0m[ INFO] [1387275870.712219106]: time ---------------------> 13941848[0m
+[0m[ INFO] [1387275870.712300626]: 
+Desired position 1: 189 
+Desired position 2: 188 
+Desired position 3: 185 
+Desired position 4: 190 
+[0m
+[0m[ INFO] [1387275870.739023986]: 
+Actual position 1: 187 
+Actual position 2: 183 
+Actual position 3: 193 
+Actual position 4: 188 
+[0m
+Position Error = 5.78725
+sCurrentMust = 2025
+Position Error = 4.01192
+sCurrentMust = -1404
+Moving...
+Moving...
+Position Error = 6.1787
+sCurrentMust = 1361
+Position Error = 9.30034
+sCurrentMust = -2046
+Moving...
+Moving...
+[0m[ INFO] [1387275870.850376746]: Still going to the desired position[0m
+[0m[ INFO] [1387275870.850482946]: time ---------------------> 14080112[0m
+[0m[ INFO] [1387275870.850563786]: 
+Desired position 1: 190 
+Desired position 2: 188 
+Desired position 3: 186 
+Desired position 4: 191 
+[0m
+[0m[ INFO] [1387275870.877021106]: 
+Actual position 1: 187 
+Actual position 2: 183 
+Actual position 3: 189 
+Actual position 4: 183 
+[0m
+Position Error = 6.7334
+sCurrentMust = 2356
+Position Error = 4.34288
+sCurrentMust = -1520
+Moving...
+Moving...
+Position Error = 9.51004
+sCurrentMust = 2092
+Position Error = 6.95544
+sCurrentMust = -1529
+Moving...
+Moving...
+[0m[ INFO] [1387275870.990108346]: Still going to the desired position[0m
+[0m[ INFO] [1387275870.990565226]: time ---------------------> 14220187[0m
+[0m[ INFO] [1387275870.990787266]: 
+Desired position 1: 190 
+Desired position 2: 189 
+Desired position 3: 186 
+Desired position 4: 191 
+[0m
+[0m[ INFO] [1387275871.019399546]: 
+Actual position 1: 188 
+Actual position 2: 183 
+Actual position 3: 193 
+Actual position 4: 184 
+[0m
+Position Error = 7.4048
+sCurrentMust = 2591
+Position Error = 4.75043
+sCurrentMust = -1662
+Moving...
+Moving...
+Position Error = -3.09642
+sCurrentMust = -683
+Position Error = 8.29413
+sCurrentMust = -1824
+Moving...
+Moving...
+[0m[ INFO] [1387275871.132600826]: Still going to the desired position[0m
+[0m[ INFO] [1387275871.132712786]: time ---------------------> 14362341[0m
+[0m[ INFO] [1387275871.132793826]: 
+Desired position 1: 191 
+Desired position 2: 190 
+Desired position 3: 187 
+Desired position 4: 192 
+[0m
+[0m[ INFO] [1387275871.159147226]: 
+Actual position 1: 188 
+Actual position 2: 183 
+Actual position 3: 209 
+Actual position 4: 191 
+[0m
+Position Error = 7.52347
+sCurrentMust = 2633
+Position Error = 4.61275
+sCurrentMust = -1614
+Moving...
+Moving...
+Position Error = -8.40073
+sCurrentMust = -1848
+Position Error = 10.2369
+sCurrentMust = -2252
+Moving...
+Moving...
+[0m[ INFO] [1387275871.273103186]: Still going to the desired position[0m
+[0m[ INFO] [1387275871.273204146]: time ---------------------> 14502835[0m
+[0m[ INFO] [1387275871.273283226]: 
+Desired position 1: 192 
+Desired position 2: 190 
+Desired position 3: 188 
+Desired position 4: 192 
+[0m
+[0m[ INFO] [1387275871.301843186]: 
+Actual position 1: 189 
+Actual position 2: 186 
+Actual position 3: 191 
+Actual position 4: 189 
+[0m
+Position Error = 4.74998
+sCurrentMust = 1662
+Position Error = 2.63615
+sCurrentMust = -922
+Moving...
+Moving...
+Position Error = 2.64261
+sCurrentMust = 582
+Position Error = 9.29237
+sCurrentMust = -2044
+Moving...
+Moving...
+[0m[ INFO] [1387275871.413576866]: Still going to the desired position[0m
+[0m[ INFO] [1387275871.413684346]: time ---------------------> 14643313[0m
+[0m[ INFO] [1387275871.413764466]: 
+Desired position 1: 192 
+Desired position 2: 191 
+Desired position 3: 189 
+Desired position 4: 193 
+[0m
+[0m[ INFO] [1387275871.441554866]: 
+Actual position 1: 188 
+Actual position 2: 189 
+Actual position 3: 196 
+Actual position 4: 186 
+[0m
+Position Error = 3.10713
+sCurrentMust = 1087
+Position Error = -0.688538
+sCurrentMust = 241
+Moving...
+Moving...
+Position Error = 6.7849
+sCurrentMust = 1493
+Position Error = 9.64018
+sCurrentMust = -2120
+Moving...
+Moving...
+[0m[ INFO] [1387275871.556584906]: Still going to the desired position[0m
+[0m[ INFO] [1387275871.556688746]: time ---------------------> 14786318[0m
+[0m[ INFO] [1387275871.556769786]: 
+Desired position 1: 193 
+Desired position 2: 191 
+Desired position 3: 189 
+Desired position 4: 193 
+[0m
+[0m[ INFO] [1387275871.583704786]: 
+Actual position 1: 187 
+Actual position 2: 190 
+Actual position 3: 188 
+Actual position 4: 183 
+[0m
+Position Error = 3.89755
+sCurrentMust = 1364
+Position Error = -0.884415
+sCurrentMust = 309
+Moving...
+Moving...
+Position Error = 0.71817
+sCurrentMust = 157
+Position Error = 10.2831
+sCurrentMust = -2262
+Moving...
+Moving...
+[0m[ INFO] [1387275871.706782746]: Still going to the desired position[0m
+[0m[ INFO] [1387275871.706890266]: time ---------------------> 14936520[0m
+[0m[ INFO] [1387275871.706968066]: 
+Desired position 1: 193 
+Desired position 2: 192 
+Desired position 3: 190 
+Desired position 4: 194 
+[0m
+[0m[ INFO] [1387275871.733497746]: 
+Actual position 1: 187 
+Actual position 2: 190 
+Actual position 3: 208 
+Actual position 4: 191 
+[0m
+Position Error = 4.9332
+sCurrentMust = 1726
+Position Error = -0.411087
+sCurrentMust = 143
+Moving...
+Moving...
+Position Error = -11.8201
+sCurrentMust = -2602
+Position Error = 10.2085
+sCurrentMust = -2245
+Moving...
+Moving...
+[0m[ INFO] [1387275871.844631866]: Still going to the desired position[0m
+[0m[ INFO] [1387275871.844728026]: time ---------------------> 15074358[0m
+[0m[ INFO] [1387275871.844804226]: 
+Desired position 1: 193 
+Desired position 2: 193 
+Desired position 3: 191 
+Desired position 4: 194 
+[0m
+[0m[ INFO] [1387275871.871207186]: 
+Actual position 1: 188 
+Actual position 2: 190 
+Actual position 3: 195 
+Actual position 4: 192 
+[0m
+Position Error = 5.38943
+sCurrentMust = 1886
+Position Error = -0.0317535
+sCurrentMust = 11
+Moving...
+Moving...
+Position Error = -3.25168
+sCurrentMust = -714
+Position Error = 8.18452
+sCurrentMust = -1800
+Moving...
+Moving...
+[0m[ INFO] [1387275871.980554386]: Still going to the desired position[0m
+[0m[ INFO] [1387275871.980659586]: time ---------------------> 15210289[0m
+[0m[ INFO] [1387275871.980738666]: 
+Desired position 1: 194 
+Desired position 2: 193 
+Desired position 3: 191 
+Desired position 4: 194 
+[0m
+[0m[ INFO] [1387275872.014574866]: 
+Actual position 1: 188 
+Actual position 2: 190 
+Actual position 3: 197 
+Actual position 4: 188 
+[0m
+Position Error = 6.20082
+sCurrentMust = 2170
+Position Error = 0.121674
+sCurrentMust = -42
+Moving...
+Moving...
+Position Error = 11.5647
+sCurrentMust = 2546
+Position Error = 9.77315
+sCurrentMust = -2150
+Moving...
+Moving...
+[0m[ INFO] [1387275872.128865906]: Still going to the desired position[0m
+[0m[ INFO] [1387275872.128977426]: time ---------------------> 15358606[0m
+[0m[ INFO] [1387275872.129063906]: 
+Desired position 1: 194 
+Desired position 2: 194 
+Desired position 3: 192 
+Desired position 4: 195 
+[0m
+[0m[ INFO] [1387275872.155012746]: 
+Actual position 1: 186 
+Actual position 2: 190 
+Actual position 3: 180 
+Actual position 4: 182 
+[0m
+Position Error = 6.74344
+sCurrentMust = 2360
+Position Error = 0.589478
+sCurrentMust = -206
+Moving...
+Moving...
+Position Error = 7.0827
+sCurrentMust = 1557
+Position Error = 10.3556
+sCurrentMust = -2278
+Moving...
+Moving...
+[0m[ INFO] [1387275872.268387586]: Still going to the desired position[0m
+[0m[ INFO] [1387275872.268490026]: time ---------------------> 15498119[0m
+[0m[ INFO] [1387275872.268574386]: 
+Desired position 1: 195 
+Desired position 2: 194 
+Desired position 3: 192 
+Desired position 4: 195 
+[0m
+[0m[ INFO] [1387275872.302313386]: 
+Actual position 1: 188 
+Actual position 2: 190 
+Actual position 3: 200 
+Actual position 4: 189 
+[0m
+Position Error = 7.64554
+sCurrentMust = 2676
+Position Error = 0.598053
+sCurrentMust = -209
+Moving...
+Moving...
+Position Error = -4.54373
+sCurrentMust = -1001
+Position Error = 11.1652
+sCurrentMust = -2456
+Moving...
+Moving...
+[0m[ INFO] [1387275872.415629266]: Still going to the desired position[0m
+[0m[ INFO] [1387275872.415744986]: time ---------------------> 15645373[0m
+[0m[ INFO] [1387275872.415827746]: 
+Desired position 1: 195 
+Desired position 2: 194 
+Desired position 3: 193 
+Desired position 4: 196 
+[0m
+[0m[ INFO] [1387275872.442229586]: 
+Actual position 1: 187 
+Actual position 2: 190 
+Actual position 3: 217 
+Actual position 4: 196 
+[0m
+Position Error = 8.25197
+sCurrentMust = 2888
+Position Error = 0.909882
+sCurrentMust = -318
+Moving...
+Moving...
+Position Error = -6.90318
+sCurrentMust = -1519
+Position Error = 11.1738
+sCurrentMust = -2458
+Moving...
+Moving...
+[0m[ INFO] [1387275872.551216626]: Still going to the desired position[0m
+[0m[ INFO] [1387275872.551330706]: time ---------------------> 15780959[0m
+[0m[ INFO] [1387275872.551413906]: 
+Desired position 1: 195 
+Desired position 2: 195 
+Desired position 3: 194 
+Desired position 4: 196 
+[0m
+[0m[ INFO] [1387275872.577702026]: 
+Actual position 1: 188 
+Actual position 2: 190 
+Actual position 3: 202 
+Actual position 4: 192 
+[0m
+Position Error = 8.9088
+sCurrentMust = 3118
+Position Error = 1.06015
+sCurrentMust = -371
+Moving...
+Moving...
+Position Error = 5.26163
+sCurrentMust = 1159
+Position Error = 11.1524
+sCurrentMust = -2453
+Moving...
+Moving...
+[0m[ INFO] [1387275872.690666546]: Still going to the desired position[0m
+[0m[ INFO] [1387275872.690775306]: time ---------------------> 15920405[0m
+[0m[ INFO] [1387275872.690853546]: 
+Desired position 1: 196 
+Desired position 2: 195 
+Desired position 3: 194 
+Desired position 4: 196 
+[0m
+[0m[ INFO] [1387275872.724720666]: 
+Actual position 1: 187 
+Actual position 2: 190 
+Actual position 3: 200 
+Actual position 4: 189 
+[0m
+Position Error = 9.38249
+sCurrentMust = 3283
+Position Error = 1.37784
+sCurrentMust = -482
+Moving...
+Moving...
+Position Error = 7.68701
+sCurrentMust = 1691
+Position Error = 8.79803
+sCurrentMust = -1935
+Moving...
+Moving...
+[0m[ INFO] [1387275872.832032026]: Still going to the desired position[0m
+[0m[ INFO] [1387275872.832469706]: time ---------------------> 16062091[0m
+[0m[ INFO] [1387275872.832696906]: 
+Desired position 1: 196 
+Desired position 2: 196 
+Desired position 3: 195 
+Desired position 4: 196 
+[0m
+[0m[ INFO] [1387275872.858558146]: 
+Actual position 1: 188 
+Actual position 2: 190 
+Actual position 3: 202 
+Actual position 4: 189 
+[0m
+Position Error = 9.83255
+sCurrentMust = 3441
+Position Error = 1.51137
+sCurrentMust = -529
+Moving...
+Moving...
+Position Error = -3.82156
+sCurrentMust = -842
+Position Error = 9.55637
+sCurrentMust = -2102
+Moving...
+Moving...
+[0m[ INFO] [1387275872.968760546]: Still going to the desired position[0m
+[0m[ INFO] [1387275872.968864466]: time ---------------------> 16198493[0m
+[0m[ INFO] [1387275872.968944986]: 
+Desired position 1: 196 
+Desired position 2: 196 
+Desired position 3: 195 
+Desired position 4: 197 
+[0m
+[0m[ INFO] [1387275872.996703946]: 
+Actual position 1: 189 
+Actual position 2: 191 
+Actual position 3: 219 
+Actual position 4: 196 
+[0m
+Position Error = 8.87067
+sCurrentMust = 3104
+Position Error = 1.55058
+sCurrentMust = -542
+Moving...
+Moving...
+Position Error = -7.86945
+sCurrentMust = -1731
+Position Error = 11.6228
+sCurrentMust = -2557
+Moving...
+Moving...
+[0m[ INFO] [1387275873.115074826]: Still going to the desired position[0m
+[0m[ INFO] [1387275873.115553706]: time ---------------------> 16345149[0m
+[0m[ INFO] [1387275873.115762546]: 
+Desired position 1: 197 
+Desired position 2: 196 
+Desired position 3: 195 
+Desired position 4: 197 
+[0m
+[0m[ INFO] [1387275873.142495346]: 
+Actual position 1: 194 
+Actual position 2: 193 
+Actual position 3: 205 
+Actual position 4: 193 
+[0m
+Position Error = 4.17709
+sCurrentMust = 1461
+Position Error = 1.55211
+sCurrentMust = -543
+Moving...
+Moving...
+Position Error = 4.07397
+sCurrentMust = 898
+Position Error = 10.6661
+sCurrentMust = -2346
+Moving...
+Moving...
+[0m[ INFO] [1387275873.259896306]: Still going to the desired position[0m
+[0m[ INFO] [1387275873.260008026]: time ---------------------> 16489636[0m
+[0m[ INFO] [1387275873.260089266]: 
+Desired position 1: 197 
+Desired position 2: 197 
+Desired position 3: 196 
+Desired position 4: 197 
+[0m
+[0m[ INFO] [1387275873.286376786]: 
+Actual position 1: 200 
+Actual position 2: 196 
+Actual position 3: 204 
+Actual position 4: 190 
+[0m
+Position Error = -0.760452
+sCurrentMust = -267
+Position Error = 2.10544
+sCurrentMust = -736
+Moving...
+Moving...
+Position Error = 6.81795
+sCurrentMust = 1500
+Position Error = 10.9485
+sCurrentMust = -2408
+Moving...
+Moving...
+[0m[ INFO] [1387275873.398888746]: Still going to the desired position[0m
+[0m[ INFO] [1387275873.398991386]: time ---------------------> 16628621[0m
+[0m[ INFO] [1387275873.399073026]: 
+Desired position 1: 197 
+Desired position 2: 197 
+Desired position 3: 196 
+Desired position 4: 198 
+[0m
+[0m[ INFO] [1387275873.433843986]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 201 
+Actual position 4: 188 
+[0m
+Position Error = -0.990799
+sCurrentMust = -346
+Position Error = 2.7478
+sCurrentMust = -961
+Moving...
+Moving...
+Position Error = -3.45583
+sCurrentMust = -761
+Position Error = 11.2395
+sCurrentMust = -2472
+Moving...
+Moving...
+[0m[ INFO] [1387275873.542107906]: Still going to the desired position[0m
+[0m[ INFO] [1387275873.542208946]: time ---------------------> 16771838[0m
+[0m[ INFO] [1387275873.542288866]: 
+Desired position 1: 198 
+Desired position 2: 197 
+Desired position 3: 197 
+Desired position 4: 198 
+[0m
+[0m[ INFO] [1387275873.568121906]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 220 
+Actual position 4: 197 
+[0m
+Position Error = -0.282349
+sCurrentMust = -98
+Position Error = 2.78976
+sCurrentMust = -976
+Moving...
+Moving...
+Position Error = -8.44099
+sCurrentMust = -1857
+Position Error = 10.7253
+sCurrentMust = -2359
+Moving...
+Moving...
+[0m[ INFO] [1387275873.686059306]: Still going to the desired position[0m
+[0m[ INFO] [1387275873.686167546]: time ---------------------> 16915795[0m
+[0m[ INFO] [1387275873.686247986]: 
+Desired position 1: 198 
+Desired position 2: 197 
+Desired position 3: 197 
+Desired position 4: 198 
+[0m
+[0m[ INFO] [1387275873.716466746]: 
+Actual position 1: 200 
+Actual position 2: 196 
+Actual position 3: 207 
+Actual position 4: 194 
+[0m
+Position Error = 0.224274
+sCurrentMust = 78
+Position Error = 2.81703
+sCurrentMust = -985
+Moving...
+Moving...
+Position Error = 2.50638
+sCurrentMust = 552
+Position Error = 9.91006
+sCurrentMust = -2180
+Moving...
+Moving...
+[0m[ INFO] [1387275873.828512066]: Still going to the desired position[0m
+[0m[ INFO] [1387275873.828624826]: time ---------------------> 17058253[0m
+[0m[ INFO] [1387275873.828705066]: 
+Desired position 1: 198 
+Desired position 2: 198 
+Desired position 3: 197 
+Desired position 4: 198 
+[0m
+[0m[ INFO] [1387275873.855494946]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 204 
+Actual position 4: 190 
+[0m
+Position Error = 0.355484
+sCurrentMust = 124
+Position Error = 3.17538
+sCurrentMust = -1111
+Moving...
+Moving...
+Position Error = 6.42691
+sCurrentMust = 1414
+Position Error = 10.8677
+sCurrentMust = -2391
+Moving...
+Moving...
+[0m[ INFO] [1387275873.971190786]: Still going to the desired position[0m
+[0m[ INFO] [1387275873.971295026]: time ---------------------> 17200925[0m
+[0m[ INFO] [1387275873.971376466]: 
+Desired position 1: 198 
+Desired position 2: 198 
+Desired position 3: 198 
+Desired position 4: 198 
+[0m
+[0m[ INFO] [1387275873.998448666]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 197 
+Actual position 4: 188 
+[0m
+Position Error = 0.714584
+sCurrentMust = 250
+Position Error = 3.08885
+sCurrentMust = -1081
+Moving...
+Moving...
+Position Error = 1.29436
+sCurrentMust = 284
+Position Error = 11.3097
+sCurrentMust = -2488
+Moving...
+Moving...
+[0m[ INFO] [1387275874.114121906]: Still going to the desired position[0m
+[0m[ INFO] [1387275874.114320506]: time ---------------------> 17343947[0m
+[0m[ INFO] [1387275874.114450466]: 
+Desired position 1: 198 
+Desired position 2: 198 
+Desired position 3: 198 
+Desired position 4: 198 
+[0m
+[0m[ INFO] [1387275874.142345066]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 216 
+Actual position 4: 196 
+[0m
+Position Error = 1.09917
+sCurrentMust = 384
+Position Error = 3.30078
+sCurrentMust = -1155
+Moving...
+Moving...
+Position Error = -10.8294
+sCurrentMust = -2384
+Position Error = 10.9751
+sCurrentMust = -2414
+Moving...
+Moving...
+[0m[ INFO] [1387275874.254610866]: Still going to the desired position[0m
+[0m[ INFO] [1387275874.254721306]: time ---------------------> 17484349[0m
+[0m[ INFO] [1387275874.254807066]: 
+Desired position 1: 199 
+Desired position 2: 198 
+Desired position 3: 198 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275874.280947146]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 214 
+Actual position 4: 196 
+[0m
+Position Error = 1.40636
+sCurrentMust = 492
+Position Error = 3.36713
+sCurrentMust = -1178
+Moving...
+Moving...
+Position Error = -2.73755
+sCurrentMust = -601
+Position Error = 11.2718
+sCurrentMust = -2479
+Moving...
+Moving...
+[0m[ INFO] [1387275874.390966106]: Still going to the desired position[0m
+[0m[ INFO] [1387275874.391069266]: time ---------------------> 17620700[0m
+[0m[ INFO] [1387275874.391148426]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 198 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275874.420232346]: 
+Actual position 1: 200 
+Actual position 2: 196 
+Actual position 3: 206 
+Actual position 4: 193 
+[0m
+Position Error = 1.59691
+sCurrentMust = 558
+Position Error = 3.50681
+sCurrentMust = -1227
+Moving...
+Moving...
+Position Error = 7.51456
+sCurrentMust = 1654
+Position Error = 11.1747
+sCurrentMust = -2458
+Moving...
+Moving...
+[0m[ INFO] [1387275874.532438986]: Still going to the desired position[0m
+[0m[ INFO] [1387275874.532550346]: time ---------------------> 17762180[0m
+[0m[ INFO] [1387275874.532631706]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 198 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275874.558450346]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 200 
+Actual position 4: 189 
+[0m
+Position Error = 1.81192
+sCurrentMust = 634
+Position Error = 3.42145
+sCurrentMust = -1197
+Moving...
+Moving...
+Position Error = 5.53383
+sCurrentMust = 1217
+Position Error = 11.4146
+sCurrentMust = -2511
+Moving...
+Moving...
+[0m[ INFO] [1387275874.686304866]: Still going to the desired position[0m
+[0m[ INFO] [1387275874.686408586]: time ---------------------> 17916038[0m
+[0m[ INFO] [1387275874.686492506]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275874.726844946]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 210 
+Actual position 4: 192 
+[0m
+Position Error = 2.16116
+sCurrentMust = 756
+Position Error = 3.73232
+sCurrentMust = -1306
+Moving...
+Moving...
+Position Error = -7.19025
+sCurrentMust = -1583
+Position Error = 11.4103
+sCurrentMust = -2510
+Moving...
+Moving...
+[0m[ INFO] [1387275874.839344426]: Still going to the desired position[0m
+[0m[ INFO] [1387275874.839459466]: time ---------------------> 18069088[0m
+[0m[ INFO] [1387275874.839571706]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275874.865518546]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 224 
+Actual position 4: 200 
+[0m
+Position Error = 2.21344
+sCurrentMust = 774
+Position Error = 3.76201
+sCurrentMust = -1316
+Moving...
+Moving...
+Position Error = -3.32944
+sCurrentMust = -731
+Position Error = 10.8119
+sCurrentMust = -2378
+Moving...
+Moving...
+[0m[ INFO] [1387275874.981432386]: Still going to the desired position[0m
+[0m[ INFO] [1387275874.981533666]: time ---------------------> 18211164[0m
+[0m[ INFO] [1387275874.981615346]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275875.012985026]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 212 
+Actual position 4: 196 
+[0m
+Position Error = 2.4966
+sCurrentMust = 873
+Position Error = 3.87117
+sCurrentMust = -1354
+Moving...
+Moving...
+Position Error = 4.32628
+sCurrentMust = 952
+Position Error = 10.3401
+sCurrentMust = -2274
+Moving...
+Moving...
+[0m[ INFO] [1387275875.127382626]: Still going to the desired position[0m
+[0m[ INFO] [1387275875.127494866]: time ---------------------> 18357124[0m
+[0m[ INFO] [1387275875.127603346]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275875.155674066]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 205 
+Actual position 4: 191 
+[0m
+Position Error = 2.32097
+sCurrentMust = 812
+Position Error = 3.87538
+sCurrentMust = -1356
+Moving...
+Moving...
+Position Error = 9.26746
+sCurrentMust = 2039
+Position Error = 11.1246
+sCurrentMust = -2447
+Moving...
+Moving...
+[0m[ INFO] [1387275875.266385026]: Still going to the desired position[0m
+[0m[ INFO] [1387275875.266492866]: time ---------------------> 18496122[0m
+[0m[ INFO] [1387275875.266571666]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275875.292810466]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 205 
+Actual position 4: 190 
+[0m
+Position Error = 2.51945
+sCurrentMust = 881
+Position Error = 4.0103
+sCurrentMust = -1403
+Moving...
+Moving...
+Position Error = -1.25751
+sCurrentMust = -278
+Position Error = 11.688
+sCurrentMust = -2571
+Moving...
+Moving...
+[0m[ INFO] [1387275875.402146786]: Still going to the desired position[0m
+[0m[ INFO] [1387275875.402253506]: time ---------------------> 18631881[0m
+[0m[ INFO] [1387275875.402335106]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275875.437236826]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 223 
+Actual position 4: 198 
+[0m
+Position Error = 2.56607
+sCurrentMust = 898
+Position Error = 4.09038
+sCurrentMust = -1431
+Moving...
+Moving...
+Position Error = -11.5428
+sCurrentMust = -2540
+Position Error = 11.9912
+sCurrentMust = -2638
+Moving...
+Moving...
+[0m[ INFO] [1387275875.547854506]: Still going to the desired position[0m
+[0m[ INFO] [1387275875.547958546]: time ---------------------> 18777588[0m
+[0m[ INFO] [1387275875.548040866]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275875.574148826]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 215 
+Actual position 4: 197 
+[0m
+Position Error = 2.77452
+sCurrentMust = 971
+Position Error = 3.99425
+sCurrentMust = -1397
+Moving...
+Moving...
+Position Error = 3.0565
+sCurrentMust = 674
+Position Error = 10.4386
+sCurrentMust = -2296
+Moving...
+Moving...
+[0m[ INFO] [1387275875.690317026]: Still going to the desired position[0m
+[0m[ INFO] [1387275875.690420426]: time ---------------------> 18920050[0m
+[0m[ INFO] [1387275875.690499746]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275875.720553066]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 211 
+Actual position 4: 193 
+[0m
+Position Error = 2.84084
+sCurrentMust = 994
+Position Error = 4.19608
+sCurrentMust = -1468
+Moving...
+Moving...
+Position Error = 3.79419
+sCurrentMust = 834
+Position Error = 11.209
+sCurrentMust = -2466
+Moving...
+Moving...
+[0m[ INFO] [1387275875.831940186]: Still going to the desired position[0m
+[0m[ INFO] [1387275875.832049946]: time ---------------------> 19061679[0m
+[0m[ INFO] [1387275875.832133986]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275875.862076586]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 209 
+Actual position 4: 192 
+[0m
+Position Error = 2.92821
+sCurrentMust = 1024
+Position Error = 3.99706
+sCurrentMust = -1398
+Moving...
+Moving...
+Position Error = -1.68504
+sCurrentMust = -371
+Position Error = 11.881
+sCurrentMust = -2613
+Moving...
+Moving...
+[0m[ INFO] [1387275875.971403226]: Still going to the desired position[0m
+[0m[ INFO] [1387275875.971548626]: time ---------------------> 19201137[0m
+[0m[ INFO] [1387275875.971635186]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275875.998833786]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 220 
+Actual position 4: 197 
+[0m
+Position Error = 2.83502
+sCurrentMust = 992
+Position Error = 4.14091
+sCurrentMust = -1449
+Moving...
+Moving...
+Position Error = -8.07251
+sCurrentMust = -1776
+Position Error = 11.8276
+sCurrentMust = -2602
+Moving...
+Moving...
+[0m[ INFO] [1387275876.110344786]: Still going to the desired position[0m
+[0m[ INFO] [1387275876.110446626]: time ---------------------> 19340077[0m
+[0m[ INFO] [1387275876.110531946]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275876.141666266]: 
+Actual position 1: 200 
+Actual position 2: 196 
+Actual position 3: 208 
+Actual position 4: 196 
+[0m
+Position Error = 2.77856
+sCurrentMust = 972
+Position Error = 4.4135
+sCurrentMust = -1544
+Moving...
+Moving...
+Position Error = 5.08618
+sCurrentMust = 1120
+Position Error = 11.1168
+sCurrentMust = -2445
+Moving...
+Moving...
+[0m[ INFO] [1387275876.251606386]: Still going to the desired position[0m
+[0m[ INFO] [1387275876.251715986]: time ---------------------> 19481345[0m
+[0m[ INFO] [1387275876.251796946]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275876.278110586]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 209 
+Actual position 4: 192 
+[0m
+Position Error = 2.87782
+sCurrentMust = 1007
+Position Error = 4.15863
+sCurrentMust = -1455
+Moving...
+Moving...
+Position Error = 6.76112
+sCurrentMust = 1487
+Position Error = 10.5407
+sCurrentMust = -2318
+Moving...
+Moving...
+[0m[ INFO] [1387275876.393496906]: Still going to the desired position[0m
+[0m[ INFO] [1387275876.393599586]: time ---------------------> 19623229[0m
+[0m[ INFO] [1387275876.393677026]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275876.422770346]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 210 
+Actual position 4: 193 
+[0m
+Position Error = 2.84103
+sCurrentMust = 994
+Position Error = 4.02985
+sCurrentMust = -1410
+Moving...
+Moving...
+Position Error = -7.4977
+sCurrentMust = -1651
+Position Error = 9.69067
+sCurrentMust = -2131
+Moving...
+Moving...
+[0m[ INFO] [1387275876.535344106]: Still going to the desired position[0m
+[0m[ INFO] [1387275876.535732066]: time ---------------------> 19765357[0m
+[0m[ INFO] [1387275876.535935346]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275876.565028906]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 223 
+Actual position 4: 200 
+[0m
+Position Error = 2.9359
+sCurrentMust = 1027
+Position Error = 4.12186
+sCurrentMust = -1442
+Moving...
+Moving...
+Position Error = -3.43277
+sCurrentMust = -754
+Position Error = 10.3111
+sCurrentMust = -2268
+Moving...
+Moving...
+[0m[ INFO] [1387275876.672904826]: Still going to the desired position[0m
+[0m[ INFO] [1387275876.673012986]: time ---------------------> 19902642[0m
+[0m[ INFO] [1387275876.673094386]: 
+Desired position 1: 199 
+Desired position 2: 199 
+Desired position 3: 199 
+Desired position 4: 199 
+[0m
+[0m[ INFO] [1387275876.700831906]: 
+Actual position 1: 201 
+Actual position 2: 196 
+Actual position 3: 210 
+Actual position 4: 194 
+[0m
+Position Error = 2.80836
+sCurrentMust = 982
+Position Error = 4.25148
+sCurrentMust = -1488
+Moving...
+Moving...
+Position Error = 6.24521
+sCurrentMust = 1375
+Position Error = 10.3547
+sCurrentMust = -2278
+Moving...
+Moving...
+[0m[ INFO] [1387275876.821382946]: Still going to the desired position[0m
+[0m[ INFO] [1387275876.821491506]: time ---------------------> 20051121[0m
+[0m[ INFO] [1387275876.821570106]: Stopping...[0m
+ModuleState = CONNECTED
+ModuleState = CONNECTED
+ModuleState = CONNECTED
+[0m[ INFO] [1387275877.195331546]: End[0m
+... logging to /home/rsk-sa/.ros/log/6148c90e-6705-11e3-b93b-001d09093f81/roslaunch-agenor-7359.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/opt/ros/groovy/stacks/ros_pkg_tutorials/isella3/isella3.launch
+[1mstarted roslaunch server http://agenor:43576/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /desired_position1
+ * /desired_position2
+ * /desired_position3
+ * /desired_position4
+ * /rosdistro
+ * /rosversion
+ * /type
+
+NODES
+  /
+    isella (isella3/my_controller_exe)
+
+auto-starting new master
+[1mprocess[master]: started with pid [7373][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/opt/ros/groovy/stacks/ros_pkg_tutorials/isella3/isella3.launch http://localhost:11311
+[1msetting /run_id to 6148c90e-6705-11e3-b93b-001d09093f81[0m
+[1mprocess[rosout-1]: started with pid [7387][0m
+started core service [/rosout]
+[1mprocess[isella-2]: started with pid [7399][0m
+[1m[isella-2] process has finished cleanly
+log file: /home/rsk-sa/.ros/log/6148c90e-6705-11e3-b93b-001d09093f81/isella-2*.log[0m
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

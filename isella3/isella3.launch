@@ -1,0 +1,4 @@
+<launch>
+   <rosparam file="$(find isella3)/isella3.yaml" command="load" />
+   <node name="isella" pkg="isella3" type="my_controller_exe" output="screen" args="-o /opt/ros/groovy/stacks/ros_pkg_tutorials/isella3/my.bag -a"/>
+</launch>

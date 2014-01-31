@@ -1,0 +1,248 @@
+/************************************************************************
+Fraunhofer IPA, 2011
+ISELLA3 - ArmModule 
+
+Author: Attila Achenbach, email: attila.achenbach@googlemail.com
+************************************************************************/
+
+// ISELLA3 ArmModule.h : header for the ISELLA3 arm module
+//
+// This file defines the objects ArmModule and its different component objects.
+// '-> With every ArmModule two MotorControllers are created.
+//     '-> With every MotorController
+//         - a Motor,
+//         - a Brake,
+//         - a negative and a positive LimitSwitch,
+//         - and an AngleSensor
+//         are created, and they are initialized with a pointer to the
+//         corresponding MotorController, to allow communication among
+//         each other.
+
+// '-> TODO: Every function consists of
+//     '-> a call to the MotorController
+//     '-> a status flag check and/or change (if appropriate)
+//     '-> an error checking functionality
+
+// NOTE: Indexing is done as follows:
+// '-> ArmModules are numbered starting from the base
+// '-> ArmModule axes are (currently) numbered 0 for the turning head axis
+//     (Axis "Beta" according to ACHENBACH2011) and 1 for the bending axis
+//     (Axis "Alpha" according to ACHENBACH2011) (!)
+// '-> ArmModule components are numbered 0 for left, 1 for right (seen from
+//     above, head axis up; following the connection sequence of the EPOS2
+//     motor controllers)
+// '-> Limit Switches are numbered 1 for "Negative" (back), 2 for "Positive"
+//     (front)
+
+// NOTE: Error/Exception Handling is done as follows:
+// '-> Using Try, Throw, Catch statements
+// '-> On exception, dwErrorCode is thrown.
+// '-> Exception objects are caught in ISELLA3PositionControlApp and a central
+//     Error Handler is called. // TODO: Change
+
+// Includes added by AA
+//#include "stdafx.h"
+#include <string>
+#include "Definitions.h"
+using namespace std;
+
+#pragma once
+
+// Module States
+enum ModuleState
+{
+	NOT_CONNECTED,
+	CONNECTED,
+	READY,
+	MOVING,
+	EXCEPTION,
+	MANUAL
+};
+
+//
+//
+// forward declarations
+class CMotorController;
+class CAngleSensor;
+class CLimitSwitch;
+class CBrake;
+class CMotor;
+
+//
+//
+// Component object classes
+
+class CAngleSensor
+{
+	// Pointer to MotorController;
+	CMotorController * pMotorController;
+public:
+	// Constructor with argument Pointer to MotorController 
+	CAngleSensor(CMotorController * pMoConPtr = NULL) : pMotorController(pMoConPtr), fSensorOffset(0), fAngleIs(180), wAnalogValue(2500), fAnalogValue(2500) {}
+
+	// Getters and Setters
+	void SetSensorOffset(float fValue);
+	void LogSensorOffset();
+	float fGetAngleIs(void* hKeyHandle);
+private:
+	float fSensorOffset;
+	float fAngleIs;
+
+	// Helpers
+	unsigned short wAnalogValue;
+	float fAnalogValue;
+};
+
+class CLimitSwitch
+{
+	// Pointer to MotorController;
+	CMotorController * pMotorController;
+	// Position Tag
+	char cPositionId;
+public:
+	// Constructor with argument Pointer to MotorController 
+	CLimitSwitch(CMotorController * pMoConPtr = NULL, char cPosId = 0);
+
+	bool bGetStatus();
+	bool bUpdateStatus(void* hKeyHandle);
+private:
+	unsigned int dwErrorCode; // Constructor assigns this variable a value depending on cPositionId
+	bool bStatus;
+	unsigned short wDigitalInputWord;
+	char cDigitalInputBit;
+};
+
+class CBrake
+{
+	// Pointer to MotorController;
+	CMotorController * pMotorController;
+public:
+	// Constructor with argument Pointer to MotorController 
+	CBrake(CMotorController * pMoConPtr = NULL) : pMotorController(pMoConPtr), bStatus(false), wDigitalOutputWord(0), cDigitalOutputBit(0) {}
+
+	bool bGetStatus();
+	bool bUpdateStatus(void* hKeyHandle);
+	void Open(void* hKeyHandle);
+	void Close(void* hKeyHandle);
+private:
+	bool bStatus;
+	unsigned short wDigitalOutputWord;
+	char cDigitalOutputBit;
+};
+
+class CMotor
+{
+	// Pointer to MotorController;
+	CMotorController * pMotorController;
+public:
+	// Constructor with argument Pointer to MotorController 
+	CMotor(CMotorController * pMoConPtr = NULL) : pMotorController(pMoConPtr), sCurrentMust(0), sCurrentIs(0) {}
+
+	short sGetCurrentMust(void* hKeyHandle);
+	short sGetCurrentIs(void* hKeyHandle);
+	void Move(void* hKeyHandle, short sCurrentMust);
+	void Halt(void* hKeyHandle);
+
+private:
+	short sCurrentMust;
+	short sCurrentIs;
+};
+
+class CMotorController
+{
+	friend class CISELLA3_ArmModule;
+	friend class CAngleSensor;
+	friend class CLimitSwitch;
+	friend class CBrake;
+	friend class CMotor;
+public:
+	// Constructor
+	CMotorController() : wNodeId(0), dwErrorCode(0), wState(0x0000), i8OpMode(0), e_ModuleState(NOT_CONNECTED), AngleSensor(CAngleSensor(this)), Brake(CBrake(this)), Motor(CMotor(this)) {LimitSwitch[0] = CLimitSwitch(this,0); LimitSwitch[1] = CLimitSwitch(this,1);}
+
+	// Getters and Setters
+	unsigned short wGetNodeId();
+	void SetNodeId(unsigned short wValue);
+	unsigned int dwGetErrorCode();
+
+	// OpMode (-0x03 = CurrentMode)
+	char i8GetOpMode();
+	char i8UpdateOpMode(void* hKeyHandle);
+
+	// State ( Enabled || Disabled || Quickstop || Fault )
+	void InitState(unsigned short wValue);
+	unsigned short wGetState();
+	unsigned short wUpdateState(void* hKeyHandle);
+	void Enable(void* hKeyHandle);
+	void Disable(void* hKeyHandle);
+	void SetCurrentMode(void* hKeyHandle);
+
+	// Module State ( NOT_CONNECTED || CONNECTED || READY || MOVING || EXCEPTION )
+	enum ModuleState e_ModuleState;
+
+	// InitializeSettings
+	void InitializeSettings(void* hKeyHandle);
+
+	// Connected components
+	// Instantiate Angle Sensor
+	CAngleSensor AngleSensor;
+	// Instantiate Limit Switches
+	CLimitSwitch LimitSwitch[2];
+	// Instantiate Brake
+	CBrake Brake;
+	// Instantiate Motor
+	CMotor Motor;
+private:
+	unsigned short wNodeId;
+	unsigned int dwErrorCode;
+
+	// State of the Motor Controller State Machine
+	unsigned short wState;
+	
+	// OpMode
+	char i8OpMode;
+};
+
+//
+//
+// Container object class
+
+class CISELLA3_ArmModule
+{
+	friend class CISELLA3PositionControlApp;
+	//friend UINT pfnThreadProcGetAngleIs(LPVOID pParamGetAngleIs); // TODO: Remove if threading not applied
+	//friend UINT pfnThreadProcMove(LPVOID pParamMove); // TODO: Remove if threading not applied
+
+public:
+	// Constructor
+	//CISELLA3_ArmModule() : e_ModuleState(NOT_CONNECTED) {} // TODO: Remove if not needed
+
+	// Getters and Setters
+	float fGetAngleAxisMust(int iAxisId); // Get AngleAxisMust (without update)
+	void SetAngleMust(int iAxisId, float fValue); // Update specified AngleAxisMust and both AngleWheelMust
+	void SetMove();
+	void SetHalt(void* hKeyHandle);
+
+	// Get ArmModule State ( NOT_CONNECTED || CONNECTED || READY || MOVING || EXCEPTION )
+	enum ModuleState e_GetModuleState();
+
+	// Error Handler
+	void ErrorHandler(unsigned int dwErrorCode); // Catch Error -> Set flags
+	float fAngleWheelIs[2];
+private:
+	// Instantiate two Motor Controllers (other objects will be instantiated by Motor Controller)
+	CMotorController MotorController[2];
+
+	unsigned int dwErrorCode;
+
+	//// Arm module state
+
+	// Parameters
+	float fAngleAxisIs[2];
+	
+	float fAngleAxisMust[2];
+	float fAngleWheelMust[2];
+
+	// Flags
+	bool bShouldMove;
+};
+extern CISELLA3_ArmModule ArmModule[2];

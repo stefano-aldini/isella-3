@@ -1,0 +1,1939 @@
+[0m[ INFO] [1387208888.068706000]: Node initialized[0m
+[0m[ INFO] [1387208888.076798040]: qd1 = 0[0m
+[0m[ INFO] [1387208888.077885601]: qd2 = 0[0m
+[0m[ INFO] [1387208888.078687921]: qd3 = 0[0m
+[0m[ INFO] [1387208888.079525520]: qd4 = 0[0m
+PID --> K(0,0) =
+350
+1
+20
+PID --> K(0,1) =
+350
+1
+20
+PID --> K(1,0) =
+200
+1
+25
+PID --> K(1,1) =
+200
+1
+25
+[0m[ INFO] [1387208888.079753240]: Current Time = 182[0m
+[0m[ INFO] [1387208888.079776560]: Final Time = 20000182[0m
+[0m[ INFO] [1387208888.079800000]: update ---> d_last_time = 182, time_fin = 20000182[0m
+Device opened
+SetProtocolStackSettings ok!
+NodeId setted for ArmModule 0 and MotorController 0
+Entering InitializeSettings...
+KeyHandle 0x40001 ErrorCode 0
+Disabled
+Motor Parameters setted
+Max Profile Velocity setted
+Settings initialized for ArmModule 0 and MotorController 0
+NodeId setted for ArmModule 0 and MotorController 1
+Entering InitializeSettings...
+KeyHandle 0x40001 ErrorCode 0
+Disabled
+Motor Parameters setted
+Max Profile Velocity setted
+Settings initialized for ArmModule 0 and MotorController 1
+NodeId setted for ArmModule 1 and MotorController 0
+Entering InitializeSettings...
+KeyHandle 0x40001 ErrorCode 0
+Disabled
+Motor Parameters setted
+Max Profile Velocity setted
+Settings initialized for ArmModule 1 and MotorController 0
+NodeId setted for ArmModule 1 and MotorController 1
+Entering InitializeSettings...
+KeyHandle 0x40001 ErrorCode 0
+Disabled
+Motor Parameters setted
+Max Profile Velocity setted
+Settings initialized for ArmModule 1 and MotorController 1
+[0m[ INFO] [1387208890.672132200]: Trajectory ---> desired_pos = 180, AngleAxisIs = 135, time_in = 182, time_fin = 20000182[0m
+Matrix A:
+          1         182       33124 6.02857e+06  1.0972e+09  1.9969e+11
+          0           1         364       99372 2.41143e+07   5.486e+09
+          0           0           2        1092      397488 1.20571e+08
+          1 2.00002e+07 4.00007e+14 8.00022e+21 1.60006e+29 3.20015e+36
+          0           1 4.00004e+07 1.20002e+15 3.20009e+22 8.00029e+29
+          0           0           2 1.20001e+08 4.80009e+15 1.60004e+23
+Vector b:
+135.18
+0
+0
+180
+0
+0
+Vector x:
+135.18
+5.56742e-15
+-3.05905e-17
+5.60281e-20
+-4.20195e-27
+8.40375e-35
+Vector b = A*x:
+135.18
+3.29247e-22
+1.21464e-28
+180
+5.05573e-21
+-1.14306e-27
+[0m[ INFO] [1387208890.686285560]: Trajectory ---> desired_pos = 180, AngleAxisIs = 131, time_in = 182, time_fin = 20000182[0m
+Matrix A:
+          1         182       33124 6.02857e+06  1.0972e+09  1.9969e+11
+          0           1         364       99372 2.41143e+07   5.486e+09
+          0           0           2        1092      397488 1.20571e+08
+          1 2.00002e+07 4.00007e+14 8.00022e+21 1.60006e+29 3.20015e+36
+          0           1 4.00004e+07 1.20002e+15 3.20009e+22 8.00029e+29
+          0           0           2 1.20001e+08 4.80009e+15 1.60004e+23
+Vector b:
+131.04
+0
+0
+180
+0
+0
+Vector x:
+131.04
+6.08168e-15
+-3.34161e-17
+6.12033e-20
+-4.59008e-27
+9.18e-35
+Vector b = A*x:
+131.04
+3.59659e-22
+1.32691e-28
+180
+1.15739e-20
+-7.25752e-28
+[0m[ INFO] [1387208890.701111840]: Trajectory ---> desired_pos = 180, AngleAxisIs = 105, time_in = 182, time_fin = 20000182[0m
+Matrix A:
+          1         182       33124 6.02857e+06  1.0972e+09  1.9969e+11
+          0           1         364       99372 2.41143e+07   5.486e+09
+          0           0           2        1092      397488 1.20571e+08
+          1 2.00002e+07 4.00007e+14 8.00022e+21 1.60006e+29 3.20015e+36
+          0           1 4.00004e+07 1.20002e+15 3.20009e+22 8.00029e+29
+          0           0           2 1.20001e+08 4.80009e+15 1.60004e+23
+Vector b:
+105.57
+0
+0
+180
+0
+0
+Vector x:
+105.57
+9.24549e-15
+-5.07999e-17
+9.30426e-20
+-6.97794e-27
+1.39556e-34
+Vector b = A*x:
+105.57
+5.46761e-22
+2.01716e-28
+180
+-1.05879e-21
+-3.43628e-27
+[0m[ INFO] [1387208890.716581840]: Trajectory ---> desired_pos = 180, AngleAxisIs = 143, time_in = 182, time_fin = 20000182[0m
+Matrix A:
+          1         182       33124 6.02857e+06  1.0972e+09  1.9969e+11
+          0           1         364       99372 2.41143e+07   5.486e+09
+          0           0           2        1092      397488 1.20571e+08
+          1 2.00002e+07 4.00007e+14 8.00022e+21 1.60006e+29 3.20015e+36
+          0           1 4.00004e+07 1.20002e+15 3.20009e+22 8.00029e+29
+          0           0           2 1.20001e+08 4.80009e+15 1.60004e+23
+Vector b:
+143.1
+0
+0
+180
+0
+0
+Vector x:
+143.1
+4.58362e-15
+-2.51849e-17
+4.61275e-20
+-3.45944e-27
+6.91875e-35
+Vector b = A*x:
+143.1
+2.71067e-22
+1.00003e-28
+180
+1.97531e-21
+-1.58719e-27
+[0m[ INFO] [1387208890.717649400]: Controller started[0m
+[0m[ INFO] [1387208890.717886320]: 
+Desired position 1: 135 
+Desired position 2: 131 
+Desired position 3: 105 
+Desired position 4: 143 
+[0m
+[0m[ INFO] [1387208890.744000720]: 
+Actual position 1: 135 
+Actual position 2: 131 
+Actual position 3: 105 
+Actual position 4: 143 
+[0m
+sCurrentMust = -447
+sCurrentMust = 158
+Moving...
+Moving...
+sCurrentMust = 353
+sCurrentMust = -217
+Moving...
+Moving...
+[0m[ INFO] [1387208890.947350160]: Still going to the desired position[0m
+[0m[ INFO] [1387208890.947476080]: time ---------------------> 2867886[0m
+[0m[ INFO] [1387208890.947582040]: 
+Desired position 1: 136 
+Desired position 2: 132 
+Desired position 3: 107 
+Desired position 4: 143 
+[0m
+[0m[ INFO] [1387208890.974588360]: 
+Actual position 1: 136 
+Actual position 2: 130 
+Actual position 3: 104 
+Actual position 4: 141 
+[0m
+sCurrentMust = 363
+sCurrentMust = -1024
+Moving...
+Moving...
+sCurrentMust = 1274
+sCurrentMust = -387
+Moving...
+Moving...
+[0m[ INFO] [1387208891.081319920]: Still going to the desired position[0m
+[0m[ INFO] [1387208891.081419080]: time ---------------------> 3001831[0m
+[0m[ INFO] [1387208891.081495240]: 
+Desired position 1: 136 
+Desired position 2: 132 
+Desired position 3: 107 
+Desired position 4: 144 
+[0m
+[0m[ INFO] [1387208891.111465880]: 
+Actual position 1: 138 
+Actual position 2: 129 
+Actual position 3: 101 
+Actual position 4: 141 
+[0m
+sCurrentMust = 594
+sCurrentMust = -1861
+Moving...
+Moving...
+sCurrentMust = 780
+sCurrentMust = -169
+Moving...
+Moving...
+[0m[ INFO] [1387208891.224675520]: Still going to the desired position[0m
+[0m[ INFO] [1387208891.224781680]: time ---------------------> 3145194[0m
+[0m[ INFO] [1387208891.224856680]: 
+Desired position 1: 136 
+Desired position 2: 132 
+Desired position 3: 107 
+Desired position 4: 144 
+[0m
+[0m[ INFO] [1387208891.251068000]: 
+Actual position 1: 139 
+Actual position 2: 129 
+Actual position 3: 112 
+Actual position 4: 146 
+[0m
+sCurrentMust = 893
+sCurrentMust = -2351
+Moving...
+Moving...
+sCurrentMust = -2216
+sCurrentMust = -342
+Moving...
+Moving...
+[0m[ INFO] [1387208891.361280960]: Still going to the desired position[0m
+[0m[ INFO] [1387208891.361381400]: time ---------------------> 3281794[0m
+[0m[ INFO] [1387208891.361459920]: 
+Desired position 1: 136 
+Desired position 2: 132 
+Desired position 3: 108 
+Desired position 4: 144 
+[0m
+[0m[ INFO] [1387208891.388395240]: 
+Actual position 1: 139 
+Actual position 2: 129 
+Actual position 3: 121 
+Actual position 4: 152 
+[0m
+sCurrentMust = 1235
+sCurrentMust = -2464
+Moving...
+Moving...
+sCurrentMust = -953
+sCurrentMust = -203
+Moving...
+Moving...
+[0m[ INFO] [1387208891.503692720]: Still going to the desired position[0m
+[0m[ INFO] [1387208891.503800960]: time ---------------------> 3424214[0m
+[0m[ INFO] [1387208891.503878880]: 
+Desired position 1: 136 
+Desired position 2: 132 
+Desired position 3: 108 
+Desired position 4: 144 
+[0m
+[0m[ INFO] [1387208891.530219400]: 
+Actual position 1: 139 
+Actual position 2: 129 
+Actual position 3: 111 
+Actual position 4: 147 
+[0m
+sCurrentMust = 1609
+sCurrentMust = -2534
+Moving...
+Moving...
+sCurrentMust = 1180
+sCurrentMust = -450
+Moving...
+Moving...
+[0m[ INFO] [1387208891.642818480]: Still going to the desired position[0m
+[0m[ INFO] [1387208891.642923640]: time ---------------------> 3563336[0m
+[0m[ INFO] [1387208891.642999720]: 
+Desired position 1: 137 
+Desired position 2: 133 
+Desired position 3: 108 
+Desired position 4: 144 
+[0m
+[0m[ INFO] [1387208891.669100240]: 
+Actual position 1: 139 
+Actual position 2: 129 
+Actual position 3: 106 
+Actual position 4: 143 
+[0m
+sCurrentMust = 1858
+sCurrentMust = -2606
+Moving...
+Moving...
+sCurrentMust = 2107
+sCurrentMust = -287
+Moving...
+Moving...
+[0m[ INFO] [1387208891.779838440]: Still going to the desired position[0m
+[0m[ INFO] [1387208891.779935520]: time ---------------------> 3700347[0m
+[0m[ INFO] [1387208891.780016000]: 
+Desired position 1: 137 
+Desired position 2: 133 
+Desired position 3: 109 
+Desired position 4: 144 
+[0m
+[0m[ INFO] [1387208891.809996680]: 
+Actual position 1: 139 
+Actual position 2: 129 
+Actual position 3: 109 
+Actual position 4: 146 
+[0m
+sCurrentMust = 1955
+sCurrentMust = -2665
+Moving...
+Moving...
+sCurrentMust = -152
+sCurrentMust = -316
+Moving...
+Moving...
+[0m[ INFO] [1387208891.922267960]: Still going to the desired position[0m
+[0m[ INFO] [1387208891.922376400]: time ---------------------> 3842788[0m
+[0m[ INFO] [1387208891.922453760]: 
+Desired position 1: 137 
+Desired position 2: 133 
+Desired position 3: 109 
+Desired position 4: 145 
+[0m
+[0m[ INFO] [1387208891.948573920]: 
+Actual position 1: 139 
+Actual position 2: 129 
+Actual position 3: 123 
+Actual position 4: 149 
+[0m
+sCurrentMust = 2077
+sCurrentMust = -2651
+Moving...
+Moving...
+sCurrentMust = -3566
+sCurrentMust = -303
+Moving...
+Moving...
+[0m[ INFO] [1387208892.064628400]: Still going to the desired position[0m
+[0m[ INFO] [1387208892.064731520]: time ---------------------> 3985143[0m
+[0m[ INFO] [1387208892.064810040]: 
+Desired position 1: 137 
+Desired position 2: 133 
+Desired position 3: 109 
+Desired position 4: 145 
+[0m
+[0m[ INFO] [1387208892.091062000]: 
+Actual position 1: 139 
+Actual position 2: 129 
+Actual position 3: 117 
+Actual position 4: 152 
+[0m
+sCurrentMust = 2115
+sCurrentMust = -2731
+Moving...
+Moving...
+sCurrentMust = 284
+sCurrentMust = -283
+Moving...
+Moving...
+[0m[ INFO] [1387208892.204318760]: Still going to the desired position[0m
+[0m[ INFO] [1387208892.204722600]: time ---------------------> 4125129[0m
+[0m[ INFO] [1387208892.204923840]: 
+Desired position 1: 137 
+Desired position 2: 134 
+Desired position 3: 110 
+Desired position 4: 145 
+[0m
+[0m[ INFO] [1387208892.232019160]: 
+Actual position 1: 141 
+Actual position 2: 130 
+Actual position 3: 113 
+Actual position 4: 146 
+[0m
+sCurrentMust = 1510
+sCurrentMust = -2705
+Moving...
+Moving...
+sCurrentMust = 630
+sCurrentMust = -454
+Moving...
+Moving...
+[0m[ INFO] [1387208892.342348440]: Still going to the desired position[0m
+[0m[ INFO] [1387208892.342453360]: time ---------------------> 4262865[0m
+[0m[ INFO] [1387208892.342531560]: 
+Desired position 1: 138 
+Desired position 2: 134 
+Desired position 3: 110 
+Desired position 4: 145 
+[0m
+[0m[ INFO] [1387208892.368851720]: 
+Actual position 1: 141 
+Actual position 2: 133 
+Actual position 3: 110 
+Actual position 4: 145 
+[0m
+sCurrentMust = 611
+sCurrentMust = -1782
+Moving...
+Moving...
+sCurrentMust = 67
+sCurrentMust = -514
+Moving...
+Moving...
+[0m[ INFO] [1387208892.481837600]: Still going to the desired position[0m
+[0m[ INFO] [1387208892.481935680]: time ---------------------> 4402350[0m
+[0m[ INFO] [1387208892.482012560]: 
+Desired position 1: 138 
+Desired position 2: 134 
+Desired position 3: 111 
+Desired position 4: 145 
+[0m
+[0m[ INFO] [1387208892.517868160]: 
+Actual position 1: 139 
+Actual position 2: 135 
+Actual position 3: 115 
+Actual position 4: 147 
+[0m
+sCurrentMust = 524
+sCurrentMust = -853
+Moving...
+Moving...
+sCurrentMust = -1144
+sCurrentMust = -565
+Moving...
+Moving...
+[0m[ INFO] [1387208892.631532880]: Still going to the desired position[0m
+[0m[ INFO] [1387208892.631640200]: time ---------------------> 4552052[0m
+[0m[ INFO] [1387208892.631720880]: 
+Desired position 1: 138 
+Desired position 2: 135 
+Desired position 3: 111 
+Desired position 4: 146 
+[0m
+[0m[ INFO] [1387208892.657776840]: 
+Actual position 1: 139 
+Actual position 2: 135 
+Actual position 3: 112 
+Actual position 4: 147 
+[0m
+sCurrentMust = 558
+sCurrentMust = -836
+Moving...
+Moving...
+sCurrentMust = 651
+sCurrentMust = -278
+Moving...
+Moving...
+[0m[ INFO] [1387208892.766633680]: Still going to the desired position[0m
+[0m[ INFO] [1387208892.766730120]: time ---------------------> 4687143[0m
+[0m[ INFO] [1387208892.766805520]: 
+Desired position 1: 139 
+Desired position 2: 135 
+Desired position 3: 112 
+Desired position 4: 146 
+[0m
+[0m[ INFO] [1387208892.792997160]: 
+Actual position 1: 138 
+Actual position 2: 135 
+Actual position 3: 110 
+Actual position 4: 144 
+[0m
+sCurrentMust = 709
+sCurrentMust = -829
+Moving...
+Moving...
+sCurrentMust = 1391
+sCurrentMust = -435
+Moving...
+Moving...
+[0m[ INFO] [1387208892.906991320]: Still going to the desired position[0m
+[0m[ INFO] [1387208892.907098560]: time ---------------------> 4827511[0m
+[0m[ INFO] [1387208892.907179040]: 
+Desired position 1: 139 
+Desired position 2: 135 
+Desired position 3: 112 
+Desired position 4: 146 
+[0m
+[0m[ INFO] [1387208892.936107520]: 
+Actual position 1: 139 
+Actual position 2: 135 
+Actual position 3: 104 
+Actual position 4: 144 
+[0m
+sCurrentMust = 878
+sCurrentMust = -913
+Moving...
+Moving...
+sCurrentMust = 347
+sCurrentMust = -301
+Moving...
+Moving...
+[0m[ INFO] [1387208893.047144120]: Still going to the desired position[0m
+[0m[ INFO] [1387208893.047239200]: time ---------------------> 4967653[0m
+[0m[ INFO] [1387208893.047315640]: 
+Desired position 1: 139 
+Desired position 2: 136 
+Desired position 3: 113 
+Desired position 4: 146 
+[0m
+[0m[ INFO] [1387208893.074110600]: 
+Actual position 1: 138 
+Actual position 2: 135 
+Actual position 3: 118 
+Actual position 4: 148 
+[0m
+sCurrentMust = 1237
+sCurrentMust = -985
+Moving...
+Moving...
+sCurrentMust = -2688
+sCurrentMust = -261
+Moving...
+Moving...
+[0m[ INFO] [1387208893.185952440]: Still going to the desired position[0m
+[0m[ INFO] [1387208893.186051720]: time ---------------------> 5106465[0m
+[0m[ INFO] [1387208893.186132960]: 
+Desired position 1: 140 
+Desired position 2: 136 
+Desired position 3: 113 
+Desired position 4: 147 
+[0m
+[0m[ INFO] [1387208893.217406960]: 
+Actual position 1: 138 
+Actual position 2: 135 
+Actual position 3: 117 
+Actual position 4: 152 
+[0m
+sCurrentMust = 1544
+sCurrentMust = -1063
+Moving...
+Moving...
+sCurrentMust = -89
+sCurrentMust = -406
+Moving...
+Moving...
+[0m[ INFO] [1387208893.326294600]: Still going to the desired position[0m
+[0m[ INFO] [1387208893.326399920]: time ---------------------> 5246813[0m
+[0m[ INFO] [1387208893.326477960]: 
+Desired position 1: 140 
+Desired position 2: 136 
+Desired position 3: 114 
+Desired position 4: 147 
+[0m
+[0m[ INFO] [1387208893.354736280]: 
+Actual position 1: 139 
+Actual position 2: 135 
+Actual position 3: 118 
+Actual position 4: 150 
+[0m
+sCurrentMust = 1674
+sCurrentMust = -1246
+Moving...
+Moving...
+sCurrentMust = 737
+sCurrentMust = -481
+Moving...
+Moving...
+[0m[ INFO] [1387208893.463550360]: Still going to the desired position[0m
+[0m[ INFO] [1387208893.463651320]: time ---------------------> 5384064[0m
+[0m[ INFO] [1387208893.463733640]: 
+Desired position 1: 140 
+Desired position 2: 137 
+Desired position 3: 114 
+Desired position 4: 147 
+[0m
+[0m[ INFO] [1387208893.489508560]: 
+Actual position 1: 139 
+Actual position 2: 135 
+Actual position 3: 113 
+Actual position 4: 146 
+[0m
+sCurrentMust = 1898
+sCurrentMust = -1291
+Moving...
+Moving...
+sCurrentMust = 861
+sCurrentMust = -344
+Moving...
+Moving...
+[0m[ INFO] [1387208893.602729080]: Still going to the desired position[0m
+[0m[ INFO] [1387208893.602831320]: time ---------------------> 5523244[0m
+[0m[ INFO] [1387208893.602903560]: 
+Desired position 1: 141 
+Desired position 2: 137 
+Desired position 3: 115 
+Desired position 4: 148 
+[0m
+[0m[ INFO] [1387208893.630446960]: 
+Actual position 1: 138 
+Actual position 2: 135 
+Actual position 3: 117 
+Actual position 4: 147 
+[0m
+sCurrentMust = 2086
+sCurrentMust = -1447
+Moving...
+Moving...
+sCurrentMust = -496
+sCurrentMust = 10
+Moving...
+Moving...
+[0m[ INFO] [1387208893.739452920]: Still going to the desired position[0m
+[0m[ INFO] [1387208893.739554040]: time ---------------------> 5659966[0m
+[0m[ INFO] [1387208893.739635640]: 
+Desired position 1: 141 
+Desired position 2: 137 
+Desired position 3: 116 
+Desired position 4: 148 
+[0m
+[0m[ INFO] [1387208893.765888440]: 
+Actual position 1: 139 
+Actual position 2: 135 
+Actual position 3: 128 
+Actual position 4: 154 
+[0m
+sCurrentMust = 2306
+sCurrentMust = -1512
+Moving...
+Moving...
+sCurrentMust = -3168
+sCurrentMust = -175
+Moving...
+Moving...
+[0m[ INFO] [1387208893.880272600]: Still going to the desired position[0m
+[0m[ INFO] [1387208893.880373600]: time ---------------------> 5800786[0m
+[0m[ INFO] [1387208893.880450160]: 
+Desired position 1: 141 
+Desired position 2: 138 
+Desired position 3: 116 
+Desired position 4: 148 
+[0m
+[0m[ INFO] [1387208893.909106160]: 
+Actual position 1: 138 
+Actual position 2: 135 
+Actual position 3: 122 
+Actual position 4: 152 
+[0m
+sCurrentMust = 2441
+sCurrentMust = -1364
+Moving...
+Moving...
+sCurrentMust = 754
+sCurrentMust = 44
+Moving...
+Moving...
+[0m[ INFO] [1387208894.018843280]: Still going to the desired position[0m
+[0m[ INFO] [1387208894.019283400]: time ---------------------> 5939688[0m
+[0m[ INFO] [1387208894.019492320]: 
+Desired position 1: 142 
+Desired position 2: 138 
+Desired position 3: 117 
+Desired position 4: 148 
+[0m
+[0m[ INFO] [1387208894.046448400]: 
+Actual position 1: 140 
+Actual position 2: 136 
+Actual position 3: 117 
+Actual position 4: 148 
+[0m
+sCurrentMust = 2032
+sCurrentMust = -1514
+Moving...
+Moving...
+sCurrentMust = 1520
+sCurrentMust = -102
+Moving...
+Moving...
+[0m[ INFO] [1387208894.153075480]: Still going to the desired position[0m
+[0m[ INFO] [1387208894.153200760]: time ---------------------> 6073587[0m
+[0m[ INFO] [1387208894.153283960]: 
+Desired position 1: 142 
+Desired position 2: 139 
+Desired position 3: 118 
+Desired position 4: 149 
+[0m
+[0m[ INFO] [1387208894.179608680]: 
+Actual position 1: 144 
+Actual position 2: 138 
+Actual position 3: 112 
+Actual position 4: 147 
+[0m
+sCurrentMust = 972
+sCurrentMust = -1555
+Moving...
+Moving...
+sCurrentMust = 351
+sCurrentMust = 208
+Moving...
+Moving...
+[0m[ INFO] [1387208894.289573120]: Still going to the desired position[0m
+[0m[ INFO] [1387208894.289673280]: time ---------------------> 6210087[0m
+[0m[ INFO] [1387208894.289748680]: 
+Desired position 1: 143 
+Desired position 2: 139 
+Desired position 3: 118 
+Desired position 4: 149 
+[0m
+[0m[ INFO] [1387208894.324106320]: 
+Actual position 1: 147 
+Actual position 2: 139 
+Actual position 3: 127 
+Actual position 4: 152 
+[0m
+sCurrentMust = 311
+sCurrentMust = -1781
+Moving...
+Moving...
+sCurrentMust = -3270
+sCurrentMust = 399
+Moving...
+Moving...
+[0m[ INFO] [1387208894.432928920]: Still going to the desired position[0m
+[0m[ INFO] [1387208894.433368920]: time ---------------------> 6353774[0m
+[0m[ INFO] [1387208894.433572800]: 
+Desired position 1: 143 
+Desired position 2: 140 
+Desired position 3: 119 
+Desired position 4: 150 
+[0m
+[0m[ INFO] [1387208894.461461200]: 
+Actual position 1: 147 
+Actual position 2: 139 
+Actual position 3: 124 
+Actual position 4: 163 
+[0m
+sCurrentMust = 294
+sCurrentMust = -1952
+Moving...
+Moving...
+sCurrentMust = -629
+sCurrentMust = 674
+Moving...
+Moving...
+[0m[ INFO] [1387208894.571374720]: Still going to the desired position[0m
+[0m[ INFO] [1387208894.571477120]: time ---------------------> 6491888[0m
+[0m[ INFO] [1387208894.571554960]: 
+Desired position 1: 144 
+Desired position 2: 140 
+Desired position 3: 120 
+Desired position 4: 150 
+[0m
+[0m[ INFO] [1387208894.597830960]: 
+Actual position 1: 147 
+Actual position 2: 139 
+Actual position 3: 122 
+Actual position 4: 152 
+[0m
+sCurrentMust = 429
+sCurrentMust = -1986
+Moving...
+Moving...
+sCurrentMust = 1243
+sCurrentMust = 734
+Moving...
+Moving...
+[0m[ INFO] [1387208894.722123920]: Still going to the desired position[0m
+[0m[ INFO] [1387208894.722229760]: time ---------------------> 6642640[0m
+[0m[ INFO] [1387208894.722527520]: 
+Desired position 1: 144 
+Desired position 2: 141 
+Desired position 3: 121 
+Desired position 4: 150 
+[0m
+[0m[ INFO] [1387208894.748770080]: 
+Actual position 1: 147 
+Actual position 2: 139 
+Actual position 3: 115 
+Actual position 4: 147 
+[0m
+sCurrentMust = 750
+sCurrentMust = -2170
+Moving...
+Moving...
+sCurrentMust = 2488
+sCurrentMust = 899
+Moving...
+Moving...
+[0m[ INFO] [1387208894.865786120]: Still going to the desired position[0m
+[0m[ INFO] [1387208894.865894080]: time ---------------------> 6786306[0m
+[0m[ INFO] [1387208894.865972200]: 
+Desired position 1: 144 
+Desired position 2: 141 
+Desired position 3: 121 
+Desired position 4: 151 
+[0m
+[0m[ INFO] [1387208894.892138000]: 
+Actual position 1: 147 
+Actual position 2: 139 
+Actual position 3: 119 
+Actual position 4: 150 
+[0m
+sCurrentMust = 1191
+sCurrentMust = -2228
+Moving...
+Moving...
+sCurrentMust = 75
+sCurrentMust = 894
+Moving...
+Moving...
+[0m[ INFO] [1387208895.006204360]: Still going to the desired position[0m
+[0m[ INFO] [1387208895.006799920]: time ---------------------> 6927201[0m
+[0m[ INFO] [1387208895.008054920]: 
+Desired position 1: 145 
+Desired position 2: 142 
+Desired position 3: 122 
+Desired position 4: 151 
+[0m
+[0m[ INFO] [1387208895.034844840]: 
+Actual position 1: 147 
+Actual position 2: 139 
+Actual position 3: 133 
+Actual position 4: 155 
+[0m
+sCurrentMust = 1591
+sCurrentMust = -2298
+Moving...
+Moving...
+sCurrentMust = -3286
+sCurrentMust = 610
+Moving...
+Moving...
+[0m[ INFO] [1387208895.144689000]: Still going to the desired position[0m
+[0m[ INFO] [1387208895.144791440]: time ---------------------> 7065203[0m
+[0m[ INFO] [1387208895.144865680]: 
+Desired position 1: 145 
+Desired position 2: 142 
+Desired position 3: 123 
+Desired position 4: 151 
+[0m
+[0m[ INFO] [1387208895.171046640]: 
+Actual position 1: 147 
+Actual position 2: 139 
+Actual position 3: 130 
+Actual position 4: 157 
+[0m
+sCurrentMust = 1989
+sCurrentMust = -2511
+Moving...
+Moving...
+sCurrentMust = -259
+sCurrentMust = 1274
+Moving...
+Moving...
+[0m[ INFO] [1387208895.278296360]: Still going to the desired position[0m
+[0m[ INFO] [1387208895.278393680]: time ---------------------> 7198807[0m
+[0m[ INFO] [1387208895.278472480]: 
+Desired position 1: 146 
+Desired position 2: 143 
+Desired position 3: 124 
+Desired position 4: 152 
+[0m
+[0m[ INFO] [1387208895.304808480]: 
+Actual position 1: 147 
+Actual position 2: 139 
+Actual position 3: 126 
+Actual position 4: 153 
+[0m
+sCurrentMust = 2124
+sCurrentMust = -2548
+Moving...
+Moving...
+sCurrentMust = 1454
+sCurrentMust = 886
+Moving...
+Moving...
+[0m[ INFO] [1387208895.424827360]: Still going to the desired position[0m
+[0m[ INFO] [1387208895.424933120]: time ---------------------> 7345346[0m
+[0m[ INFO] [1387208895.425020360]: 
+Desired position 1: 146 
+Desired position 2: 143 
+Desired position 3: 125 
+Desired position 4: 152 
+[0m
+[0m[ INFO] [1387208895.451185640]: 
+Actual position 1: 147 
+Actual position 2: 139 
+Actual position 3: 118 
+Actual position 4: 149 
+[0m
+sCurrentMust = 2490
+sCurrentMust = -2648
+Moving...
+Moving...
+sCurrentMust = 1618
+sCurrentMust = 1017
+Moving...
+Moving...
+[0m[ INFO] [1387208895.560700440]: Still going to the desired position[0m
+[0m[ INFO] [1387208895.560801600]: time ---------------------> 7481214[0m
+[0m[ INFO] [1387208895.560878520]: 
+Desired position 1: 147 
+Desired position 2: 144 
+Desired position 3: 125 
+Desired position 4: 153 
+[0m
+[0m[ INFO] [1387208895.587121920]: 
+Actual position 1: 148 
+Actual position 2: 139 
+Actual position 3: 128 
+Actual position 4: 155 
+[0m
+sCurrentMust = 2285
+sCurrentMust = -2729
+Moving...
+Moving...
+sCurrentMust = -1129
+sCurrentMust = -661
+Moving...
+Moving...
+[0m[ INFO] [1387208895.694098520]: Still going to the desired position[0m
+[0m[ INFO] [1387208895.694200320]: time ---------------------> 7614614[0m
+[0m[ INFO] [1387208895.694276000]: 
+Desired position 1: 147 
+Desired position 2: 144 
+Desired position 3: 126 
+Desired position 4: 153 
+[0m
+[0m[ INFO] [1387208895.726627280]: 
+Actual position 1: 151 
+Actual position 2: 142 
+Actual position 3: 141 
+Actual position 4: 159 
+[0m
+sCurrentMust = 998
+sCurrentMust = -1938
+Moving...
+Moving...
+sCurrentMust = -2275
+sCurrentMust = -676
+Moving...
+Moving...
+[0m[ INFO] [1387208895.838853080]: Still going to the desired position[0m
+[0m[ INFO] [1387208895.838954360]: time ---------------------> 7759367[0m
+[0m[ INFO] [1387208895.839034600]: 
+Desired position 1: 148 
+Desired position 2: 145 
+Desired position 3: 127 
+Desired position 4: 154 
+[0m
+[0m[ INFO] [1387208895.865437800]: 
+Actual position 1: 148 
+Actual position 2: 147 
+Actual position 3: 132 
+Actual position 4: 156 
+[0m
+sCurrentMust = 72
+sCurrentMust = -291
+Moving...
+Moving...
+sCurrentMust = 1302
+sCurrentMust = -401
+Moving...
+Moving...
+[0m[ INFO] [1387208895.976906760]: Still going to the desired position[0m
+[0m[ INFO] [1387208895.977005200]: time ---------------------> 7897417[0m
+[0m[ INFO] [1387208895.977081560]: 
+Desired position 1: 149 
+Desired position 2: 146 
+Desired position 3: 128 
+Desired position 4: 154 
+[0m
+[0m[ INFO] [1387208896.003335560]: 
+Actual position 1: 147 
+Actual position 2: 148 
+Actual position 3: 126 
+Actual position 4: 153 
+[0m
+sCurrentMust = 213
+sCurrentMust = 402
+Moving...
+Moving...
+sCurrentMust = 2305
+sCurrentMust = -58
+Moving...
+Moving...
+[0m[ INFO] [1387208896.120573240]: Still going to the desired position[0m
+[0m[ INFO] [1387208896.120682800]: time ---------------------> 8041093[0m
+[0m[ INFO] [1387208896.120759360]: 
+Desired position 1: 149 
+Desired position 2: 146 
+Desired position 3: 129 
+Desired position 4: 154 
+[0m
+[0m[ INFO] [1387208896.150106640]: 
+Actual position 1: 148 
+Actual position 2: 147 
+Actual position 3: 129 
+Actual position 4: 155 
+[0m
+sCurrentMust = 486
+sCurrentMust = -65
+Moving...
+Moving...
+sCurrentMust = -348
+sCurrentMust = -50
+Moving...
+Moving...
+[0m[ INFO] [1387208896.259214200]: Still going to the desired position[0m
+[0m[ INFO] [1387208896.259319560]: time ---------------------> 8179731[0m
+[0m[ INFO] [1387208896.259395360]: 
+Desired position 1: 150 
+Desired position 2: 147 
+Desired position 3: 130 
+Desired position 4: 155 
+[0m
+[0m[ INFO] [1387208896.285557600]: 
+Actual position 1: 152 
+Actual position 2: 145 
+Actual position 3: 143 
+Actual position 4: 161 
+[0m
+sCurrentMust = 877
+sCurrentMust = -1467
+Moving...
+Moving...
+sCurrentMust = -3249
+sCurrentMust = -202
+Moving...
+Moving...
+[0m[ INFO] [1387208896.397922200]: Still going to the desired position[0m
+[0m[ INFO] [1387208896.398022320]: time ---------------------> 8318435[0m
+[0m[ INFO] [1387208896.398102440]: 
+Desired position 1: 150 
+Desired position 2: 147 
+Desired position 3: 131 
+Desired position 4: 155 
+[0m
+[0m[ INFO] [1387208896.428302680]: 
+Actual position 1: 153 
+Actual position 2: 144 
+Actual position 3: 138 
+Actual position 4: 160 
+[0m
+sCurrentMust = 1266
+sCurrentMust = -2608
+Moving...
+Moving...
+sCurrentMust = 634
+sCurrentMust = 63
+Moving...
+Moving...
+[0m[ INFO] [1387208896.537255400]: Still going to the desired position[0m
+[0m[ INFO] [1387208896.537361480]: time ---------------------> 8457774[0m
+[0m[ INFO] [1387208896.537441880]: 
+Desired position 1: 151 
+Desired position 2: 148 
+Desired position 3: 132 
+Desired position 4: 156 
+[0m
+[0m[ INFO] [1387208896.565750280]: 
+Actual position 1: 154 
+Actual position 2: 145 
+Actual position 3: 133 
+Actual position 4: 157 
+[0m
+sCurrentMust = 1507
+sCurrentMust = -2814
+Moving...
+Moving...
+sCurrentMust = 1168
+sCurrentMust = -81
+Moving...
+Moving...
+[0m[ INFO] [1387208896.684306440]: Still going to the desired position[0m
+[0m[ INFO] [1387208896.684409360]: time ---------------------> 8604821[0m
+[0m[ INFO] [1387208896.684488240]: 
+Desired position 1: 151 
+Desired position 2: 149 
+Desired position 3: 133 
+Desired position 4: 156 
+[0m
+[0m[ INFO] [1387208896.710848880]: 
+Actual position 1: 154 
+Actual position 2: 145 
+Actual position 3: 130 
+Actual position 4: 155 
+[0m
+sCurrentMust = 1857
+sCurrentMust = -2709
+Moving...
+Moving...
+sCurrentMust = -245
+sCurrentMust = 216
+Moving...
+Moving...
+[0m[ INFO] [1387208896.823596440]: Still going to the desired position[0m
+[0m[ INFO] [1387208896.824006600]: time ---------------------> 8744413[0m
+[0m[ INFO] [1387208896.824221160]: 
+Desired position 1: 152 
+Desired position 2: 149 
+Desired position 3: 134 
+Desired position 4: 157 
+[0m
+[0m[ INFO] [1387208896.854151320]: 
+Actual position 1: 154 
+Actual position 2: 145 
+Actual position 3: 144 
+Actual position 4: 161 
+[0m
+sCurrentMust = 1858
+sCurrentMust = -2701
+Moving...
+Moving...
+sCurrentMust = -3023
+sCurrentMust = 32
+Moving...
+Moving...
+[0m[ INFO] [1387208896.963727720]: Still going to the desired position[0m
+[0m[ INFO] [1387208896.963832160]: time ---------------------> 8884243[0m
+[0m[ INFO] [1387208896.963915280]: 
+Desired position 1: 152 
+Desired position 2: 150 
+Desired position 3: 135 
+Desired position 4: 157 
+[0m
+[0m[ INFO] [1387208896.989865760]: 
+Actual position 1: 155 
+Actual position 2: 147 
+Actual position 3: 140 
+Actual position 4: 162 
+[0m
+sCurrentMust = 1673
+sCurrentMust = -2566
+Moving...
+Moving...
+sCurrentMust = 953
+sCurrentMust = 113
+Moving...
+Moving...
+[0m[ INFO] [1387208897.104020520]: Still going to the desired position[0m
+[0m[ INFO] [1387208897.104119920]: time ---------------------> 9024533[0m
+[0m[ INFO] [1387208897.104199480]: 
+Desired position 1: 153 
+Desired position 2: 151 
+Desired position 3: 136 
+Desired position 4: 158 
+[0m
+[0m[ INFO] [1387208897.134089240]: 
+Actual position 1: 156 
+Actual position 2: 149 
+Actual position 3: 135 
+Actual position 4: 157 
+[0m
+sCurrentMust = 909
+sCurrentMust = -1880
+Moving...
+Moving...
+sCurrentMust = 1437
+sCurrentMust = 152
+Moving...
+Moving...
+[0m[ INFO] [1387208897.254964320]: Still going to the desired position[0m
+[0m[ INFO] [1387208897.255069480]: time ---------------------> 9175483[0m
+[0m[ INFO] [1387208897.255149320]: 
+Desired position 1: 154 
+Desired position 2: 151 
+Desired position 3: 137 
+Desired position 4: 158 
+[0m
+[0m[ INFO] [1387208897.282104480]: 
+Actual position 1: 153 
+Actual position 2: 151 
+Actual position 3: 133 
+Actual position 4: 158 
+[0m
+sCurrentMust = 1107
+sCurrentMust = -1026
+Moving...
+Moving...
+sCurrentMust = -883
+sCurrentMust = 385
+Moving...
+Moving...
+[0m[ INFO] [1387208897.393625280]: Still going to the desired position[0m
+[0m[ INFO] [1387208897.393724040]: time ---------------------> 9314136[0m
+[0m[ INFO] [1387208897.393802880]: 
+Desired position 1: 154 
+Desired position 2: 152 
+Desired position 3: 138 
+Desired position 4: 159 
+[0m
+[0m[ INFO] [1387208897.422631800]: 
+Actual position 1: 153 
+Actual position 2: 151 
+Actual position 3: 152 
+Actual position 4: 165 
+[0m
+sCurrentMust = 1439
+sCurrentMust = -1135
+Moving...
+Moving...
+sCurrentMust = -2726
+sCurrentMust = 300
+Moving...
+Moving...
+[0m[ INFO] [1387208897.531438480]: Still going to the desired position[0m
+[0m[ INFO] [1387208897.531545560]: time ---------------------> 9451956[0m
+[0m[ INFO] [1387208897.531623920]: 
+Desired position 1: 155 
+Desired position 2: 153 
+Desired position 3: 138 
+Desired position 4: 159 
+[0m
+[0m[ INFO] [1387208897.558287040]: 
+Actual position 1: 153 
+Actual position 2: 151 
+Actual position 3: 144 
+Actual position 4: 163 
+[0m
+sCurrentMust = 1893
+sCurrentMust = -1247
+Moving...
+Moving...
+sCurrentMust = 1106
+sCurrentMust = 372
+Moving...
+Moving...
+[0m[ INFO] [1387208897.667445440]: Still going to the desired position[0m
+[0m[ INFO] [1387208897.667548720]: time ---------------------> 9587961[0m
+[0m[ INFO] [1387208897.667626080]: 
+Desired position 1: 155 
+Desired position 2: 153 
+Desired position 3: 139 
+Desired position 4: 160 
+[0m
+[0m[ INFO] [1387208897.694168880]: 
+Actual position 1: 153 
+Actual position 2: 151 
+Actual position 3: 138 
+Actual position 4: 159 
+[0m
+sCurrentMust = 2082
+sCurrentMust = -1366
+Moving...
+Moving...
+sCurrentMust = 1864
+sCurrentMust = 708
+Moving...
+Moving...
+[0m[ INFO] [1387208897.804127320]: Still going to the desired position[0m
+[0m[ INFO] [1387208897.804221240]: time ---------------------> 9724635[0m
+[0m[ INFO] [1387208897.804297680]: 
+Desired position 1: 156 
+Desired position 2: 154 
+Desired position 3: 140 
+Desired position 4: 160 
+[0m
+[0m[ INFO] [1387208897.832594520]: 
+Actual position 1: 153 
+Actual position 2: 151 
+Actual position 3: 139 
+Actual position 4: 160 
+[0m
+sCurrentMust = 2350
+sCurrentMust = -1473
+Moving...
+Moving...
+sCurrentMust = 149
+sCurrentMust = 761
+Moving...
+Moving...
+[0m[ INFO] [1387208897.944772480]: Still going to the desired position[0m
+[0m[ INFO] [1387208897.944881640]: time ---------------------> 9865294[0m
+[0m[ INFO] [1387208897.944967120]: 
+Desired position 1: 157 
+Desired position 2: 154 
+Desired position 3: 141 
+Desired position 4: 161 
+[0m
+[0m[ INFO] [1387208897.970991600]: 
+Actual position 1: 153 
+Actual position 2: 151 
+Actual position 3: 154 
+Actual position 4: 166 
+[0m
+sCurrentMust = 2705
+sCurrentMust = -1570
+Moving...
+Moving...
+sCurrentMust = -3421
+sCurrentMust = 564
+Moving...
+Moving...
+[0m[ INFO] [1387208898.078634600]: Still going to the desired position[0m
+[0m[ INFO] [1387208898.078735040]: time ---------------------> 9999147[0m
+[0m[ INFO] [1387208898.078820360]: 
+Desired position 1: 157 
+Desired position 2: 155 
+Desired position 3: 142 
+Desired position 4: 161 
+[0m
+[0m[ INFO] [1387208898.104889200]: 
+Actual position 1: 153 
+Actual position 2: 151 
+Actual position 3: 152 
+Actual position 4: 165 
+[0m
+sCurrentMust = 2984
+sCurrentMust = -1721
+Moving...
+Moving...
+sCurrentMust = -178
+sCurrentMust = 857
+Moving...
+Moving...
+[0m[ INFO] [1387208898.215835280]: Still going to the desired position[0m
+[0m[ INFO] [1387208898.216285280]: time ---------------------> 10136690[0m
+[0m[ INFO] [1387208898.216516360]: 
+Desired position 1: 158 
+Desired position 2: 156 
+Desired position 3: 143 
+Desired position 4: 162 
+[0m
+[0m[ INFO] [1387208898.252872800]: 
+Actual position 1: 155 
+Actual position 2: 152 
+Actual position 3: 145 
+Actual position 4: 162 
+[0m
+sCurrentMust = 2634
+sCurrentMust = -1630
+Moving...
+Moving...
+sCurrentMust = 1269
+sCurrentMust = 487
+Moving...
+Moving...
+[0m[ INFO] [1387208898.365752080]: Still going to the desired position[0m
+[0m[ INFO] [1387208898.365852480]: time ---------------------> 10286266[0m
+[0m[ INFO] [1387208898.365927760]: 
+Desired position 1: 158 
+Desired position 2: 156 
+Desired position 3: 144 
+Desired position 4: 162 
+[0m
+[0m[ INFO] [1387208898.392103240]: 
+Actual position 1: 159 
+Actual position 2: 155 
+Actual position 3: 138 
+Actual position 4: 159 
+[0m
+sCurrentMust = 1386
+sCurrentMust = -1406
+Moving...
+Moving...
+sCurrentMust = 1731
+sCurrentMust = 865
+Moving...
+Moving...
+[0m[ INFO] [1387208898.511037040]: Still going to the desired position[0m
+[0m[ INFO] [1387208898.511138160]: time ---------------------> 10431551[0m
+[0m[ INFO] [1387208898.511214280]: 
+Desired position 1: 159 
+Desired position 2: 157 
+Desired position 3: 145 
+Desired position 4: 163 
+[0m
+[0m[ INFO] [1387208898.541030160]: 
+Actual position 1: 161 
+Actual position 2: 157 
+Actual position 3: 147 
+Actual position 4: 164 
+[0m
+sCurrentMust = 746
+sCurrentMust = -1314
+Moving...
+Moving...
+sCurrentMust = -1578
+sCurrentMust = 912
+Moving...
+Moving...
+[0m[ INFO] [1387208898.664953880]: Still going to the desired position[0m
+[0m[ INFO] [1387208898.665061240]: time ---------------------> 10585473[0m
+[0m[ INFO] [1387208898.665143960]: 
+Desired position 1: 160 
+Desired position 2: 158 
+Desired position 3: 146 
+Desired position 4: 163 
+[0m
+[0m[ INFO] [1387208898.691430120]: 
+Actual position 1: 160 
+Actual position 2: 157 
+Actual position 3: 160 
+Actual position 4: 170 
+[0m
+sCurrentMust = 1122
+sCurrentMust = -1408
+Moving...
+Moving...
+sCurrentMust = -2476
+sCurrentMust = -515
+Moving...
+Moving...
+[0m[ INFO] [1387208898.802793240]: Still going to the desired position[0m
+[0m[ INFO] [1387208898.802892720]: time ---------------------> 10723305[0m
+[0m[ INFO] [1387208898.802970320]: 
+Desired position 1: 160 
+Desired position 2: 158 
+Desired position 3: 147 
+Desired position 4: 164 
+[0m
+[0m[ INFO] [1387208898.831429280]: 
+Actual position 1: 160 
+Actual position 2: 157 
+Actual position 3: 150 
+Actual position 4: 165 
+[0m
+sCurrentMust = 1430
+sCurrentMust = -1561
+Moving...
+Moving...
+sCurrentMust = 2098
+sCurrentMust = -742
+Moving...
+Moving...
+[0m[ INFO] [1387208898.947432840]: Still going to the desired position[0m
+[0m[ INFO] [1387208898.947849640]: time ---------------------> 10868256[0m
+[0m[ INFO] [1387208898.948055120]: 
+Desired position 1: 161 
+Desired position 2: 159 
+Desired position 3: 148 
+Desired position 4: 164 
+[0m
+[0m[ INFO] [1387208898.974746760]: 
+Actual position 1: 160 
+Actual position 2: 157 
+Actual position 3: 140 
+Actual position 4: 161 
+[0m
+sCurrentMust = 1729
+sCurrentMust = -1659
+Moving...
+Moving...
+sCurrentMust = 1489
+sCurrentMust = -714
+Moving...
+Moving...
+[0m[ INFO] [1387208899.090643760]: Still going to the desired position[0m
+[0m[ INFO] [1387208899.090745920]: time ---------------------> 11011160[0m
+[0m[ INFO] [1387208899.090828440]: 
+Desired position 1: 161 
+Desired position 2: 160 
+Desired position 3: 149 
+Desired position 4: 165 
+[0m
+[0m[ INFO] [1387208899.117181120]: 
+Actual position 1: 161 
+Actual position 2: 157 
+Actual position 3: 148 
+Actual position 4: 165 
+[0m
+sCurrentMust = 2147
+sCurrentMust = -1819
+Moving...
+Moving...
+sCurrentMust = -1000
+sCurrentMust = -220
+Moving...
+Moving...
+[0m[ INFO] [1387208899.225951560]: Still going to the desired position[0m
+[0m[ INFO] [1387208899.226053920]: time ---------------------> 11146467[0m
+[0m[ INFO] [1387208899.226126840]: 
+Desired position 1: 162 
+Desired position 2: 160 
+Desired position 3: 150 
+Desired position 4: 165 
+[0m
+[0m[ INFO] [1387208899.259129640]: 
+Actual position 1: 161 
+Actual position 2: 157 
+Actual position 3: 165 
+Actual position 4: 172 
+[0m
+sCurrentMust = 2405
+sCurrentMust = -1922
+Moving...
+Moving...
+sCurrentMust = -2757
+sCurrentMust = -253
+Moving...
+Moving...
+[0m[ INFO] [1387208899.370452200]: Still going to the desired position[0m
+[0m[ INFO] [1387208899.370559760]: time ---------------------> 11290972[0m
+[0m[ INFO] [1387208899.370636720]: 
+Desired position 1: 162 
+Desired position 2: 161 
+Desired position 3: 151 
+Desired position 4: 165 
+[0m
+[0m[ INFO] [1387208899.396989520]: 
+Actual position 1: 161 
+Actual position 2: 157 
+Actual position 3: 154 
+Actual position 4: 168 
+[0m
+sCurrentMust = 2729
+sCurrentMust = -2049
+Moving...
+Moving...
+sCurrentMust = 1396
+sCurrentMust = -463
+Moving...
+Moving...
+[0m[ INFO] [1387208899.504947280]: Still going to the desired position[0m
+[0m[ INFO] [1387208899.505049040]: time ---------------------> 11425461[0m
+[0m[ INFO] [1387208899.505123760]: 
+Desired position 1: 163 
+Desired position 2: 161 
+Desired position 3: 152 
+Desired position 4: 166 
+[0m
+[0m[ INFO] [1387208899.537791040]: 
+Actual position 1: 161 
+Actual position 2: 157 
+Actual position 3: 150 
+Actual position 4: 165 
+[0m
+sCurrentMust = 2967
+sCurrentMust = -2164
+Moving...
+Moving...
+sCurrentMust = 2343
+sCurrentMust = 87
+Moving...
+Moving...
+[0m[ INFO] [1387208899.652925440]: Still going to the desired position[0m
+[0m[ INFO] [1387208899.653364200]: time ---------------------> 11573770[0m
+[0m[ INFO] [1387208899.653600720]: 
+Desired position 1: 164 
+Desired position 2: 162 
+Desired position 3: 153 
+Desired position 4: 166 
+[0m
+[0m[ INFO] [1387208899.679832400]: 
+Actual position 1: 162 
+Actual position 2: 158 
+Actual position 3: 155 
+Actual position 4: 166 
+[0m
+sCurrentMust = 2753
+sCurrentMust = -2203
+Moving...
+Moving...
+sCurrentMust = -641
+sCurrentMust = -189
+Moving...
+Moving...
+[0m[ INFO] [1387208899.797767600]: Still going to the desired position[0m
+[0m[ INFO] [1387208899.797868880]: time ---------------------> 11718282[0m
+[0m[ INFO] [1387208899.797945840]: 
+Desired position 1: 164 
+Desired position 2: 163 
+Desired position 3: 154 
+Desired position 4: 167 
+[0m
+[0m[ INFO] [1387208899.824117600]: 
+Actual position 1: 163 
+Actual position 2: 161 
+Actual position 3: 170 
+Actual position 4: 174 
+[0m
+sCurrentMust = 1407
+sCurrentMust = -1026
+Moving...
+Moving...
+sCurrentMust = -3262
+sCurrentMust = -341
+Moving...
+Moving...
+[0m[ INFO] [1387208899.934147800]: Still going to the desired position[0m
+[0m[ INFO] [1387208899.934585240]: time ---------------------> 11854992[0m
+[0m[ INFO] [1387208899.934791360]: 
+Desired position 1: 165 
+Desired position 2: 163 
+Desired position 3: 155 
+Desired position 4: 167 
+[0m
+[0m[ INFO] [1387208899.965090560]: 
+Actual position 1: 161 
+Actual position 2: 166 
+Actual position 3: 163 
+Actual position 4: 171 
+[0m
+sCurrentMust = 661
+sCurrentMust = 1045
+Moving...
+Moving...
+sCurrentMust = 796
+sCurrentMust = -373
+Moving...
+Moving...
+[0m[ INFO] [1387208900.076897160]: Still going to the desired position[0m
+[0m[ INFO] [1387208900.077004000]: time ---------------------> 11997415[0m
+[0m[ INFO] [1387208900.077081760]: 
+Desired position 1: 165 
+Desired position 2: 164 
+Desired position 3: 156 
+Desired position 4: 168 
+[0m
+[0m[ INFO] [1387208900.103490760]: 
+Actual position 1: 162 
+Actual position 2: 166 
+Actual position 3: 156 
+Actual position 4: 167 
+[0m
+sCurrentMust = 725
+sCurrentMust = 808
+Moving...
+Moving...
+sCurrentMust = 1454
+sCurrentMust = -227
+Moving...
+Moving...
+[0m[ INFO] [1387208900.214465440]: Still going to the desired position[0m
+[0m[ INFO] [1387208900.214565720]: time ---------------------> 12134978[0m
+[0m[ INFO] [1387208900.214645840]: 
+Desired position 1: 166 
+Desired position 2: 165 
+Desired position 3: 157 
+Desired position 4: 168 
+[0m
+[0m[ INFO] [1387208900.244866640]: 
+Actual position 1: 170 
+Actual position 2: 163 
+Actual position 3: 153 
+Actual position 4: 167 
+[0m
+sCurrentMust = 957
+sCurrentMust = -1720
+Moving...
+Moving...
+sCurrentMust = 25
+sCurrentMust = -318
+Moving...
+Moving...
+[0m[ INFO] [1387208900.356761120]: Still going to the desired position[0m
+[0m[ INFO] [1387208900.356865640]: time ---------------------> 12277277[0m
+[0m[ INFO] [1387208900.356940440]: 
+Desired position 1: 166 
+Desired position 2: 165 
+Desired position 3: 158 
+Desired position 4: 169 
+[0m
+[0m[ INFO] [1387208900.383871640]: 
+Actual position 1: 173 
+Actual position 2: 161 
+Actual position 3: 170 
+Actual position 4: 174 
+[0m
+sCurrentMust = 1449
+sCurrentMust = -3699
+Moving...
+Moving...
+sCurrentMust = -3342
+sCurrentMust = -529
+Moving...
+Moving...
+[0m[ INFO] [1387208900.494270320]: Still going to the desired position[0m
+[0m[ INFO] [1387208900.494373120]: time ---------------------> 12414786[0m
+[0m[ INFO] [1387208900.494449720]: 
+Desired position 1: 167 
+Desired position 2: 166 
+Desired position 3: 158 
+Desired position 4: 169 
+[0m
+[0m[ INFO] [1387208900.520643360]: 
+Actual position 1: 180 
+Actual position 2: 161 
+Actual position 3: 166 
+Actual position 4: 173 
+[0m
+sCurrentMust = 257
+sCurrentMust = -3890
+Moving...
+Moving...
+sCurrentMust = 688
+sCurrentMust = -560
+Moving...
+Moving...
+[0m[ INFO] [1387208900.630185560]: Still going to the desired position[0m
+[0m[ INFO] [1387208900.630292520]: time ---------------------> 12550704[0m
+[0m[ INFO] [1387208900.630364640]: 
+Desired position 1: 167 
+Desired position 2: 166 
+Desired position 3: 159 
+Desired position 4: 169 
+[0m
+[0m[ INFO] [1387208900.661522160]: 
+Actual position 1: 171 
+Actual position 2: 165 
+Actual position 3: 162 
+Actual position 4: 170 
+[0m
+sCurrentMust = -182
+sCurrentMust = -2043
+Moving...
+Moving...
+sCurrentMust = 680
+sCurrentMust = -354
+Moving...
+Moving...
+[0m[ INFO] [1387208900.776784600]: Still going to the desired position[0m
+[0m[ INFO] [1387208900.776887720]: time ---------------------> 12697300[0m
+[0m[ INFO] [1387208900.776964440]: 
+Desired position 1: 168 
+Desired position 2: 167 
+Desired position 3: 160 
+Desired position 4: 170 
+[0m
+[0m[ INFO] [1387208900.803225200]: 
+Actual position 1: 154 
+Actual position 2: 171 
+Actual position 3: 161 
+Actual position 4: 170 
+[0m
+sCurrentMust = 596
+sCurrentMust = 3151
+Moving...
+Moving...
+sCurrentMust = -390
+sCurrentMust = -354
+Moving...
+Moving...
+[0m[ INFO] [1387208900.913371600]: Still going to the desired position[0m
+[0m[ INFO] [1387208900.913470920]: time ---------------------> 12833883[0m
+[0m[ INFO] [1387208900.913545600]: 
+Desired position 1: 168 
+Desired position 2: 167 
+Desired position 3: 161 
+Desired position 4: 170 
+[0m
+[0m[ INFO] [1387208900.942751120]: 
+Actual position 1: 155 
+Actual position 2: 173 
+Actual position 3: 171 
+Actual position 4: 174 
+[0m
+sCurrentMust = 1380
+sCurrentMust = 3377
+Moving...
+Moving...
+sCurrentMust = -1962
+sCurrentMust = -620
+Moving...
+Moving...
+[0m[ INFO] [1387208901.058024840]: Still going to the desired position[0m
+[0m[ INFO] [1387208901.058122400]: time ---------------------> 12978537[0m
+[0m[ INFO] [1387208901.058197200]: 
+Desired position 1: 169 
+Desired position 2: 168 
+Desired position 3: 162 
+Desired position 4: 171 
+[0m
+[0m[ INFO] [1387208901.084271840]: 
+Actual position 1: 156 
+Actual position 2: 170 
+Actual position 3: 158 
+Actual position 4: 172 
+[0m
+sCurrentMust = 3206
+sCurrentMust = 3201
+Moving...
+Moving...
+sCurrentMust = 555
+sCurrentMust = -859
+Moving...
+Moving...
+[0m[ INFO] [1387208901.197380080]: Still going to the desired position[0m
+[0m[ INFO] [1387208901.197477720]: time ---------------------> 13117891[0m
+[0m[ INFO] [1387208901.197556000]: 
+Desired position 1: 169 
+Desired position 2: 168 
+Desired position 3: 163 
+Desired position 4: 171 
+[0m
+[0m[ INFO] [1387208901.223705280]: 
+Actual position 1: 172 
+Actual position 2: 164 
+Actual position 3: 158 
+Actual position 4: 168 
+[0m
+sCurrentMust = 2356
+sCurrentMust = -2069
+Moving...
+Moving...
+sCurrentMust = 1973
+sCurrentMust = -780
+Moving...
+Moving...
+[0m[ INFO] [1387208901.338082320]: Still going to the desired position[0m
+[0m[ INFO] [1387208901.338485320]: time ---------------------> 13258890[0m
+[0m[ INFO] [1387208901.338698920]: 
+Desired position 1: 170 
+Desired position 2: 169 
+Desired position 3: 163 
+Desired position 4: 172 
+[0m
+[0m[ INFO] [1387208901.365465320]: 
+Actual position 1: 193 
+Actual position 2: 156 
+Actual position 3: 148 
+Actual position 4: 165 
+[0m
+sCurrentMust = 1661
+sCurrentMust = -3890
+Moving...
+Moving...
+sCurrentMust = 1616
+sCurrentMust = -760
+Moving...
+Moving...
+[0m[ INFO] [1387208901.481630920]: Still going to the desired position[0m
+[0m[ INFO] [1387208901.481737720]: time ---------------------> 13402148[0m
+[0m[ INFO] [1387208901.481817400]: 
+Desired position 1: 170 
+Desired position 2: 169 
+Desired position 3: 164 
+Desired position 4: 172 
+[0m
+[0m[ INFO] [1387208901.513078960]: 
+Actual position 1: 204 
+Actual position 2: 158 
+Actual position 3: 165 
+Actual position 4: 173 
+[0m
+sCurrentMust = -1012
+sCurrentMust = -3890
+Moving...
+Moving...
+sCurrentMust = -1058
+sCurrentMust = -666
+Moving...
+Moving...
+[0m[ INFO] [1387208901.622537160]: Still going to the desired position[0m
+[0m[ INFO] [1387208901.622639000]: time ---------------------> 13543050[0m
+[0m[ INFO] [1387208901.622716680]: 
+Desired position 1: 171 
+Desired position 2: 170 
+Desired position 3: 165 
+Desired position 4: 172 
+[0m
+[0m[ INFO] [1387208901.661857400]: 
+Actual position 1: 197 
+Actual position 2: 164 
+Actual position 3: 182 
+Actual position 4: 180 
+[0m
+sCurrentMust = -2703
+sCurrentMust = -3890
+Moving...
+Moving...
+sCurrentMust = -1937
+sCurrentMust = -1721
+Moving...
+Moving...
+sCurrentMust = 172
+sCurrentMust = -1439
+Moving...
+Moving...
+sCurrentMust = -807
+sCurrentMust = -882
+Moving...
+Moving...
+ModuleState = CONNECTED
+ModuleState = CONNECTED
+ModuleState = CONNECTED
+... logging to /home/rsk-sa/.ros/log/74d1cfc6-6669-11e3-80d5-001d09093f81/roslaunch-agenor-19911.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/opt/ros/groovy/stacks/ros_pkg_tutorials/isella3/isella3.launch
+[1mstarted roslaunch server http://agenor:48407/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /desired_position1
+ * /desired_position2
+ * /desired_position3
+ * /desired_position4
+ * /pid_parameters/d
+ * /pid_parameters/i
+ * /pid_parameters/i_clamp
+ * /pid_parameters/p
+ * /root_name
+ * /rosdistro
+ * /rosversion
+ * /tip_name
+ * /type
+
+NODES
+  /
+    isella (isella3/my_controller_exe)
+
+auto-starting new master
+[1mprocess[master]: started with pid [19925][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/opt/ros/groovy/stacks/ros_pkg_tutorials/isella3/isella3.launch http://localhost:11311
+[1msetting /run_id to 74d1cfc6-6669-11e3-80d5-001d09093f81[0m
+[1mprocess[rosout-1]: started with pid [19938][0m
+started core service [/rosout]
+[1mprocess[isella-2]: started with pid [19950][0m
+[isella-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

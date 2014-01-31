@@ -1,0 +1,20 @@
+<package>
+  <description brief="isella3">
+
+     isella3
+
+  </description>
+  <author>rsk-sa</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/isella3</url>
+  <depend package="pluginlib"/>
+  <depend package="actionlib"/>
+  <depend package="roscpp"/>
+  <depend package="EposManager"/>
+  <depend package="std_srvs"/>
+  <build_depend>message_generation</build_depend>
+  <run_depend>message_runtime</run_depend>
+</package>
+
+

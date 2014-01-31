@@ -1,0 +1,4 @@
+isella3_cart:
+  type: MyCartControllerPlugin
+  root_name: module1.1
+  tip_name: module2.2

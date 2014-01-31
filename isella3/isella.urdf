@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<robot name="isella">
+	<link name="base_link">
+		<visual>
+			<geometry>
+				<box size=".07 .07 .450"/>
+			</geometry>
+			<material name="blue">
+        			<color rgba="0 0 .8 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<box size=".07 .07 .450"/>
+			</geometry>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+		</collision>
+		<inertial>
+      			<mass value="10"/>
+		        <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+			         iyy="1.0" iyz="0.0"
+			         izz="1.0"/>
+		</inertial>
+	</link>
+
+	<joint name="base_to_module1.1" type="fixed">
+		<parent link="base_link"/>
+		<child link="module1.1"/>
+		<origin xyz="0 .037 .197"/>
+	</joint>
+
+	<link name="module1.1">
+		<visual>
+			<geometry>
+				<box size=".104 .09 .35"/>
+			</geometry>
+			<origin xyz="0 .047 .131" rpy="0 0 0"/>
+			<material name="grey">
+				<color rgba=".6 .6 .6 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<box size=".104 .09 .35"/>
+			</geometry>
+			<origin xyz="0 .047 .131" rpy="0 0 0"/>
+		</collision>
+		<inertial>
+      			<mass value="10"/>
+		        <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+			         iyy="1.0" iyz="0.0"
+			         izz="1.0"/>
+		</inertial>
+	</link>
+	
+	<joint name="mod1.1_to_mod1.2" type="revolute">
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+		<origin rpy="0 -1.57 3.14" xyz="0 .045 .308"/>
+		<parent link="module1.1"/>
+		<child link="module1.2"/>
+	</joint>
+	
+	<link name="module1.2">
+		<visual>
+			<geometry>
+				<box size=".116 .114 .115"/>
+			</geometry>
+			<origin xyz=".059 0 0" rpy="0 0 0"/>
+			<material name="grey"/>
+		</visual>
+		<collision>
+			<geometry>
+				<box size=".116 .114 .115"/>
+			</geometry>
+			<origin xyz=".059 0 0" rpy="0 0 0"/>
+		</collision>
+		<inertial>
+      			<mass value="10"/>
+		        <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+			         iyy="1.0" iyz="0.0"
+			         izz="1.0"/>
+		</inertial>
+	</link>
+	
+	<joint name="mod1.2_to_mod2.1" type="revolute">
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+		<origin rpy="-1.57 0 -1.57" xyz=".118 0 0"/>
+		<parent link="module1.2"/>
+		<child link="module2.1"/>
+	</joint>
+
+	<link name="module2.1">
+		<visual>
+			<geometry>
+				<box size=".35 .104 .09"/>
+			</geometry>
+			<origin xyz=".131 0 .045" rpy="0 0 0"/>
+			<material name="grey"/>
+		</visual>
+		<collision>
+			<geometry>
+				<box size=".35 .104 .09"/>
+			</geometry>
+			<origin xyz=".131 0 .045" rpy="0 0 0"/>
+		</collision>
+		<inertial>
+      			<mass value="10"/>
+		        <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+			         iyy="1.0" iyz="0.0"
+			         izz="1.0"/>
+		</inertial>
+	</link>
+
+	<joint name="mod2.1_to_mod2.2" type="revolute">
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+		<origin rpy="1.57 0 0" xyz=".308 0 .045"/>
+		<parent link="module2.1"/>
+		<child link="module2.2"/>
+	</joint>
+
+	<link name="module2.2">
+		<visual>
+			<geometry>
+				<box size=".116 .114 .115"/>
+			</geometry>
+			<origin xyz=".051 0 0" rpy="0 0 0"/>
+			<material name="grey"/>
+		</visual>
+		<collision>
+			<geometry>
+				<box size=".116 .114 .115"/>
+			</geometry>
+			<origin xyz=".051 0 0" rpy="0 0 0"/>
+		</collision>
+		<inertial>
+      			<mass value="10"/>
+		        <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+			         iyy="1.0" iyz="0.0"
+			         izz="1.0"/>
+		</inertial>
+	</link>
+
+	<joint name="mod2.2_to_gripper" type="revolute">
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+		<origin rpy="0 1.57 0" xyz=".118 0 0"/>
+		<parent link="module2.2"/>
+		<child link="gripper" />
+	</joint>
+
+	<link name="gripper">
+		<visual>
+			<geometry>
+				<box size=".084 .144 .166"/>
+			</geometry>
+			<origin xyz="0 0 .083" rpy="0 0 0"/>
+			<material name="blue"/>
+		</visual>
+		<collision>
+			<geometry>
+				<box size=".084 .144 .166"/>
+			</geometry>
+			<origin xyz="0 0 .083" rpy="0 0 0"/>
+		</collision>
+		<inertial>
+      			<mass value=".57"/>
+		        <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+			         iyy="1.0" iyz="0.0"
+			         izz="1.0"/>
+		</inertial>
+	</link>
+
+</robot>

@@ -1,0 +1,759 @@
+/************************************************************************
+Fraunhofer IPA, 2011
+ISELLA3 - ArmModule 
+
+Author: Attila Achenbach, email: attila.achenbach@googlemail.com
+************************************************************************/
+
+// ISELLA3 ArmModule.cpp : Defines the class behaviors for the arm module.
+//
+// This file defines the behavior of the different components of the object
+// ArmModule by defining their functions.
+
+// Includes added by AA
+#include <iostream>
+#include "ISELLA3_ArmModule.h" // for the object ArmModule and components
+#include "Definitions.h" // for using the Maxon Motor Control EPOS library
+
+//
+//
+// CMotorController
+
+// Getter: Get NodeId
+unsigned short CMotorController::wGetNodeId()
+{
+	return this->wNodeId;
+}
+
+// Setter: Set NodeId
+void CMotorController::SetNodeId(unsigned short wValue)
+{
+	this->wNodeId = wValue;
+}
+
+// Getter: Get ErrorCode
+unsigned int CMotorController::dwGetErrorCode()
+{
+	return this->dwErrorCode;
+}
+
+// Getter: Get OpMode
+char CMotorController::i8GetOpMode()
+{
+	// Return i8OpMode
+	return this->i8OpMode;
+}
+
+// Update and get OpMode
+char CMotorController::i8UpdateOpMode(void* hKeyHandle)
+{
+	// Update i8OpMode
+	try
+	{
+		if (!VCS_GetOperationMode(hKeyHandle,this->wNodeId,&this->i8OpMode,&this->dwErrorCode)) throw this->dwErrorCode;
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CMotorController::i8GetOpMode..." << std::endl;
+		throw;
+	}
+	// Return i8OpMode
+	return this->i8OpMode;
+}
+
+//InitState created by SA
+void CMotorController::InitState(unsigned short wValue)
+{
+	this->wState = wValue;
+}
+
+// Getter: Get Motor Controller State (0x0000: Disable State, 0x0001: Enable State, 0x0002: Quickstop State, 0x0003: Fault State)
+unsigned short CMotorController::wGetState()
+{
+	switch(this->wState)
+	{
+		case 0x0000 : // Disable State
+			// Set ArmModuleState to CONNECTED
+			this->e_ModuleState = CONNECTED;
+			break;
+		case 0x0001 : // Enable State
+			// Set ArmModuleState to CONNECTED
+			if (this->e_ModuleState != MOVING) this->e_ModuleState = READY;
+			break;
+		case 0x0002 : // Quickstop State
+			// Set ArmModuleState to CONNECTED
+			this->e_ModuleState = CONNECTED;
+			break;
+		case 0x0003 : // Fault State
+			// Set ArmModuleState to CONNECTED
+			this->e_ModuleState = CONNECTED;
+			break;
+		default :
+			// Set ArmModuleState to NOT_CONNECTED
+			this->e_ModuleState = NOT_CONNECTED;
+			break;
+	}
+	return this->wState;
+}
+
+// Update and get Motor Controller State (0x0000: Disable State, 0x0001: Enable State, 0x0002: Quickstop State, 0x0003: Fault State)
+unsigned short CMotorController::wUpdateState(void* hKeyHandle)
+{
+	if(!VCS_GetState(hKeyHandle,this->wNodeId,&this->wState,&this->dwErrorCode)) throw this->dwErrorCode;
+	switch(this->wState)
+	{
+		case 0x0000 : // Disable State
+			// Set ArmModuleState to CONNECTED
+			this->e_ModuleState = CONNECTED;
+			break;
+		case 0x0001 : // Enable State
+			// Set ArmModuleState to CONNECTED
+			if (this->e_ModuleState != MOVING) this->e_ModuleState = READY;
+			break;
+		case 0x0002 : // Quickstop State
+			// Set ArmModuleState to CONNECTED
+			this->e_ModuleState = CONNECTED;
+			break;
+		case 0x0003 : // Fault State
+			// Set ArmModuleState to CONNECTED
+			this->e_ModuleState = CONNECTED;
+			break;
+		default :
+			// Set ArmModuleState to NOT_CONNECTED
+			this->e_ModuleState = NOT_CONNECTED;
+			break;
+	}
+	return this->wState;
+}
+
+// Enable Motor Controller (+Clear Errors)
+void CMotorController::Enable(void* hKeyHandle)
+{
+	try
+	{
+		// Check State
+		if(!VCS_GetState(hKeyHandle,this->wNodeId,&this->wState,&this->dwErrorCode)) throw this->dwErrorCode;
+		switch(this->wState)
+		{
+			case 0x0001 : // Enable State
+				break;
+			case 0x0003 : // Fault State
+				// Clear previous faults
+				if(!VCS_ClearFault(hKeyHandle,this->wNodeId,&this->dwErrorCode)) throw this->dwErrorCode;
+				else
+				{
+					this->wState = 0x0000;
+					// Set ArmModuleState to CONNECTED
+					this->e_ModuleState = CONNECTED;
+				}
+				break;
+			case 0x0000 : // Disable State
+			case 0x0002 : // Quickstop State
+		// Set Enable State
+				if(!VCS_SetEnableState(hKeyHandle,this->wNodeId,&this->dwErrorCode)) throw this->dwErrorCode;
+				else
+				{
+					// Set State variable to ENABLED
+					this->wState = 0x0001;
+					// Set ArmModuleState to READY
+					this->e_ModuleState = READY;
+				}
+				break;
+			default :
+				this->dwErrorCode = 0xA0000000; // Unknown Error
+				// Set ArmModuleState to EXCEPTION
+				this->e_ModuleState = EXCEPTION;
+				throw this->dwErrorCode;
+		}
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CMotorController::Enable..." << std::endl;
+		throw;
+	}
+}
+
+// Disable Motor Controller
+void CMotorController::Disable(void* hKeyHandle)
+{
+	try
+	{
+		// Check State
+		if(!VCS_GetState(hKeyHandle,this->wNodeId,&this->wState,&this->dwErrorCode))
+		{
+			std::cout << "Cannot get state: KeyHandle " << hKeyHandle << " NodeId " << this->wNodeId << " State " << this->wState << " ErrorCode " << this->dwErrorCode << endl;
+			throw this->dwErrorCode;
+		}
+		switch(this->wState)
+		{
+			case 0x0000 : // Disable State
+				break;
+			case 0x0003 : // Fault State
+				// Clear previous faults
+				if(!VCS_ClearFault(hKeyHandle,this->wNodeId,&this->dwErrorCode)) 
+				{
+					std::cout << "Cannot clear fault" << endl;
+					throw this->dwErrorCode;
+				}
+				else
+				{
+					this->wState = 0x0000;
+					// Set ModuleState to CONNECTED
+					this->e_ModuleState = CONNECTED;
+					std::cout << "ModuleState = CONNECTED" << endl;
+				}
+				break;
+			case 0x0001 : // Enable State
+			case 0x0002 : // Quickstop State
+		// Set Disable State
+				if(!VCS_SetDisableState(hKeyHandle,this->wNodeId,&this->dwErrorCode)) 
+				{
+					std::cout << "Cannot set disable state" << endl;
+					throw this->dwErrorCode;
+				}
+				else
+				{
+					// Set State variable to DISABLED
+					this->wState = 0x0000;
+					// Set ModuleState to CONNECTED
+					this->e_ModuleState = CONNECTED;
+					std::cout << "ModuleState = CONNECTED" << endl;
+				}
+				break;
+			default :
+				this->dwErrorCode = 0xA0000000; // Unknown Error
+				// Set ArmModuleState to EXCEPTION
+				this->e_ModuleState = EXCEPTION;
+				throw this->dwErrorCode;
+		}
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CMotorController::Disable..." <<std::endl;
+		throw;
+	}
+}
+
+// Setter: Set OpMode to CurrentMode
+void CMotorController::SetCurrentMode(void* hKeyHandle)
+{
+	try
+	{
+		// Set OpMode to Current Mode (-0x03)
+		if(!VCS_ActivateCurrentMode(hKeyHandle,this->wNodeId,&this->dwErrorCode)) throw this->dwErrorCode;
+		else this->i8OpMode = -0x03;
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CMotorController::SetCurrentMode..." << std::endl;
+		throw;
+	}
+}
+
+// TODO: Initialize Motor Controller Settings (Set all IO parameters)
+void CMotorController::InitializeSettings(void* hKeyHandle)
+{
+	try
+	{
+		// Clear Error History and Set Disable State
+		this->Disable(hKeyHandle);
+		std::cout << "Disabled" << endl;
+
+		// TODO: Set Parameters
+			// '-> Motor Parameters
+				// (Block commutation, 3890mA continuos current, 7780mA peak current, 2 pole pairs, 4s thermal time constant)
+                                //if(!VCS_SetMotorParameter(hKeyHandle,this->wNodeId,11,3890,7780,2,4,&this->dwErrorCode)) throw this->dwErrorCode;
+				if(!VCS_SetEcMotorParameter(hKeyHandle,this->wNodeId,3890,7780,4,2,&this->dwErrorCode)) throw this->dwErrorCode;
+				std::cout << "Motor Parameters setted" << endl;
+				//if(!VCS_SetEcMotorParameter(hKeyHandle,this->wNodeId,2660,18800,3,1,&this->dwErrorCode)) throw this->dwErrorCode;
+				// TODO: Load Motor Parameters from Parameter File
+				//if(!VCS_SetMotorParameter(hKeyHandle,this->wNodeId,wMotorType,wContinuousCurrent,wPeakCurrent,bPolePair,wThermalTimeConstant,&this->dwErrorCode)) throw this->dwErrorCode;
+
+			// '-> TODO: Position Sensor Parameters
+				// (Counts, SensorType)
+				//if(!VCS_SetSensorType(hKeyHandle,this->wNodeId,12,0x03,&this->dwErrorCode)) throw this->dwErrorCode;
+				//if(!VCS_SetHallSensorParameter(hKeyHandle,this->wNodeId,false,&this->dwErrorCode)) throw this->dwErrorCode;
+
+			// '-> Safety Parameters
+				// Set Maximum Profile Velocity and Acceleration
+					if(!VCS_SetMaxProfileVelocity(hKeyHandle,this->wNodeId,8000,&this->dwErrorCode)) throw this->dwErrorCode;
+				std::cout << "Max Profile Velocity setted" << endl;
+					//if(!VCS_SetMaxAcceleration(hKeyHandle,this->wNodeId,dwMaxAcceleration,&this->dwErrorCode)) throw this->dwErrorCode;
+
+			// '-> TODO: Regulator Parameters
+				// Set Position Regulator Gain and FeedForward
+					//if(!VCS_SetPositionRegulatorGain(hKeyHandle,this->wNodeId,wP,wI,wD,&this->dwErrorCode)) throw this->dwErrorCode;
+					//if(!VCS_SetPositionRegulatorFeedForward(hKeyHandle,this->wNodeId,wVelocityFeedForward,wAccelerationFeedForward,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Set Velocity Regulator Gain
+					//if(!VCS_SetVelocityRegulatorGain(hKeyHandle,this->wNodeId,wP,wI,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Set Current Regulator Gain
+					//if(!VCS_SetCurrentRegulatorGain(hKeyHandle,this->wNodeId,wP,wI,&this->dwErrorCode)) throw this->dwErrorCode;
+
+			// '-> Set IO Parameters
+				// Digital Output 01: Disable (and assign functionality General Purpose A)
+					if(!VCS_DigitalOutputConfiguration(hKeyHandle,this->wNodeId,1,15,0,0,0,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Digital Output 02: Disable (and assign functionality General Purpose B)
+					if(!VCS_DigitalOutputConfiguration(hKeyHandle,this->wNodeId,2,14,0,0,0,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Digital Output 03: Disable (and assign functionality General Purpose C)
+					if(!VCS_DigitalOutputConfiguration(hKeyHandle,this->wNodeId,3,13,0,0,0,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Digital Output 04: Set for Brake (and assign functionality General Purpose D)
+					if(!VCS_DigitalOutputConfiguration(hKeyHandle,this->wNodeId,4,12,0,1,1,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Digital Input 01: Disable
+					if(!VCS_DigitalInputConfiguration(hKeyHandle,this->wNodeId,1,15,0,0,0,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Digital Input 02: Disable
+					if(!VCS_DigitalInputConfiguration(hKeyHandle,this->wNodeId,2,14,0,0,0,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Digital Input 03: Disable
+					if(!VCS_DigitalInputConfiguration(hKeyHandle,this->wNodeId,3,13,0,0,0,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Digital Input 04: Disable
+					if(!VCS_DigitalInputConfiguration(hKeyHandle,this->wNodeId,4,12,0,0,0,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Digital Input 05: Set for Positive Limit Switch
+					if(!VCS_DigitalInputConfiguration(hKeyHandle,this->wNodeId,5,1,1,0,1,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Digital Input 06: Set for Negative Limit Switch
+					if(!VCS_DigitalInputConfiguration(hKeyHandle,this->wNodeId,6,0,1,0,1,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Analog Input 01: Set for Angle Sensor (and assign functionality General Purpose A) // == default configuration
+					if(!VCS_AnalogInputConfiguration(hKeyHandle,this->wNodeId,1,15,0,&this->dwErrorCode)) throw this->dwErrorCode;
+				// Analog Input 02: Disable (and assign functionality General Purpose B) // == default configuration
+					if(!VCS_AnalogInputConfiguration(hKeyHandle,this->wNodeId,2,14,0,&this->dwErrorCode)) throw this->dwErrorCode;
+					
+
+		// Init Modes and/or (Min/Max)Values
+			// '-> Close Brake
+				this->Brake.Close(hKeyHandle);
+
+			// '-> TODO: ErrorHandling (Limit Switch Active -> Halt) // Default Value is OK
+				//void Data;
+				//DWORD dwNbOfBytesWritten;
+				//if(!VCS_SetObject(hKeyHandle,this->wNodeId,0x605E,0x00,&Data,1,&dwNbOfBytesWritten,&this->dwErrorCode)) throw this->dwErrorCode;
+
+			// '-> OpMode
+				// Set OpMode to Current Mode (-0x03)
+				// Alternative: if(!VCS_ActivateCurrentMode(hKeyHandle,this->wNodeId,&this->dwErrorCode)) throw this->dwErrorCode;
+				this->SetCurrentMode(hKeyHandle);
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CMotorController::InitializeSettings..." << std::endl;
+		throw;
+	}
+}
+
+
+//
+//
+// CAngleSensor
+
+// Set SensorOffset
+void CAngleSensor::SetSensorOffset(float fValue)
+{
+	this->fSensorOffset = fValue;
+}
+
+// Set SensorOffset by detection
+void CAngleSensor::LogSensorOffset()
+{
+	// TODO: LogCenter -> prompt: "Adjust robot arm: Center both axes. Click OK" -> SetSensorOffset to compensate Diff from axis center (180)
+	// TODO:
+	// '-> Open brakes
+	// '-> prompt "Center/Staighten robot arm"
+	// '-> Log angles on BtnPressedOK
+	// '-> Set SensorOffset to Diff(ActualAngles-180)
+}
+
+// Get Actual Angle (AngleIs)
+float CAngleSensor::fGetAngleIs(void* hKeyHandle)
+{
+	try
+	{
+		// Get Analog Input Value [mV] and convert to Actual Angle [Grad,�]
+		if(!VCS_GetAnalogInput(hKeyHandle,pMotorController->wNodeId,1,&this->wAnalogValue,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode; 
+		{
+			// Cast Input from WORD to FLOAT 
+			this->fAnalogValue = this->wAnalogValue;
+			// Calculate fAngleIs from analog sensor output value fAnalogValue
+			// '-> Sensor Output: 500mV..4500mV (SensorOutputRange = 4000mV, SensorOutputOffset = 500mV)
+			// '-> Represented Angles: 0�..360� (AngleRange = 360�)
+			// '-> Angle = (SensorOutput - SensorOutputOffset) * AngleRange / SensorOutputRange
+			// '-> To compensate for mechanical sensor offset, this->fSensorOffset is added.
+			this->fAngleIs = (this->fAnalogValue - 500) * 0.09 + this->fSensorOffset;
+			// Note: Resolution = 0.09�
+
+			// Check value to avoid damage
+			if ((pMotorController->e_ModuleState == MOVING) && (this->fAngleIs < 88 || this->fAngleIs > 272))
+			{
+				pMotorController->dwErrorCode = 0xA0000006; // Angle limit violation!
+				throw pMotorController->dwErrorCode;
+			}
+		}
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		//AfxMessageBox(_T("Error Handler: CAngleSensor::fGetAngleIs..."),MB_ICONEXCLAMATION);
+		throw;
+	}
+	return this->fAngleIs;
+}
+
+
+//
+//
+// CLimitSwitch
+
+// CLimitSwitch Constructor
+CLimitSwitch::CLimitSwitch(CMotorController * pMoConPtr, char cPosId) : pMotorController(pMoConPtr), cPositionId(cPosId), bStatus(false), wDigitalInputWord(0), cDigitalInputBit(0)
+{
+	try
+	{
+		switch (this->cPositionId)
+		{
+			case 0 : 
+				this->dwErrorCode = 0xA0000002; // Negative Limit Switch active!
+				break;
+			case 1 : 
+				this->dwErrorCode = 0xA0000003; // Positive Limit Switch active!
+				break;
+			default :
+				pMotorController->dwErrorCode = 0xA0000001; // Limit Switch badly defined!
+				throw pMotorController->dwErrorCode;
+		}
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CLimitSwitch::CLimitSwitch..." << std::endl;
+		throw;
+	}
+}
+
+// Getter: Get Limit Switch Status (OK || Active)
+bool CLimitSwitch::bGetStatus()
+{
+	return this->bStatus;
+}
+
+// Update and get Limit Switch Status (OK || Active)
+bool CLimitSwitch::bUpdateStatus(void* hKeyHandle)
+{
+	try
+	{
+		// Read Digital Inputs
+		if(!VCS_GetAllDigitalInputs(hKeyHandle,pMotorController->wNodeId,&this->wDigitalInputWord,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode;
+		if(this->cPositionId == 2)
+			// Shift bits of WORD (16bit, unsigned int) right by 1 -> to have bit 1 (Positive Limit Switch indicator) in place of bit 0
+			this->wDigitalInputWord /= 2;
+		// Read last bit (bit 0) of WORD (16bit, unsigned int)
+		this->cDigitalInputBit = this->wDigitalInputWord % 2;
+		// Check Status
+		if(this->cDigitalInputBit)
+		{
+			this->bStatus = true;
+			pMotorController->dwErrorCode = this->dwErrorCode; // Limit Switch active!
+			throw pMotorController->dwErrorCode;
+		}
+		else this->bStatus = false;
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CLimitSwitch::bGetStatus..." << std::endl;
+		throw;
+	}
+	return this->bStatus;
+}
+
+
+//
+//
+// CBrake
+
+// Get Brake Status (TRUE: Open || FALSE: Closed)
+bool CBrake::bGetStatus()
+{
+	return this->bStatus;
+}
+
+// Update and get Brake Status (TRUE: Open || FALSE: Closed)
+bool CBrake::bUpdateStatus(void* hKeyHandle)
+{
+	try
+	{
+		// Read Digital Outputs
+		if(!VCS_GetAllDigitalOutputs(hKeyHandle,pMotorController->wNodeId,&this->wDigitalOutputWord,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode;
+		// Shift bits of WORD (16bit, unsigned int) right by 12 -> to have bit 12 in place of bit 0
+		for(int i = 0; i < 12; i++)
+		{
+			this->wDigitalOutputWord /= 2;
+		}
+		// Read last bit (bit 0, formerly bit 12) of WORD
+		this->cDigitalOutputBit = this->wDigitalOutputWord % 2;
+		// Check Status
+		switch (this->cDigitalOutputBit)
+		{
+			case 0 :
+				this->bStatus = false;
+				break;
+			case 1 :
+				this->bStatus = true;
+				break;
+			default :
+				this->bStatus = false;
+				pMotorController->dwErrorCode = 0xA0000004; // Unknown Error checking Brake Status!
+				throw pMotorController->dwErrorCode;
+		}
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CBrake::bGetStatus..." << std::endl;
+		throw;
+	}
+	return this->bStatus;
+}
+
+// Open Brake
+void CBrake::Open(void* hKeyHandle)
+{
+	try
+	{
+		// TODO: Test procedure 2
+		// Procedure 1 (Use if Digital Outputs only command Brake - faster procedure, but does not allow other Digital Outputs): Set Digital Outputs bit 12 to 1 and all others to 0
+		if(!VCS_SetAllDigitalOutputs(hKeyHandle,pMotorController->wNodeId,0x1000,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode;
+		else this->bStatus = true;
+		// Procedure 2 (Use if Digital Outputs also command other components than just the Brake - slower, but allows other Digital Outputs): As follows...
+		// Read Digital Outputs
+		//if(!VCS_GetAllDigitalOutputs(hKeyHandle,pMotorController->wNodeId,&this->wDigitalOutputWord,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode;
+		// Set bit 12 = 1, e.g. by applying a bit mask to wDigitalOutputWord (-> OR 0x1000)
+		//this->wDigitalOutputWord |= 0x1000;
+		// SetAllDigitalOutputs
+		//if(!VCS_SetAllDigitalOutputs(hKeyHandle,pMotorController->wNodeId,&this->wDigitalOutputWord,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode;
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CBrake::Open..." << std::endl;
+		throw;
+	}
+}
+
+// Close Brake
+void CBrake::Close(void* hKeyHandle)
+{
+	try
+	{
+		// TODO: Test procedure 2
+		// Procedure 1 (Use if Digital Outputs only command Brake - faster procedure, but does not allow other Digital Outputs): Set all Digital Outputs to 0
+		if(!VCS_SetAllDigitalOutputs(hKeyHandle,pMotorController->wNodeId,0x0000,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode;
+		else this->bStatus = false;
+		// Procedure 2 (Use if Digital Outputs also command other components than just the Brake - slower, but allows other Digital Outputs): As follows...
+		// Read Digital Outputs
+		//if(!VCS_GetAllDigitalOutputs(hKeyHandle,pMotorController->wNodeId,&this->wDigitalOutputWord,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode;
+		// Set bit 12 = 0, e.g. by applying a bit mask to wDigitalOutputWord (-> AND 0xEFFF)
+		//this->wDigitalOutputWord &= 0xEFFF;
+		// SetAllDigitalOutputs
+		//if(!VCS_SetAllDigitalOutputs(hKeyHandle,pMotorController->wNodeId,&this->wDigitalOutputWord,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode;
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CBrake::Close..." << std::endl;
+		throw;
+	}
+}
+
+
+//
+//
+// CMotor
+
+// Read Target Current
+short CMotor::sGetCurrentMust(void* hKeyHandle)
+{
+	// Update sCurrentMust
+	try
+	{
+		if(!VCS_GetCurrentMust(hKeyHandle,pMotorController->wNodeId,&this->sCurrentMust,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode;
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CMotor::sGetCurrentMust..." << std::endl;
+		throw;
+	}
+	// Return sCurrentMust
+	return this->sCurrentMust;
+}
+
+// Read Actual Current
+short CMotor::sGetCurrentIs(void* hKeyHandle)
+{
+	// Update sCurrentIs
+	try
+	{
+		if(!VCS_GetCurrentIs(hKeyHandle,pMotorController->wNodeId,&this->sCurrentIs,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode;
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CMotor::sGetCurrentIs..." << std::endl;
+		throw;
+	}
+	// Return sCurrentIs
+	return this->sCurrentIs;
+}
+
+// Exec Move Command
+void CMotor::Move(void* hKeyHandle, short sCurrentMust)
+{
+	try
+	{
+		if (pMotorController->e_ModuleState == MOVING)
+		{
+			// Check OpMode (and Set OpMode to Current Mode if necessary)
+			if (pMotorController->i8GetOpMode() != -0x03) pMotorController->SetCurrentMode(hKeyHandle);
+			// Check Brake Status (and Open Brake if necessary)
+			if (!pMotorController->Brake.bGetStatus()) pMotorController->Brake.Open(hKeyHandle);
+		}
+		else
+		{
+			// Update and check OpMode (and Set OpMode to Current Mode if necessary)
+			if (pMotorController->i8UpdateOpMode(hKeyHandle) != -0x03) pMotorController->SetCurrentMode(hKeyHandle);
+			// Update Brake Status (and Open Brake if necessary)
+			if (!pMotorController->Brake.bUpdateStatus(hKeyHandle)) pMotorController->Brake.Open(hKeyHandle);
+		}
+
+		// Current Control // is handled internally on the controller P_Gain and I_Gain need to be set externally (e.g. EPOS Studio) or in the Initialization
+		// '-> conventional
+		//     '-> sCurrentMust = sCurrentMust - (sCurrentMust - sGetCurrentIs()) * K_p
+		//sCurrentMust -= (sCurrentMust - sGetCurrentIs(hKeyHandle)) * 0.8;
+		// '-> fuzzy
+		//
+		// '-> Step limit
+		//sGetCurrentIs(hKeyHandle);
+		//if ((sCurrentMust - sCurrentIs) > 500) sCurrentMust = sCurrentIs + 500;
+		//else if ((sCurrentMust - sCurrentIs) < -500) sCurrentMust = sCurrentIs - 500;
+
+		// Write Target Current
+		if (!VCS_SetCurrentMust(hKeyHandle,pMotorController->wNodeId,sCurrentMust,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode;
+		else pMotorController->e_ModuleState = MOVING;
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CMotor::Move..." << std::endl;
+		throw;
+	}
+}
+
+// Exec Halt Command (Set Quickstop State + Close Brakes)
+void CMotor::Halt(void* hKeyHandle)
+{
+	try
+	{
+		// Set Quickstop State
+		if (!VCS_SetQuickStopState(hKeyHandle,pMotorController->wNodeId,&pMotorController->dwErrorCode)) throw pMotorController->dwErrorCode;
+		else
+		{
+			pMotorController->wState = 0x0002;
+			pMotorController->e_ModuleState = CONNECTED;
+		}
+
+		// Delay to avoid spoiling the break
+		//Sleep(100);
+
+		// Close Brake
+		if (pMotorController->Brake.bUpdateStatus(hKeyHandle)) pMotorController->Brake.Close(hKeyHandle);
+
+		// Enable
+		pMotorController->Enable(hKeyHandle);
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CMotor::Halt..." << std::endl;
+		throw;
+	}
+}
+
+//
+//
+// ArmModule
+
+// Get ArmModule State
+enum ModuleState CISELLA3_ArmModule::e_GetModuleState()
+{
+	if ((this->MotorController[0].e_ModuleState == NOT_CONNECTED) && (this->MotorController[1].e_ModuleState == NOT_CONNECTED)) return NOT_CONNECTED;
+	else if ((this->MotorController[0].e_ModuleState == CONNECTED) && (this->MotorController[1].e_ModuleState == CONNECTED)) return CONNECTED;
+	else if ((this->MotorController[0].e_ModuleState == READY) && (this->MotorController[1].e_ModuleState == READY)) return READY;
+	else if (((this->MotorController[0].e_ModuleState == MOVING) && (this->MotorController[1].e_ModuleState == READY)) || ((this->MotorController[0].e_ModuleState == READY) && (this->MotorController[1].e_ModuleState == MOVING)) || ((this->MotorController[0].e_ModuleState == MOVING) && (this->MotorController[1].e_ModuleState == MOVING))) return MOVING;
+	else return EXCEPTION;
+}
+
+// Get AngleAxisMust
+float CISELLA3_ArmModule::fGetAngleAxisMust(int iAxisId) // Get AngleAxisMust (without update)
+{
+	try
+	{
+		// Checking if parameter iAxisId valid = ( 0 || 1 )
+		if (!(iAxisId == 0 || iAxisId == 1))
+		{
+			unsigned int dwErrorCode = 0xA0000005;
+			throw dwErrorCode;
+		}
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CISELLA3_ArmModule::fGetAngleAxisMust..." << std::endl;
+		throw;
+	}
+	return this->fAngleAxisMust[iAxisId];
+}
+
+// Set AngleMust
+void CISELLA3_ArmModule::SetAngleMust(int iAxisId, float fValue)
+{
+	try
+	{
+		// Check if parameter iAxisId valid = ( 0 || 1 )
+		if (!(iAxisId == 0 || iAxisId == 1)) throw dwErrorCode = 0xA0000005;
+		// Check if within limits
+		if (!(90 < fValue < 270)) throw dwErrorCode = 0xB0000001;
+		// Update the changed Axis Target Value
+		this->fAngleAxisMust[iAxisId] = fValue;
+		// Update the Wheel Target Values
+		this->fAngleWheelMust[0] = fAngleAxisMust[1] + ( fAngleAxisMust[0] - 180 ) / double(2.09278351); // factor 2.09278351 for means of gear ratio
+		this->fAngleWheelMust[1] = fAngleAxisMust[1] - ( fAngleAxisMust[0] - 180 ) / double(2.09278351); // factor 2.09278351 for means of gear ratio
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CISELLA3_ArmModule::SetAngleMust..." << std::endl;
+		throw;
+	}
+}
+
+// Start Movement
+void CISELLA3_ArmModule::SetMove()
+{
+	// Set Move flag to 1
+	this->bShouldMove = 1;
+}
+
+// Halt Movement
+void CISELLA3_ArmModule::SetHalt(void* hKeyHandle)
+{
+	// Set Move flag to 0
+	this->bShouldMove = 0;
+	// Halt Motors
+	for (int iMotorControllerId = 0; iMotorControllerId < 2; iMotorControllerId++)
+	{
+		this->MotorController[iMotorControllerId].Motor.Halt(hKeyHandle);
+	}
+
+}
+
+// ErrorHandler
+void CISELLA3_ArmModule::ErrorHandler(unsigned int dwErrorCode)
+{
+	try
+	{
+		// TODO: Reset flags
+		//for (int iMotorControllerId = 0; iMotorControllerId < 2; iMotorControllerId++)
+		//{
+		//	MotorController[iMotorControllerId].Motor.Halt(hKeyHandle);
+		//}
+	}
+	catch (unsigned int dwErrorCode)
+	{
+		std::cout << "Error Handler: CISELLA3_ArmModule::ErrorHandler..." << std::endl;
+		throw;
+	}
+}

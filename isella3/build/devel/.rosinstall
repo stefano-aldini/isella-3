@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /opt/ros/groovy/stacks/ros_pkg_tutorials/isella3/build/devel/setup.sh
